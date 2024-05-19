@@ -1,5 +1,2 @@
-# Ignore Angular cache directory
-.angular/
 
-# Ignore node_modules directory
-node_modules/
+Admin/package-lock.json
