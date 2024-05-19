@@ -1,0 +1,45 @@
+<div class="account-pages my-5 pt-sm-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center mb-5">
+                    <a routerLink="/" class="d-block auth-logo">
+                      <img [src]="mode === 'dark' ? 'assets/images/logos/lazo.png' : 'assets/images/logos/lazo.png'" alt="lazo"
+                      height="90"
+                      class="logo mx-auto" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 col-xl-5">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="p-2">
+                            <div class="text-center">
+                                <div class="avatar-md mx-auto">
+                                    <div class="avatar-title rounded-circle bg-light">
+                                        <i class="bx bxs-envelope h1 mb-0 text-primary"></i>
+                                    </div>
+                                </div>
+                                <div class="p-2 mt-4">
+                                    <h4>{{TRANSLATE_KEY + 'VERIFY'|translate }}</h4>
+                                    <p>{{TRANSLATE_KEY + 'VERIFY_EMAIL'|translate }} <span class="fw-semibold">{{authenticationService.authService.model.email}}</span>, Please check it</p>
+                                    <div class="mt-4">
+                                        <a (click)="resend()" class="btn btn-success w-md">{{TRANSLATE_KEY + 'RESEND'|translate }} ?</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
+                    <p>© {{year}} Lazo.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="card p-0 m-0 shadow-none">
+  <div class="card-body pb-0">
+    <div class="d-flex gap-2 w-100 align-content-center">
+      <div class="flex-grow-1">
+        <div class="d-flex align-items-center">
+          <div class="flex-grow-1">
+            <ul
+              ngbNav
+              #customNav="ngbNav"
+              [activeId]="active"
+              class="nav-tabs nav-tabs-custom nav-justified">
+              <li [ngbNavItem]="1">
+                <a ngbNavLink class=""> My Photos </a>
+                <ng-template ngbNavContent>
+                  <ng-template [ngTemplateOutlet]="UserMedia"> </ng-template>
+                </ng-template>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0">
+        <button
+          (click)="closeModal.emit()"
+          type="button"
+          class="btn text-black">
+          <i class="mdi mdi-close-thick align-middle"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div [ngbNavOutlet]="customNav"></div>
+  </div>
+</div>
+
+<ng-template #UserMedia>
+  <app-user-media (emitter)="emitter.emit($event)"></app-user-media>
+</ng-template>

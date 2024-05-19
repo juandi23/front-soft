@@ -1,0 +1,16 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "src/assets/scss/variables";
+.bg-overlay{
+  // background: url("../../../../assets/images/logos/home-resource.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+.google-btn {
+  box-shadow: 0 3px 13px -4px #4e1df1;
+}
+.welcome-text {
+  color: #000842;
+}

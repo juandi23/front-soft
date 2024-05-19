@@ -1,0 +1,287 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-8">
+            <div class="auth-full-bg pt-lg-5 p-4">
+              <div class="w-100">
+                <div class="bg-overlay bg-dark-color"></div>
+                <div class="d-flex h-100 flex-column">
+                  <div class="p-4 mt-auto">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-7">
+                        <div class="text-center text-white">
+                          <h4 class="mb-3">
+                            <i
+                              class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"
+                            ></i
+                            ><span class="text-primary">1k</span>+ {{ TRANSLATE_KEY+ 'SATISFIED' | translate }}
+                          </h4>
+
+                          <div dir="ltr">
+                            <owl-carousel-o
+                              class="owl-theme auth-review-carousel"
+                              [options]="carouselOption"
+                            >
+                              <ng-template carouselSlide>
+                                <div class="item">
+                                  <div class="py-3">
+                                    <p class="font-size-16 mb-4">
+                                      "Impressive tool! Love the notifications feature. Easy to use. Great support from the team. Thank you team Lazo!"
+                                    </p>
+
+                                    <div>
+                                      <h4 class="font-size-16 text-primary">
+                                        Albert1981
+                                      </h4>
+                                      <p class="font-size-14 mb-0">- {{ TRANSLATE_KEY+ 'ROBIN_USER' | translate }}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </ng-template>
+                              <ng-template carouselSlide>
+                                <div class="item">
+                                  <div class="py-3">
+                                    <p class="font-size-16 mb-4">
+                                      "At first, I assumed it was similar to other tested platforms like Jasper, CopyAI, GaryAi, etc. However, after thorough testing, it became evident that the approach is significantly superior."
+                                    </p>
+
+                                    <div>
+                                      <h4 class="font-size-16 text-primary">
+                                        valen345h
+                                      </h4>
+                                      <p class="font-size-14 mb-0">- {{ TRANSLATE_KEY+ 'ROBIN_USER' | translate }}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </ng-template>
+                            </owl-carousel-o>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="auth-full-page-content p-md-5 p-4">
+              <div class="w-100">
+                <div class="d-flex flex-column h-100">
+                  <div class="mb-4 mb-md-5">
+                    <a routerLink="/" class="d-block auth-logo">
+                      <img [src]="'assets/images/logos/lazo.png'" alt="lazo"
+                      height="90"
+                      class="logo" />
+                    </a>
+                  </div>
+                    <form [formGroup]="group" (ngSubmit)="ngSubmit()">
+                        <!-- Sección 1: Información del miembro -->
+                        <div *ngIf="section === 1">
+                            <h4 class="card-title">Formulario Mayorista</h4>
+                            <p class="card-title-desc">por favor complete toda la información requerida</p>
+                            <div class="my-auto">
+                                <div class="col-md-12 mb-3">
+                                    <label for="firstName">Nombre</label>
+                                    <input
+                                        id="firstName"
+                                        formControlName="firstName"
+                                        placeholder="Nombre"
+                                        type="text"
+                                        class="form-control"
+                                        autocomplete="new-data"
+                                        [ngClass]="{ 'is-invalid': submit && f.firstName?.invalid }"
+                                    />
+                                    <div *ngIf="submit && f.first_name?.invalid" class="invalid-feedback d-block">
+                                        <span *ngIf="f.first_name.errors.required">Nombre es requerido</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="lastName">Apellido</label>
+                                    <input
+                                        id="lastName"
+                                        formControlName="lastName"
+                                        placeholder="Apellido"
+                                        type="text"
+                                        class="form-control"
+                                        autocomplete="new-data"
+                                        [ngClass]="{ 'is-invalid': submit && f.lastName?.invalid }"
+                                    />
+                                    <div *ngIf="submit && f.lastName?.invalid" class="invalid-feedback d-block">
+                                        <span *ngIf="f.lastName.errors.required">Se requiere apellido</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="email">Email</label>
+                                    <input
+                                        id="email"
+                                        formControlName="email"
+                                        placeholder="Email"
+                                        type="email"
+                                        class="form-control"
+                                        autocomplete="new-data"
+                                        [ngClass]="{ 'is-invalid': submit && f.email?.invalid }"
+                                    />
+                                    <div *ngIf="submit && f.email?.invalid" class="invalid-feedback d-block">
+                                        <span *ngIf="f.email.errors.required">Email es Requerido</span>
+                                        <span *ngIf="f.email.errors.email">Ingresa un Emailvalido</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="password">Contraseñas</label>
+                                    <input
+                                        id="password"
+                                        formControlName="password"
+                                        placeholder="Contraseña"
+                                        type="password"
+                                        class="form-control"
+                                        autocomplete="new-password"
+                                        [ngClass]="{ 'is-invalid': submit && f.password?.invalid }"
+                                    />
+                                    <div *ngIf="submit && f.password?.invalid" class="invalid-feedback d-block">
+                                        <span *ngIf="f.password.errors.required">Contraseña es requerida</span>
+                                        <span *ngIf="f.password.errors.minlength">La contraseña debe tener al menos 6 caracteres</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <label for="confirmPassword">Confirmar Contraseña</label>
+                                    <input
+                                        id="confirmPassword"
+                                        formControlName="confirmPassword"
+                                        placeholder="Confirmar Contraseña"
+                                        type="password"
+                                        class="form-control"
+                                        autocomplete="new-password"
+                                        [ngClass]="{ 'is-invalid': submit && f.confirmPassword?.invalid }"
+                                    />
+                                    <div *ngIf="submit && f.confirmPassword?.invalid" class="invalid-feedback d-block">
+                                        <span *ngIf="f.confirmPassword.errors.required">Confirmacion es requerida</span>
+                                        <span *ngIf="f.confirmPassword.errors.passwordMismatch">Las contraseñas deben coincidir</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-primary w-md" (click)="nextSection()">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sección 2: Información de la empresa -->
+                        <div *ngIf="section === 2">
+                            <h4 class="card-title">Informacion de la Empresa</h4>
+                            <p class="card-title-desc">Por favor complete toda la información requerida</p>
+                            <div class="my-auto">
+
+                                <div class="col-12 mb-3">
+                                    <label for="phone">Telefono Contacto</label>
+                                    <input
+                                        id="phone"
+                                        formControlName="phone"
+                                        placeholder="Telefono"
+                                        type="text"
+                                        class="form-control"
+                                        autocomplete="new-data"
+                                      [ngClass]="{ 'is-invalid': submit && f.phone?.invalid }"
+                                    />
+                                    <div *ngIf="submit && f.phone?.invalid" class="invalid-feedback d-block">
+                                        Telefono es Requerido
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                <label for="companyName">Nombre Compañia</label>
+                                <input
+                                    id="companyName"
+                                    formControlName="companyName"
+                                    placeholder="Nombre Compañia"
+                                    type="text"
+                                    class="form-control"
+                                    autocomplete="new-data"
+                                  [ngClass]="{ 'is-invalid': submit && f.companyName?.invalid }"
+
+                                />
+                                  <div *ngIf="submit && f.companyName?.invalid" class="invalid-feedback d-block">
+                                      Nombre de la Compañia es Requerido
+                                      </div>
+
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="companySize">Tamaño de la Empresa</label>
+                                <select
+                                    id="companySize"
+                                    formControlName="companySize"
+                                    class="form-control"
+                                    [ngClass]="{ 'is-invalid': submit && f.companySize?.invalid }"
+                                >
+                                
+                                    <!-- <option value=" ">Selecciona el tamaño de tu empresa</option> -->
+                                    <option value="1-10" selected>1-10 empleados</option>
+                                    <option value="11-50">11-50 empleados</option>
+                                    <option value="51-200">51-200 empleados</option>
+                                    <option value="201-500">201-500 empleados</option>
+                                    <option value="501-1000">501-1000 empleados</option>
+                                    <option value="1001-5000">1001-5000 empleados</option>
+                                    <option value="5001-10000">5001-10000 empleados</option>
+                                    <option value="10000+">Más de 10000 empleados</option>
+                                </select>
+                            </div>
+
+
+                            <div class="col-12 mb-3">
+                                <label for="address">Direccion (opcional)</label>
+                                <input
+                                    id="address"
+                                    formControlName="address"
+                                    type="text"
+                                    class="form-control"
+                                    autocomplete="new-data"
+                                    placeholder="Direccion"
+                                />
+
+                            </div>
+                            <div class="col-12 mb-3">
+                                <label for="rutRegistration">RUT (Registro Único Tributario)</label>
+                                <input
+                                    id="rutRegistration"
+                                    placeholder="RUT"
+                                    formControlName="rutRegistration"
+                                    type="text"
+                                    class="form-control"
+                                    autocomplete="new-data"
+                                    [ngClass]="{ 'is-invalid': submit && f.rutRegistration?.invalid }"
+                                />
+                                <div *ngIf="submit && f.rutRegistration?.invalid" class="invalid-feedback d-block">
+                                  Ingresa tu RUT (Registro Único Tributario)
+                                </div>
+                            </div>
+                                <div class="col-md-6 mb-4 justify-content-center">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="acceptPolicy" formControlName="acceptPolicy" class="form-check-input"
+                                        [ngClass]="{'is-invalid': submit && f.acceptPolicy?.invalid}"
+                                        />
+                                        <label class="form-check-label" for="acceptPolicy">Acepta Politicas</label>
+                                        <div *ngIf="submit && f.acceptPolicy?.invalid" class="invalid-feedback d-block">
+                                            para continuar debes aceptar las Politicas
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between  col-11">
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-primary  " (click)="previousSection()">Previous</button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-primary  ">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="mt-4 mt-md-5 text-center">
+                        <p class="mb-0">© 2024 Lazo.</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>

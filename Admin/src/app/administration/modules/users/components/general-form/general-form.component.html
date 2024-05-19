@@ -1,0 +1,175 @@
+<div class="card shadow-sm mb-0">
+  <form (ngSubmit)="ngSubmit()" [formGroup]="group">
+    <div class="card-body border-bottom">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="card-title">{{TRANSLATE_KEY+ 'USER_I' | translate}}</h4>
+          <p class="card-title-desc">{{TRANSLATE_KEY+ 'FILL' | translate}}</p>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <label for="firstName">{{TRANSLATE_KEY+ 'FIRST_NAME' | translate}}  </label>
+          <input
+            id="firstName"
+            formControlName="firstName"
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            autocomplete="new-data"
+            [ngClass]="ngClassValidate(group, 'firstName')" />
+            <div *ngIf="submit && f" class="invalid-feedback">
+              <div *ngIf="f['firstName'].errors">
+                {{TRANSLATE_KEY+ 'FIRST_NAME_V' | translate}}
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName"> {{TRANSLATE_KEY+ 'LAST_NAME' | translate}} </label>
+          <input
+            id="lastName"
+            formControlName="lastName"
+            type="text"
+            class="form-control"
+            autocomplete="new-data"
+            [ngClass]="ngClassValidate(group, 'lastName')" />
+            <div *ngIf="submit && f" class="invalid-feedback">
+              <div *ngIf="f['lastName'].errors">
+                {{TRANSLATE_KEY+ 'LAST_NAME_V' | translate}}
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="name"> {{TRANSLATE_KEY+ 'EMAIL' | translate}}</label>
+          <input
+            id="email"
+            formControlName="email"
+            type="text"
+            class="form-control"
+            [placeholder]="TRANSLATE_KEY+ 'EMAIL' | translate"
+            autocomplete="new-data"
+            [ngClass]="ngClassValidate(group, 'email')" />
+            <div *ngIf="submit && f" class="invalid-feedback">
+              <div *ngIf="f['email'].errors">
+                {{TRANSLATE_KEY+ 'EMAIL_V' | translate}}
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="roles">Role</label>
+          <ng-select
+            formControlName="roles"
+            [items]="roleArray"
+            bindLabel="name"
+            labelForId="roles"
+            [multiple]="false"
+            autocomplete="off"
+            [placeholder]="TRANSLATE_KEY+ 'ROLES' | translate"
+            [clearable]="true"
+            clearAllText="x"
+            [ngClass]="ngClassValidate(group, 'roles')"
+            name="roles">
+          </ng-select>
+          <div *ngIf="submit && f" class="invalid-feedback">
+            <div *ngIf="f['roles'].errors">
+              The role must be valid
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" formGroupName="profile" *ngIf="!isAdminUser">
+        <div class="col-md-6 mb-3">
+          <label for="name"> {{TRANSLATE_KEY+ 'ABOUT' | translate}} </label>
+          <textarea
+            id="about"
+            formControlName="about"
+            class="form-control"
+            [placeholder]="TRANSLATE_KEY+ 'ABOUT' | translate"
+            autocomplete="new-data"
+            [ngClass]="ngClassValidate(group, 'profile.about')">
+          </textarea>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label" for="name"> {{TRANSLATE_KEY+ 'GENDER' | translate}} </label><br />
+          <div
+            class="form-check form-check-inline"
+            *ngFor="let genderOpt of genderOptions">
+            <input
+              type="radio"
+              id="{{ genderOpt.name }}"
+              name="gender"
+              class="form-check-input"
+              value="{{ genderOpt.value }}"
+              [ngClass]="ngClassValidate(group, 'profile.gender')"
+              formControlName="gender" />
+            <label class="form-check-label" for="{{ genderOpt.name }}">
+              {{ genderOpt.name }}
+            </label>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="name"> {{TRANSLATE_KEY+ 'Nickname' | translate}}</label>
+          <input
+            id="nickname"
+            formControlName="nickname"
+            type="text"
+            class="form-control"
+            placeholder="Nikname"
+            autocomplete="new-data"
+            [ngClass]="ngClassValidate(group, 'profile.nickname')" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="name"> {{TRANSLATE_KEY+ 'PREFERRED_N' | translate}}</label>
+          <input
+            id="preferredName"
+            formControlName="preferredName"
+            type="text"
+            class="form-control"
+            placeholder="Preferred Name"
+            autocomplete="new-data"
+            [ngClass]="ngClassValidate(group, 'profile.preferredName')" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="name"> {{TRANSLATE_KEY+ 'PHONE_N' | translate}}</label>
+          <input
+            id="phoneNumber"
+            formControlName="phoneNumber"
+            type="text"
+            class="form-control"
+            [placeholder]="TRANSLATE_KEY+ 'PHONE_N' | translate"
+            autocomplete="new-data"
+            [ngClass]="ngClassValidate(group, 'profile.phoneNumber')" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="name"> {{TRANSLATE_KEY+ 'BIRTH_D' | translate}} </label>
+          <div class="input-group">
+            <input
+              formControlName="birthdate"
+              (click)="f.toggle()"
+              #f="ngbDatepicker"
+              type="text"
+              [placeholder]="TRANSLATE_KEY+ 'BIRTH_D' | translate"
+              ngbDatepicker
+              name="birthdate"
+              [(ngModel)]="birthDate"
+              [ngClass]="ngClassValidate(group, 'profile.birthdate')"
+              class="form-control" />
+            <button
+              class="btn btn-outline-secondary calendar fa fa-calendar"
+              (click)="f.toggle()"
+              type="button"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <div class="row justify-content-end">
+        <div class="col-md-2 mt-md-4 mb-3">
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-primary">{{TRANSLATE_KEY+ 'SAVE' | translate}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,41 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "module": "es2020",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [ "youtube" ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "@environments/*": ["src/environments/*"],
+      "@functions/*": ["src/app/core/functions/*"],
+      "@interceptors/*": ["src/app/core/interceptors/*"],
+      "@components/*": ["src/app/core/components/*"],
+      "@models/*": ["src/app/core/models/*"],
+      "@services/*": ["src/app/core/services/*"],
+      "@modules/*": ["src/app/core/modules/*"],
+      "@validators/*": ["src/app/core/validators/*"],
+      "@resolvers/*": ["src/app/core/resolvers/*"],
+      "@utils/*": ["src/app/core/utils/*"],
+      "@database/*": ["src/app/core/database/*"],
+    },
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+  }
+}

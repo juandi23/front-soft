@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card p-0 m-0 shadow-none border">
+      <div class="card-body p-2 border-bottom">
+        <div class="d-block d-sm-flex gap-2 align-items-center">
+          <div class="mb-0 flex-grow-1">
+            <ngx-dropzone
+              style="height: auto"
+              [multiple]="false"
+              [expandable]="false"
+              [accept]="accept"
+              (change)="onUpload($event)">
+              <ngx-dropzone-label>Drag or click to upload</ngx-dropzone-label>
+            </ngx-dropzone>
+          </div>
+
+          <div class="flex-shrink-0 d-block d-sm-flex gap-2 align-items-end">
+            <div class="d-block d-sm-inline mb-2 mb-sm-0">
+              <input
+                type="search"
+                class="form-control"
+                [formControl]="searchControl"
+                placeholder="Search for ..."
+                style="min-width: 200px" />
+            </div>
+            <a (click)="clear()" class="btn btn-light mx-2 mx-sm-0">
+              <i class="mdi mdi-refresh"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="row">
+          <div
+            *ngFor="let item of (service.collection$ | async)?.data"
+            class="col-xl-3 col-sm-4">
+            <div class="card">
+              <app-images
+                role="button"
+                src="{{ item  }}"
+                (click)="emitter.emit(item)"
+                [class]="'card-img-top img-fluid'">
+              </app-images>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto me-auto">
+            <div class="dataTables_length" id="tickets-table_length">
+              <label class="d-inline-flex align-items-center"
+                >Mostrar
+                <select
+                  aria-controls="tickets-table"
+                  name="pageSize"
+                  [formControl]="limitControl"
+                  class="custom-select custom-select-sm form-control form-control-sm mx-2">
+                  <option [ngValue]="8">8</option>
+                  <option [ngValue]="16">16</option>
+                  <option [ngValue]="40">40</option>
+                  <option [ngValue]="80">80</option>
+                </select>
+                entries</label
+              >
+            </div>
+          </div>
+          <div class="col-auto me-auto">
+            <p class="mb-0">
+              Showing <b>{{ service.from }}</b> to <b>{{ service.to }}</b> of
+              <b>{{ service.total }}</b> entries
+            </p>
+          </div>
+
+          <div class="col-auto">
+            <ul class="pagination pagination-rounded justify-content-end mb-2">
+              <ngb-pagination
+                [collectionSize]="service.total"
+                [(page)]="service.page"
+                [maxSize]="3"
+                [rotate]="true"
+                [pageSize]="service.limit">
+              </ngb-pagination>
+            </ul>
+          </div>
+        </div>
+
+        <!--end row-->
+      </div>
+    </div>
+  </div>
+</div>

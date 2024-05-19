@@ -1,0 +1,10 @@
+.topnav {
+  nav.navbar {
+    &.navbar-expand-lg {
+      .navbar-collapse {
+        align-content: center;
+        justify-content: center;
+      }
+    }
+  }
+}

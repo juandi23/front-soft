@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <app-page-title
+    title="Profile"
+    [breadcrumbItems]="menuAccountItems"></app-page-title>
+
+  <div class="card shadow-sm mb-0">
+    <form (ngSubmit)="ngSubmit()" [formGroup]="group">
+      <div class="card-body p-5">
+        <div class="row justify-content-end">
+          <div class="col-12">
+            <h4 class="card-title">{{TRANSLATE_KEY +'ACCOUNT_S'|translate}}</h4>
+            <p class="card-title-desc">{{TRANSLATE_KEY +'FILL'|translate}}</p>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="firstName"> {{TRANSLATE_KEY +'NAME'|translate}} </label>
+            <input
+              id="firstName"
+              formControlName="firstName"
+              type="text"
+              class="form-control"
+              autocomplete="new-data"
+              [ngClass]="ngClassValidate(group, 'firstName')" />
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="lastName"> {{TRANSLATE_KEY +'L_NAME'|translate}} </label>
+            <input
+              id="lastName"
+              formControlName="lastName"
+              type="text"
+              class="form-control"
+              autocomplete="new-data"
+              [ngClass]="ngClassValidate(group, 'lastName')" />
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="preferredName"> {{TRANSLATE_KEY +'PREFERED_NAME'|translate}} </label>
+            <input
+              id="preferredName"
+              formControlName="preferredName"
+              type="text"
+              class="form-control"
+              autocomplete="new-data"
+              [ngClass]="ngClassValidate(group, 'preferredName')" />
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <label for="about">{{TRANSLATE_KEY +'ABOUT'|translate}} </label>
+            <textarea
+              id="about"
+              formControlName="about"
+              rows="6"
+              class="form-control"
+              [ngClass]="ngClassValidate(group, 'about')"></textarea>
+          </div>
+
+          <div class="col-md-2">
+            <button type="submit" class="btn w-100 btn-primary">{{TRANSLATE_KEY +'SUBMIT'|translate}}</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

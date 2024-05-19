@@ -1,0 +1,1637 @@
+{
+  "HEADER": {
+    "SEARCH": "Buscar...",
+    "MEGA_MENU": "Mega Menú",
+    "NOTIFICATIONS": {
+      "TITLE": "Notificaciones",
+      "VIEW_ALL": "Ver todo",
+      "LOAD_MORE": "Ver más..",
+      "FIRST": {
+        "TITLE": "Su pedido se ha realizado",
+        "TEXT": "Si varios idiomas fusionan la gramática",
+        "TIME": "hace 3 minutos"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "Parecerá un inglés simplificado",
+        "TIME": "hace 1 hora"
+      },
+      "THIRD": {
+        "TITLE": "Su artículo ha sido enviado",
+        "TEXT": "Si varios idiomas fusionan la gramática",
+        "TIME": "hace 3 minutos"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "Como un escéptico amigo de Cambridge occidental",
+        "TIME": "hace 1 hora"
+      }
+    },
+    "SETTINGS": "Configuración",
+    "TENANTS": "Inquilinos",
+    "COMPANIES": "Empresas",
+    "ACCOUNTS": "Cuentas",
+    "USERS": "Usuarios",
+    "UI": {
+      "TITLE": "Componentes de la interfaz de usuario",
+      "LIGHTBOX": "LightBox",
+      "RANGE_SLIDER": "Control deslizante de rango",
+      "SWEET_ALERT": "Alerta dulce",
+      "RATING": "Calificación",
+      "FORMS": "Formularios",
+      "TABLES": "Tablas",
+      "CHARTS": "Gráficos"
+    },
+    "APPLICATIONS": {
+      "TITLE": "Aplicaciones",
+      "ECOMMERCE": "Comercio electrónico",
+      "CALENDAR": "Calendario",
+      "EMAIL": "Correo electrónico",
+      "PROJECTS": "Proyectos",
+      "TASKS": "Tareas",
+      "CONTACTS": "Contactos"
+    },
+    "EXTRA_PAGES": {
+      "TITLE": "Páginas extra",
+      "LIGHT_SIDEBAR": "Barra lateral ligera",
+      "COMPACT_SIDEBAR": "Barra lateral compacta",
+      "HORIZONTAL_LAYOUT": "Diseño horizontal",
+      "MAINTENANCE": "Mantenimiento",
+      "COMING SOON": "Próximamente",
+      "TIMELINE": "Timeline",
+      "FAQ": "Preguntas frecuentes"
+    },
+    "LOGIN": {
+      "PROFILE": "Perfil",
+      "MY_WALLET": "Mi billetera",
+      "SETTINGS": "Configuración",
+      "LOCK_SCREEN": "Pantalla de bloqueo",
+      "LOGOUT": "Cerrar sesión"
+    }
+  },
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menú"
+    },
+    "DASHBOARDS": {
+      "TEXT": "Tableros",
+      "BADGE": "04",
+      "LIST": {
+        "DEFAULT": "Defecto",
+        "SAAS": "Saas",
+        "CRYPTO": "Cripto",
+        "BLOG": "Blog",
+        "JOBS": "Trabajos"
+      }
+    },
+    "LAYOUTS": {
+      "TEXT": "Diseños",
+      "LIST": {
+        "HORIZONTAL": "Horizontal",
+        "LIGHTSIDEBAR": "Barra lateral ligera",
+        "COMPACTSIDEBAR": "Barra lateral compacta",
+        "ICONSIDEBAR": "Barra lateral de iconos",
+        "BOXED": "Diseño en caja",
+        "COLOREDSIDEBAR": "Barra lateral de color",
+        "VERTICAL": "Vertical",
+        "LIGHTTOPBAR": "Barra superior ligera",
+        "COLOREDHEADER": "Encabezado de color",
+        "SCROLLABLE": "Desplazable"
+      }
+    },
+    "APPS": {
+      "TEXT": "Aplicaciones"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendario"
+    },
+    "CHAT": {
+      "TEXT": "Charla",
+      "BADGE": "Nueva"
+    },
+    "FILEMANAGER": {
+      "TEXT": "Administradora de archivos",
+      "BADGE": "Nueva"
+    },
+    "ECOMMERCE": {
+      "TEXT": "Comercio electrónico",
+      "LIST": {
+        "PRODUCTS": "Productos",
+        "PRODUCTDETAIL": "Detalle del producto",
+        "ORDERS": "Pedidos",
+        "CUSTOMERS": "Clientes",
+        "CART": "Carro",
+        "CHECKOUT": "Revisa",
+        "SHOPS": "Tiendas",
+        "ADDPRODUCT": "Añadir Producto"
+      }
+    },
+    "CRYPTO": {
+      "TEXT": "Cripto",
+      "LIST": {
+        "WALLET": "Billetera",
+        "BUY/SELL": "Compra venta",
+        "EXCHANGE": "Intercambiar",
+        "LENDING": "Préstamo",
+        "ORDERS": "Pedidos",
+        "KYCAPPLICATION": "Solicitud KYC",
+        "ICOLANDING": "Aterrizaje ICO"
+      }
+    },
+    "EMAIL": {
+      "TEXT": "Email",
+      "LIST": {
+        "INBOX": "Bandeja de entrada",
+        "READEMAIL": "Leer el correo electrónico",
+        "TEMPLATE": {
+          "TEXT": "Modelo",
+          "BADGE": "Nueva",
+          "LIST": {
+            "BASIC": "Acción básica",
+            "ALERT": "Correo electrónico de alerta",
+            "BILLING": "Correo Electrónico de Facturas"
+          }
+        }
+      }
+    },
+    "INVOICES": {
+      "TEXT": "Facturas",
+      "LIST": {
+        "INVOICELIST": "Lista de facturas",
+        "INVOICEDETAIL": "Detalle de factura"
+      }
+    },
+    "PROJECTS": {
+      "TEXT": "Proyectos",
+      "LIST": {
+        "GRID": "Cuadrícula de proyectos",
+        "PROJECTLIST": "Lista de proyectos",
+        "OVERVIEW": "Descripción del proyecto",
+        "CREATE": "Crear nueva"
+      }
+    },
+    "TASKS": {
+      "TEXT": "Tareas",
+      "LIST": {
+        "TASKLIST": "Lista de tareas",
+        "KANBAN": "Kanban Board",
+        "CREATETASK": "Crear tarea"
+      }
+    },
+    "CONTACTS": {
+      "TEXT": "Contactos",
+      "LIST": {
+        "USERGRID": "Cuadrícula de usuario",
+        "USERLIST": "Lista de usuarios",
+        "PROFILE": "Perfil"
+      }
+    },
+    "BLOG": {
+      "TEXT": "Blog",
+      "BADGE": "Nueva",
+      "LIST": {
+        "BLOGLIST": "Lista de blogs",
+        "BLOGGRID": "Blog Grid",
+        "DETAIL": "Detalles del blog"
+      }
+    },
+    "JOBS": {
+      "TEXT": "Trabajos",
+      "BADGE": "Nueva",
+      "LIST": {
+        "JOBLIST": "Lista de trabajo",
+        "JOBGRID": "Cuadrícula de trabajo",
+        "APPLYJOB": "Aplicar al trabajo",
+        "JOBDETAILS": "Detalles del trabajo",
+        "JOBCATEGORIES": "Categorías de trabajos",
+        "CANDIDATE": {
+          "TEXT": "Candidata",
+          "LIST": {
+            "LIST": "Lista",
+            "OVERVIEW": "Visión general"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "TEXT": "Páginas"
+    },
+    "AUTHENTICATION": {
+      "TEXT": "Autenticación",
+      "BADGE": "Nueva",
+      "LIST": {
+        "LOGIN": "Iniciar sesión",
+        "REGISTER": "Registrarse",
+        "RECOVERPWD": "Recuperar contraseña",
+        "LOCKSCREEN": "Bloquear pantalla",
+        "LOGIN2": "Iniciar sesión 2",
+        "REGISTER2": "Registrarse 2",
+        "RECOVERPWD2": "Recuperar contraseña 2",
+        "LOCKSCREEN2": "Bloquear pantalla 2",
+        "CONFIRMMAIL": "Confirmar correo",
+        "CONFIRMMAIL2": "Confirmar correo 2",
+        "EMAILVERIFICATION": "Verificacion de email",
+        "EMAILVERIFICATION2": "Verificacion de email 2",
+        "TWOSTEPVERIFICATION": "Verificación de dos pasos",
+        "TWOSTEPVERIFICATION2": "Verificación de dos pasos 2"
+      }
+    },
+    "UTILITY": {
+      "TEXT": "Utilidad",
+      "LIST": {
+        "STARTER": "Página de inicio",
+        "MAINTENANCE": "Mantenimiento",
+        "TIMELINE": "Cronograma",
+        "FAQS": "Preguntas frecuentes",
+        "PRICING": "Precios",
+        "ERROR404": "error 404",
+        "ERROR500": "Error 500"
+      }
+    },
+    "COMPONENTS": {
+      "TEXT": "Componentes"
+    },
+    "UIELEMENTS": {
+      "TEXT": "Elementos de la IU",
+      "LIST": {
+        "ALERTS": "Alertas",
+        "BUTTONS": "Botones",
+        "CARDS": "Tarjetas",
+        "CAROUSEL": "Carrusel",
+        "DROPDOWNS": "Listas deplegables",
+        "GRID": "Cuadrícula",
+        "IMAGES": "Imágenes",
+        "LIGHTBOX": "Caja ligera",
+        "MODALS": "modales",
+        "RANGESLIDER": "Deslizador de rango",
+        "PROGRESSBAR": "Barras de progreso",
+        "PLACEHOLDER": "Marcador de posición",
+        "SWEETALERT": "dulce alerta",
+        "TABS": "Tablaturas y acordeones",
+        "TYPOGRAPHY": "Typography",
+        "TOASTS": "tostadas",
+        "VIDEO": "Video",
+        "GENERAL": "General",
+        "COLORS": "Colores",
+        "RATING": "Clasificación",
+        "NOTIFICATION": "Notificación",
+        "UTILITIES": "Utilidades",
+        "CROPPER": "Recortador de imágenes"
+      }
+    },
+    "FORMS": {
+      "TEXT": "Formas",
+      "BADGE": "09",
+      "LIST": {
+        "ELEMENTS": "Elementos de formulario",
+        "VALIDATION": "Validación de formulario",
+        "ADVANCED": "Formulario avanzado",
+        "EDITOR": "Editora de formularios",
+        "FILEUPLOAD": "Subir archivo de formulario",
+        "REPEATER": "Repetidor de forma",
+        "WIZARD": "Asistente de formulario",
+        "MASK": "Máscara de forma",
+        "LAYOUTS": "Diseños de formulario"
+      }
+    },
+    "TABLES": {
+      "TEXT": "Mesas",
+      "LIST": {
+        "BASIC": "Tablas Básicas",
+        "DataTables": "Tablas de datos",
+        "EditTableTables": "Tabla editable"
+      }
+    },
+    "CHARTS": {
+      "TEXT": "Gráficos",
+      "LIST": {
+        "APEX": "Gráfico de Apex",
+        "CHARTJS": "Chartjs Chart",
+        "CHARTIST": "Chartist Chart",
+        "ECHART": "Gráfico E"
+      }
+    },
+    "ICONS": {
+      "TEXT": "Íconos",
+      "LIST": {
+        "BOXICONS": "Boxicones",
+        "MATERIALDESIGN": "Diseño de materiales",
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Fuente impresionante"
+      }
+    },
+    "MAPS": {
+      "TEXT": "Mapas",
+      "LIST": {
+        "GOOGLEMAP": "mapas de Google",
+        "LEAFLETMAP": "Mapas de folletos"
+      }
+    },
+    "MULTILEVEL": {
+      "TEXT": "Multi nivel",
+      "LIST": {
+        "LEVEL1": {
+          "1": "Nivel 1.1",
+          "2": "Nivel 1.2",
+          "LEVEL2": {
+            "1": "Nivel 2.1",
+            "2": "Nivel 2.2"
+          }
+        }
+      }
+    }
+  },
+  "MODEL_BOTS": {
+    "MODULES": {
+      "MAIN": {
+        "CHAT": {
+          "RECENT": "Reciente",
+          "NEW_CHAT": "Nueva Conversación",
+          "NEW": "Nuevo",
+          "START_CONVERSATION": "Iniciar una conversación con Lazo",
+          "UPLOAD_FILES": "Este bot no tiene archivos cargados aún",
+          "COPY": "Copiar",
+          "DELETE": "Eliminar",
+          "SEARCH_CHAT": "Buscar en el chat",
+          "RESPONSE": "Respuesta",
+          "NO_AVALIBLE_PDF": "No disponible, la fuente no es un archivo PDF",
+          "MATCHES": "Coincidencias",
+          "ORDERBY": "Ordenar por",
+          "DATE": "Fecha",
+          "YOU": "Tú",
+          "PLACEHOLDER.RECENT": "Buscar en todo el chat",
+          "NO_CONTENT_YET": "Aún no hay contenido",
+          "ASK_ROBIN": "Pregunta a Lazo...",
+          "ANSWER_BASED_ON": "Respuesta basada en",
+          "SHARECHAT": "Shared Chat"
+        },
+        "UPLOAD_MODAL": {
+          "ADD_CONNECTORS": "Añadir conectores para dar forma a tu base de conocimiento.",
+          "UPLOAD_INSTRUCTIONS": "Arrastra el archivo aquí o haz clic para cargarlo",
+          "UPLOAD_LIMIT": "El límite de carga de archivos es de hasta 20 MB por archivo. Ten en cuenta que solo se admiten los siguientes formatos.",
+          "DOC": "DOC, DOCX, RTF, DOT, DOTX",
+          "XLS": "XLS, XLSX, XLSM",
+          "PPT": "PPT, PPTX, PPS, PPSX",
+          "SAVE": "Guardar",
+          "CANCEL": "Cancelar",
+          "INSERT_URL": "Insertar URL web",
+          "DEPP_LEVEL": "Nivel profundo",
+          "REFERENCE_NAME": "Nombre de referencia",
+          "YOUTUBE_URL": "Insertar URL de YouTube"
+        },
+        "MODAL": {
+          "RESPONSE_VALORATION": "Valoración de la respuesta",
+          "SELECT_VALORATION": "Selecciona una valoración",
+          "GOOD": "Bueno",
+          "BAD": "Malo",
+          "WRITE_FEEDBACK": "Escribe tu retroalimentación",
+          "SAVE": "Guardar"
+        },
+        "NEW": {
+          "NEW_CHAT": "Nueva Conversación",
+          "SELECT_MODE": "Por favor, selecciona el modo de la nueva conversación",
+          "ANSWER_BASED_INFORMATION": "Respuestas basadas en la información cargada",
+          "ANSWER_BASED_INTERNET": "Respuestas basadas en el conocimiento de Internet",
+          "DONE": "Listo"
+        }
+      },
+      "UPLOADS": {
+        "UPLOAD": {
+          "WELCOME_BACK": "Bienvenido de nuevo",
+          "UPLOAD": "Cargar",
+          "ADD_YOUTUBE": "Añadir URL de video de YouTube",
+          "DROPBOX": "Dropbox",
+          "SHARED": "Compartido",
+          "STARRED": "Destacado",
+          "TRASH": "Papelera",
+          "SETTING": "Configuración",
+          "DROP_FILE_CLICK": "Arrastra el archivo aquí o haz clic para cargarlo",
+          "RECENT_FILES": "Archivos recientes",
+          "SEARCHFOR": "Buscar por...",
+          "NAME": "Nombre",
+          "DATE_MODIFIED": "Fecha de modificación",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "UPGRADE_FEATURES": "Características de actualización",
+          "CUMSOCCIIS": "Cum sociis natoque penatibus et.",
+          "UPGRADE": "Actualizar",
+          "PREVIEW_NOT": "Vista previa no disponible",
+          "CLOSE": "Cerrar",
+          "USED": " GB utilizados",
+          "STORAGE": "Almacenamiento",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "SIZE": "Tamaño",
+          "CANCEL": "Cancelar",
+          "SAVE": "Guardar",
+          "READY": "Listo",
+          "INVALID_URL": "URL no válida",
+          "VIEW_PROFILE": "Ver perfil"
+        },
+        "YOUTUBE_MODAL": {
+          "SEARCHFOR": "Buscar por...",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "ACTIONS": "Acciones",
+          "TRANSCRIPTION": "Transcripción",
+          "LANGUAGE": "Idioma",
+          "DATE": "Fecha"
+        },
+        "MODAL": {
+          "YOU_SELECTED_VIDEO": "Acabas de seleccionar un video",
+          "PLASE_SELECT": "Por favor, selecciona un idioma",
+          "ENGLISH": "Inglés",
+          "SPANISH": "Español",
+          "SAVE": "Guardar"
+        }
+      },
+      "DATA-SET": {
+        "EDIT": {
+          "DATA_SET": "Información del conjunto de datos",
+          "FILL_ALL": "Completa toda la información para actualizar el conjunto de datos.",
+          "MODEL_BOT": "Bot del modelo",
+          "MODEL_BOT_VALID": "El bot del modelo debe ser válido",
+          "SET_NAME": "Nombre del conjunto de datos",
+          "NAME_VALID": "El nombre debe ser válido",
+          "BASE_VALID": "La URL base debe ser válida",
+          "DEEP_LEVEL": "Nivel profundo",
+          "DEPP_VALID": "El nivel profundo debe ser válido (Máximo 255)",
+          "FORBIDDEN": "URLs prohibidas añadidas",
+          "EXAMPLE": "Ejemplo",
+          "SAVE": "Guardar"
+        },
+        "FORM": {
+          "DETAILS": "Detalles"
+        },
+        "LIST": {
+          "SEARCH": "Buscar por...",
+          "NAME": "Nombre",
+          "DEEP_LEVEL": "Nivel profundo",
+          "DELETE_DATA": "Eliminar conjunto de datos",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "EDIT": "Editar"
+        }
+      },
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Portal del Bot del Modelo",
+            "SETTINGS": "Ajustes",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Portal del Bot del Modelo",
+            "SETTINGS": "Ajustes",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      },
+      "TUNNINGS": {
+        "PAGES": {
+          "FIND_TUNNING": {
+            "UPLOAD_FILE": "Subir Archivo",
+            "SELECT_FILE": "Selecciona el archivo que deseas subir para el ajuste fino",
+            "DROP": "Suelta el archivo aquí o haz clic para subirlo",
+            "FILE_FINE_TUNNING": "Archivo para ajuste fino",
+            "THIS_FILE": "Este archivo ayudará a mejorar el aprendizaje del modelo. Por favor, proporciona datos relevantes para el ajuste fino",
+            "JSON_EDIT": "Editar JSON",
+            "SAVE": "Guardar"
+          }
+        }
+      },
+      "CRON-JOBS": {
+        "COMPONENTS": {
+          "EDIT-FORM": {
+            "CRON_JOB_INFORMATION": "Información del Cron Job",
+            "FILL_ALL_INFORMATION_FOR_CRON_JOB": "Complete toda la información para el Cron Job.",
+            "QUERY_MUST_BE_VALID": "La consulta debe ser válida",
+            "QUERY": "Consulta",
+            "NEWS": "Noticias",
+            "GENERATE_POSSIBLE_NEWS_BASED_ON_THE_NEXT_INFORMATION": "Generar posibles noticias basadas en la siguiente información",
+            "PROVIDE_A_SUMMARY_BASED_ON_THE_NEXT_INFORMATION": "Proporcionar un resumen basado en la siguiente información",
+            "SUMMARY": "Resumen",
+            "QUESTIONNAIRE": "Cuestionario",
+            "GENERATE_QUESTIONS_BASED_ON_THE_NEXT_INFORMATION": "Generar preguntas basadas en la siguiente información",
+            "ANALYSIS": "Análisis",
+            "CREATE_AN_ARTICLE_BASED_ON_THE_NEXT_INFORMATION": "Crear un artículo basado en la siguiente información",
+            "SYSTEM_PROMPT": "Indicación del sistema",
+            "DAILY": "Diario",
+            "WEEKLY": "Semanal",
+            "MONTHLY": "Mensual",
+            "IF_YOU_ONLY_SELECT_A_DATE_TIME_THE_FREQUENCY_WILL_BE_DAILY": "Si solo selecciona una 'Fecha y Hora', la frecuencia será diaria",
+            "DATE_TIME": "Fecha y Hora",
+            "TIME_MUST_BE_VALID": "La hora debe ser válida",
+            "WEEKLY_CHOOSE_THE_WEEK_DAY": "¿Semanal? Elija el día de la semana",
+            "WEEK_DAY_MUST_BE_VALID": "El día de la semana debe ser válido",
+            "MONTHLY_CHOOSE_THE_MONTH_DAY": "¿Mensual? Elija el día del mes",
+            "MONTH_DAY_SHOULD_BE_VALID": "El día del mes debe ser válido",
+            "DEPTH_SEARCH": "Búsqueda en profundidad",
+            "URLS_MAX_5": "URLs (Máximo 5)",
+            "URLS_MUST_BE_VALID": "Las URL deben ser válidas",
+            "ADD": "Agregar",
+            "URLS_ADDED": "URLs Agregadas",
+            "EMAILS_MAX_10": "Correos Electrónicos (Máximo 10)",
+            "EMAILS_MUST_BE_VALID": "Los correos electrónicos deben ser válidos",
+            "SAVE": "Guardar",
+            "P_CRON_JOB_NAME": "Nombre del Cron Job",
+            "P_ANY_QUESTION": "Cualquier pregunta sobre las URL del sitio web",
+            "P_SYSTEM_PROM": "Ingrese la indicación del sistema para la caracterización de la respuesta (rol o personalidad)",
+            "HOUR": "Hora",
+            "EMAIL": "Correo electrónico"
+          }
+        },
+        "PAGES": {
+          "FORM-PAGE": {
+            "DETAILS": "Detalles"
+          },
+          "LIST-PAGE": {
+            "SEARCH": "Buscar...",
+            "NAME": "Nombre",
+            "QUERY": "Consulta",
+            "SYSTEM_PROMPT": "Indicación del sistema",
+            "FRECUENCY": "Frecuencia",
+            "TIME": "Hora",
+            "ACTIONS": "Acciones",
+            "GO_TO_PORTAL": "Ir al Portal",
+            "EDIT": "Editar",
+            "SHOW": "Mostrar",
+            "ENTRIES": "entradas",
+            "SHOWING": "Mostrando",
+            "TO": "a",
+            "OF": "de",
+            "DAILY": "Diario",
+            "WEEKLY": "Semanal a las",
+            "MONTHLY": "Mensual a las"
+          },
+          "QUERIES-LIST": {
+            "SEARCH": "Buscar...",
+            "NAME": "Nombre",
+            "QUERY": "Consulta",
+            "SYSTEM_PROMPT": "Indicación del sistema",
+            "FRECUENCY": "Frecuencia",
+            "TIME": "Hora",
+            "ACTIONS": "Acciones",
+            "GO_TO_PORTAL": "Ir al Portal",
+            "EDIT": "Editar",
+            "SHOW": "Mostrar",
+            "ENTRIES": "entradas",
+            "SHOWING": "Mostrando",
+            "TO": "a",
+            "OF": "de",
+            "DAILY": "Diario",
+            "WEEKLY": "Semanal a las",
+            "MONTHLY": "Mensual a las"
+          }
+        }
+      }
+    }
+  },
+  "TENANTS": {
+    "MODULES": {
+      "COMPANIES": {
+        "EDIT-FORM": {
+          "COMPANY_INFORMATION": "Información de la Empresa",
+          "FILL_ALL": "Complete toda la información para actualizar la empresa.",
+          "COMPANY_NAME": "Nombre de la Empresa",
+          "SAVE": "Guardar"
+        },
+        "PAGES": {
+          "FORM-PAGE": {
+            "DETAILS": "Detalles"
+          },
+          "LIST-PAGE": {
+            "SEARCH_FOR": "Buscar...",
+            "NAME": "Nombre",
+            "COMPANY_MODULES": "Módulos de la Empresa",
+            "ACTIONS": "Acciones",
+            "GO_TO_PORTAL": "Ir al Portal",
+            "EDIT": "Editar",
+            "SHOW": "Mostrar",
+            "ENTRIES": "entradas",
+            "SHOWING": "Mostrando",
+            "TO": "a",
+            "OF": "de"
+          }
+        }
+      },
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Portal del Inquilino",
+            "SETTINGS": "Configuración",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de Tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Portal del Inquilino",
+            "SETTINGS": "Configuración",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de Tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "MAIN": {
+        "WELCOME": "Bienvenido al panel de control de Skote",
+        "UI": "Diseñador de UI / UX",
+        "TOTAL": "Proyectos Totales",
+        "PROJECTS": "Proyectos",
+        "CLIENTS": "Clientes",
+        "SETTING": "Configuración",
+        "ACTION": "Acción",
+        "ANOTHER": "Otra acción",
+        "SOMETHING": "Algo más",
+        "WELCOME_BACK": "¡Bienvenido de nuevo!",
+        "STOKE": "Panel de Control Skote Saas",
+        "LAYOUT": "Diseños",
+        "MULTIPLE_APPS": "Aplicaciones Múltiples",
+        "ORDERS": "Pedidos",
+        "FROM_PREVIOUS": "Del período anterior",
+        "REVENUE": "Ingresos",
+        "AVERAGE_PRICE": "Precio Promedio",
+        "ANALYTICS": "Análisis"
+      }
+    }
+  },
+  "WEB-SITE": {
+    "PAGES": {
+      "HOME": {
+        "HOME": "Inicio",
+        "ABOUT": "Acerca de",
+        "FEATURES": "Características",
+        "ROADMAP": "Hoja de Ruta",
+        "TEAM": "Equipo",
+        "NEWS": "Noticias",
+        "FAQS": "Preguntas Frecuentes",
+        "LOGIN": "Iniciar sesión",
+        "REGISTER": "Registrarse",
+        "SETTINGS": "Configuración",
+        "THEME_MODE": "Modo de Tema",
+        "LIGHT": "Claro",
+        "DARK": "Oscuro",
+        "RESET": "Restablecer",
+        "HELLO": "Hola, soy Lazo, tu asistente",
+        "WILL_BE": "Será tan simple como occidental, de hecho, para una persona de habla inglesa, parecerá simplificado como un escéptico de Cambridge.",
+        "REQUEST_DEMO": "Solicitar Demo",
+        "HOW_IT_WORK": "Cómo funciona",
+        "BITCOIN": "Bitcoin",
+        "ETHEREUM": "Ethereum",
+        "LITECOIN": "Litecoin",
+        "ABOUT_US": "Acerca de Nosotros",
+        "WHAT_ICO_TOKEN": "¿Qué es un Token ICO?",
+        "BEST_ICO": "Mejor ICO para tu negocio de criptomonedas",
+        "SEVERAL_LANGUAGES": "Si varias lenguas se unen, la gramática de la lengua común resultante será más simple y regular que la de las lenguas individuales existentes.",
+        "IT_WOULD_BE_PRONUNCIATION": "Sería necesario tener una pronunciación uniforme.",
+        "READ_MORE": "Leer Más",
+        "HOW_WORK": "Cómo funciona",
+        "INVEST_AMOUNT": "Cantidad de Inversión",
+        "USERS": "Usuarios",
+        "LENDING": "Préstamos",
+        "VERO_ACCUSAMUS": "At vero eos et accusamus et iusto blanditiis",
+        "LEARN_MORE": "Aprender Más",
+        "QUIS_AUTEM": "Quis autem vel eum iure reprehenderit",
+        "KEY_FEATURES": "Características Clave del Producto",
+        "IF_SEVERAL_LANGUAGES": "Si varias lenguas se unen, la gramática de la lengua resultante será más simple y regular que la de las lenguas individuales existentes.",
+        "DONEC_PEDE": "Donec pede justo vel\naliquet",
+        "WALLET": "Cartera",
+        "IT_WILL_BE_OCCIDENTAL": "Será tan simple como el occidental; de hecho, será occidental. Para una persona de habla inglesa, parecerá inglés simplificado, como a un amigo escéptico de Cambridge.",
+        "DONEC_PEDE_JUSTO": "Donec pede justo vel",
+        "AENEAN": "Aenean et nisl sagittis",
+        "TIMELINE": "Línea de Tiempo",
+        "OUR_ROADMAP": "Nuestra Hoja de Ruta",
+        "DECEMBER": "Diciembre",
+        "ICO_IDEA": "Idea de la Plataforma ICO",
+        "IT_WILL_AS_CAMBRIDGE": "Será tan simple como occidental; de hecho, será Cambridge",
+        "JANUARY": "Enero"
+      },
+      "TERMS-USE": {
+        "TERMS_USE": "Términos de Uso",
+        "UPDATED_DATE": "Actualizado: 24 de Noviembre, 2023",
+        "TERMS_OF_USE": "Estos Términos de Uso se aplican al uso de los servicios de Lazo junto con cualquier aplicación de software y sitio web asociados (colectivamente, los 'Servicios'). Estos términos constituyen un acuerdo entre usted y Lazo e incluyen disposiciones importantes para resolver disputas a través de arbitraje. Al utilizar nuestros Servicios, usted acepta estos Términos.",
+        "RESIDE_NOTICE": "Si reside en el Área Económica Europea, Suiza o el Reino Unido, el uso de los Servicios está regido por estos términos.",
+        "COMMERCIAL_TERMS": "Nuestros Términos Comerciales rigen el uso de Lazo, nuestras APIs y otros servicios para empresas y desarrolladores.",
+        "PRIVACY_POLICY_NOTICE": "Nuestra Política de Privacidad explica cómo recopilamos y utilizamos información personal. Aunque no forma parte de estos Términos, es un documento importante que debería leer.",
+        "WHO_WE_ARE": "Quiénes Somos",
+        "ROBIN_DESCRIPTION": "Lazo es un asistente virtual diseñado y entrenado para seguir instrucciones en un aviso y proporcionar una respuesta detallada. Lazo ofrece información de manera clara y comprensible a individuos, equipos o empresas en diferentes sectores.",
+        "SIGNUP_AND_ACCESS": "Registro y Acceso",
+        "MINIMUM_AGE_LABEL": "Edad Mínima",
+        "MINIMUM_AGE_TEXT": "Debe tener al menos 13 años de edad o la edad mínima requerida en su país para dar consentimiento para utilizar los Servicios. Si tiene menos de 18 años, debe contar con el permiso de sus padres o tutor legal para utilizar los Servicios.",
+        "REGISTRATION_LABEL": "Registro",
+        "REGISTRATION_TEXT": "Debe proporcionar información precisa y completa para registrarse y obtener una cuenta para usar nuestros Servicios. No puede compartir sus credenciales de cuenta ni ponerlas a disposición de otras personas, y es responsable de todas las actividades que ocurran bajo su cuenta. Si crea una cuenta o utiliza los Servicios en nombre de otra persona o entidad, debe tener la autoridad para aceptar estos Términos en su nombre.",
+        "USING_OUR_SERVICES": "Uso de Nuestros Servicios",
+        "WHAT_YOU_CAN_DO": "Lo Que Puede Hacer",
+        "YOU_CAN_DO_DESCRIPTION": "Sujeto a su cumplimiento con estos Términos, puede acceder y utilizar nuestros Servicios. Al utilizar nuestros Servicios, debe cumplir con todas las leyes aplicables, así como con nuestra Política de Compartir y Publicar, Políticas de Uso y cualquier otra documentación, pautas o políticas que pongamos a su disposición.",
+        "WHAT_YOU_CANNOT_DO": "Lo Que No Puede Hacer",
+        "YOU_CANNOT_DO_DESCRIPTION": "No puede utilizar nuestros Servicios para ninguna actividad ilegal, perjudicial o abusiva. Por ejemplo, no puede:",
+        "ITEM_1": "Utilizar nuestros Servicios de manera que infrinja, apropie indebidamente o viole los derechos de propiedad intelectual de cualquier persona.",
+        "ITEM_2": "Modificar, copiar, alquilar, vender o distribuir ninguno de nuestros Servicios.",
+        "ITEM_3": "Intentar o ayudar a alguien a ingeniería inversa, desensamblar o descompilar nuestros Servicios o componentes subyacentes de nuestros Servicios, incluyendo nuestros modelos.",
+        "ITEM_4": "Extraer datos o resultados (según se define a continuación) de manera automática o programática.",
+        "ITEM_5": "Falsificar que la Salida fue generada por humanos cuando no lo fue.",
+        "ITEM_6": "Interferir o interrumpir nuestros Servicios, incluyendo eludir cualquier límite de tarifa o restricción o eludir cualquier medida de protección o mitigación de seguridad que implementemos en nuestros Servicios.",
+        "ITEM_7": "Usar la Salida para desarrollar modelos que compitan con Lazo.",
+        "SOFTWARE": "Software",
+        "SOFTWARE_DESCRIPTION": "Nuestros Servicios pueden permitirle descargar software, como aplicaciones móviles, que pueden actualizarse automáticamente para asegurar que esté utilizando la última versión. Nuestro software puede incluir software de código abierto regido por sus propias licencias que hemos puesto a su disposición.",
+        "CORPORATE_DOMAINS": "Dominios Corporativos",
+        "CORPORATE_DOMAINS_DESCRIPTION": "Si crea una cuenta utilizando una dirección de correo electrónico propiedad de una organización (por ejemplo, su empleador), esa cuenta puede ser agregada a la cuenta comercial de la organización con nosotros, en cuyo caso le notificaremos para que pueda facilitar la transferencia de su cuenta (a menos que su organización ya le haya notificado que puede monitorear y controlar su cuenta). Una vez que su cuenta sea transferida, el administrador de la organización puede controlar su cuenta, incluyendo el acceso al Contenido (definido a continuación) y puede restringir o eliminar su acceso a la cuenta.",
+        "THIRD_PARTY_SERVICES": "Servicios de Terceros",
+        "THIRD_PARTY_SERVICES_DESCRIPTION": "Nuestros servicios pueden incluir software, productos o servicios de terceros ('Servicios de Terceros'), y algunas partes de nuestros Servicios, como nuestra función de navegación, pueden incluir resultados de esos servicios ('Resultados de Terceros'). Los servicios de terceros y los resultados de terceros están sujetos a sus propios términos, y no somos responsables de ellos.",
+        "FEEDBACK": "Retroalimentación",
+        "FEEDBACK_DESCRIPTION": "Apreciamos sus comentarios, y usted acepta que podemos utilizarlos sin restricciones o compensación para usted.",
+        "CONTENT_TITLE": "Contenido",
+        "SERVICE_INTERRUPTION": "Interrupción del Servicio",
+        "SERVICE_INTERRUPTION_NOTICE": "Podemos decidir interrumpir nuestros Servicios, pero si lo hacemos, le notificaremos con anticipación y reembolsaremos cualquier Servicio prepagado no utilizado.",
+        "WARRANTY_DISCLAIMER": "Renuncia de Garantías",
+        "WARRANTY_DISCLAIMER_FIRST_PART": "NUESTROS SERVICIOS SE PROPORCIONAN 'TAL CUAL'. EXCEPTO CUANDO ESTÉ PROHIBIDO POR LA LEY, NOSOTROS Y NUESTROS AFILIADOS Y LICENCIATARIOS NO OFRECEMOS GARANTÍAS (EXPRESAS, IMPLÍCITAS, LEGALES O DE OTRO TIPO) CON RESPECTO A LOS SERVICIOS, Y RENUNCIAMOS A TODAS LAS GARANTÍAS, INCLUYENDO, PERO SIN LIMITARSE A, GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR, CALIDAD SATISFACTORIA, NO INFRACCIÓN Y DISFRUTE PACÍFICO, Y CUALQUIER GARANTÍA QUE SURJA DE CUALQUIER CURSO DE NEGOCIACIÓN O USO COMERCIAL. NO GARANTIZAMOS QUE LOS SERVICIOS SERÁN ININTERRUMPIDOS, EXACTOS O LIBRES DE ERRORES, NI QUE CUALQUIER CONTENIDO SERÁ SEGURO O NO SE PERDERÁ O ALTERARÁ.",
+        "WARRANTY_DISCLAIMER_SECOND_PART": "USTED ACEPTA Y RECONOCE QUE CUALQUIER USO DE LOS RESULTADOS DE NUESTRO SERVICIO ES BAJO SU PROPIO RIESGO Y NO DEBE CONFIAR EN LOS RESULTADOS COMO ÚNICA FUENTE DE VERDAD O INFORMACIÓN HECHA, O COMO SUSTITUTO DE CONSEJOS PROFESIONALES.",
+        "LIMITATION_OF_LIABILITY": "Limitación de Responsabilidad",
+        "LIABILITY_LIMITATION_FIRST_PART": "NI NOSOTROS NI NINGUNO DE NUESTROS AFILIADOS O LICENCIATARIOS SERÁN RESPONSABLES POR DAÑOS INDIRECTOS, INCIDENTALES, ESPECIALES, CONSECUENTES O EJEMPLARES, INCLUYENDO DAÑOS POR PÉRDIDA DE BENEFICIOS, BUENA VOLUNTAD, USO O DATOS U OTROS PERJUICIOS, INCLUSO SI SE NOS HA ADVERTIDO DE LA POSIBILIDAD DE TALES DAÑOS. NUESTRA RESPONSABILIDAD TOTAL BAJO ESTOS TÉRMINOS NO EXCEDERÁ LA MAYOR DE LA CANTIDAD QUE PAGÓ POR EL SERVICIO QUE DIO LUGAR A LA RECLAMACIÓN DURANTE LOS 12 MESES ANTERIORES AL SURGIMIENTO DE LA RESPONSABILIDAD O CIEN DÓLARES ($100). LAS LIMITACIONES EN ESTA SECCIÓN SE APLICAN SOLO EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY APLICABLE.",
+        "LIABILITY_LIMITATION_SECOND_PART": "Algunos países y estados no permiten la renuncia de ciertas garantías o la limitación de ciertos daños, por lo que algunos o todos los términos anteriores pueden no aplicarse a usted y es posible que tenga derechos adicionales. En ese caso, estos Términos solo limitan nuestras responsabilidades en la medida máxima permitida en su país de residencia. NUESTROS AFILIADOS, PROVEEDORES, LICENCIATARIOS Y DISTRIBUIDORES DE ROBIN SON BENEFICIARIOS DE TERCEROS DE ESTA SECCIÓN.",
+        "GENERAL_TERMS": "Términos Generales",
+        "TERMS_ASSIGNMENT": "Asignación. Usted no puede ceder ni transferir ningún derecho u obligación bajo estos Términos, y cualquier intento de hacerlo será nulo. Podemos asignar nuestros derechos u obligaciones bajo estos Términos a cualquier afiliado, subsidiaria o sucesor en interés a cualquier negocio asociado con nuestros Servicios.",
+        "TERMS_CHANGES": "Cambios en estos Términos o Nuestros Servicios. Estamos trabajando continuamente para desarrollar y mejorar nuestros Servicios. Podemos actualizar estos Términos o nuestros Servicios en consecuencia de vez en cuando. Por ejemplo, podemos realizar cambios en estos Términos o Servicios debido a:",
+        "LIST_ITEM_1": "Cambios en la ley o requisitos regulatorios.",
+        "LIST_ITEM_2": "Razones de seguridad o protección.",
+        "LIST_ITEM_3": "Circunstancias fuera de nuestro control razonable.",
+        "LIST_ITEM_4": "Cambios que realizamos en el curso ordinario del desarrollo de nuestros Servicios.",
+        "LIST_ITEM_5": "Para adaptarse a nuevas tecnologías.",
+        "TERMS_DELAY_ENFORCEMENT": "Retraso en la Aplicación de estos Términos. Nuestro fallo en hacer cumplir una disposición no constituye una renuncia a nuestro derecho de hacerlo más tarde. Excepto según se establece en la sección de resolución de disputas anterior, si alguna parte de estos Términos se determina inválida o inaplicable, esa parte se aplicará en la mayor medida permitida y no afectará la aplicabilidad de ningún otro término.",
+        "TERMS_BUSINESS_CONTROLS": "Controles Empresariales. Debe cumplir con todas las leyes comerciales aplicables, incluidas las leyes de sanciones y control de exportaciones. Nuestros Servicios no pueden ser utilizados en beneficio de, ni exportados o reexportados a (a) ningún país o territorio embargado por EE. UU. o (b) cualquier individuo o entidad con los que las transacciones estén prohibidas o restringidas por las leyes comerciales aplicables. Nuestros Servicios no pueden ser utilizados para ningún uso final prohibido por las leyes comerciales aplicables, y su Salida no puede incluir material o información que requiera una licencia gubernamental para su divulgación o exportación.",
+        "TERMS_COMPLETE_AGREEMENT": "Acuerdo Completo. Estos Términos constituyen el acuerdo completo entre usted y Lazo con respecto a los Servicios y, excepto por términos específicos del Servicio, reemplazan cualquier acuerdo previo o contemporáneo entre usted y Lazo.",
+        "YOUR_CONTENT": "Tu contenido",
+        "PROVIDE_INFORMATION_SERVICES": "Puedes proporcionar información sobre los Servicios ('Entrada') y recibir resultados de los Servicios basados en la Información ('Salida'). La entrada y la salida juntas constituyen el 'Contenido'. Eres responsable del Contenido, incluyendo asegurarte de que no viole ninguna ley aplicable o estos Términos. Declaras y garantizas que tienes todos los derechos, licencias y permisos necesarios para proporcionar información sobre nuestros Servicios.",
+        "PROPERTY_CONTENT_DISCLAIMER": "Entre usted y LazoAI, y en la medida permitida por la ley aplicable, usted (a) conserva sus derechos de propiedad sobre la Entrada y (b) es propietario de la Salida. Por la presente le asignamos todos nuestros derechos, títulos e intereses, si los hubiere, en y para la Salida.",
+        "CONTENT_SIMILARITY": "Similitud de contenido.",
+        "CONTENT_OWNERSHIP": "Propiedad del contenido",
+        "RESULTS_NATURE": "Debido a la naturaleza de nuestros servicios y a la inteligencia artificial en general, los resultados pueden no ser únicos y otros usuarios pueden recibir resultados similares de nuestros servicios. Nuestra tarea anterior no se extiende a los resultados de otros usuarios ni a los resultados de terceros.",
+        "OUR_CONTENT_USAGE": "Nuestro uso del contenido",
+        "ACCEPTANCE_OF_TERMS": "Cuando utilices nuestros Servicios, entiendes y aceptas:",
+        "RESULTS_NOT_ALWAYS_ACCURATE": "Los resultados no siempre pueden ser precisos. No debes confiar en los resultados de nuestros Servicios como la única fuente de información veraz u objetiva, ni como sustituto de asesoramiento profesional.",
+        "EVALUATE_ACCURACY_RESULTS": "Debes evaluar la precisión y adecuación de los Resultados para tu caso de uso, incluyendo la revisión humana cuando sea necesario, antes de usar o compartir los Resultados de los Servicios.",
+        "PROHIBITED_USE_PERSONAL_INFO": "No debes usar ninguna Información Personal para ningún propósito que pueda tener un impacto legal o material en esa persona, como tomar decisiones crediticias, educativas, laborales, de vivienda, de seguros, legales, médicas u otras decisiones importantes sobre ella.",
+        "INCOMPLETE_OR_OUTDATED_RESULTS": "Los resultados pueden ser incompletos o no estar actualizados.",
+        "INACCURATE_OFFENSIVE_RESULTS": "Nuestros Servicios pueden proporcionar Resultados incompletos, incorrectos u ofensivos que no representan los puntos de vista de Lazo . Si la Salida hace referencia a productos o servicios de terceros, no implica respaldo o afiliación por parte de LazoAI.",
+        "CONTENT_USAGE": "Podemos utilizar el Contenido para proporcionar, mantener, desarrollar y mejorar nuestros Servicios, cumplir con la ley aplicable, hacer cumplir nuestros términos y políticas, y mantener seguros nuestros Servicios."
+      },
+      "PRIVACY-POLICY": {
+        "POLICY-PRIVACY": "Política de Privacidad",
+        "PRIVACY_POLICY_TEXT": "Respetamos tu privacidad y estamos firmemente comprometidos a mantener segura cualquier información que obtengamos de ti o sobre ti. Esta Política de Privacidad describe nuestras prácticas con respecto a la Información Personal que recopilamos de ti o sobre ti cuando utilizas nuestro sitio web, aplicaciones y servicios (colectivamente, 'Servicios'). Esta Política de Privacidad no se aplica al contenido que procesamos en nombre de nuestros clientes comerciales, como nuestra API. Nuestro uso de dichos datos está regulado por nuestros acuerdos con los clientes que cubren el acceso y uso de esas ofertas.",
+        "PERSONAL_INFORMATION_COLLECTED": "1. Información Personal Que Recopilamos",
+        "PERSONAL_INFORMATION_COLLECTED_INTRO": "Recopilamos información personal relacionada contigo ('Información Personal') de la siguiente manera:",
+        "PERSONAL_INFORMATION_DESCRIPTION": "Información personal que proporcionas: Recopilamos información personal si creas una cuenta para usar nuestros Servicios o te comunicas con nosotros de las siguientes maneras:",
+        "ACCOUNT_INFORMATION_DESCRIPTION": "Información de la cuenta: Cuando creas una cuenta con nosotros, recopilamos información asociada a tu cuenta, incluyendo tu nombre, información de credenciales de cuenta, información de tarjeta de pago o historial de transacciones (colectivamente, 'Información de la cuenta').",
+        "USER_CONTENT_DESCRIPTION": "Contenido del usuario: Cuando utilizas nuestros Servicios, recopilamos información personal incluida en la entrada, la carga de archivos u otros materiales proporcionados a nuestros Servicios ('Contenido').",
+        "COMMUNICATION_INFORMATION_DESCRIPTION": "Información de comunicación: Si te comunicas con nosotros, recopilamos tu nombre, información de contacto y el contenido de cualquier mensaje que envíes ('Información de comunicación').",
+        "SOCIAL_MEDIA_INFORMATION_DESCRIPTION": "Información de redes sociales: Tenemos páginas en sitios o redes sociales como Instagram, Facebook, Medium, Twitter, YouTube y LinkedIn. Cuando interactúas con nuestras páginas de redes sociales, recopilamos información personal que elijas proporcionarnos, como tus datos de contacto (colectivamente, 'Información social'). Además, las empresas que alojan estas páginas nos proporcionan otra información agregada y análisis sobre nuestra actividad en las redes sociales.",
+        "OTHER_INFORMATION_PROVIDED": "Otra información que proporcionas: Recopilamos información adicional que puedas proporcionarnos cuando participas.",
+        "LOG_DATA": "Datos de registro: Información que tu navegador o dispositivo envía automáticamente cuando utilizas nuestros Servicios. Los datos de registro incluyen tu dirección de Protocolo de Internet, tipo y configuración de navegador, la fecha y hora de tu solicitud y cómo interactúas con los Servicios.",
+        "USAGE_DATA": "Datos de uso: Podemos recopilar automáticamente información sobre tu uso de los Servicios, como los tipos de contenido que ves o con los que interactúas, las funciones que utilizas y las acciones que realizas. Esto puede incluir tu zona horaria, país, fechas y horas en las que accedes al servicio desde un ordenador o dispositivo móvil, y la conexión de tu ordenador.",
+        "DEVICE_INFORMATION": "Información del dispositivo: incluye el nombre del dispositivo, el sistema operativo, los identificadores del dispositivo y el navegador que estás utilizando. La información recopilada puede depender del tipo de dispositivo que utilices y su configuración.",
+        "COOKIES_INFORMATION": "Cookies: Utilizamos cookies para operar y gestionar nuestros Servicios y mejorar tu experiencia. Una 'cookie' es información enviada a tu navegador por un sitio web que visitas. Puedes configurar tu navegador para aceptar todas las cookies, rechazar todas o recibir una notificación cada vez que se ofrezca una cookie, para que puedas decidir si la aceptas. Sin embargo, rechazar una cookie puede, en algunos casos, impedirte utilizar un sitio web o afectar negativamente su visualización o funcionalidad. Para obtener más detalles sobre las cookies, visita 'Todo sobre las cookies'.",
+        "ANALYTICS_INFORMATION": "Análisis: Podemos utilizar varios productos de análisis en línea que utilizan cookies para ayudarnos...",
+        "UPLOADED_FILES_PRIVACY": "Privacidad de los archivos subidos: Nuestro servicio de  utiliza los archivos que subes para proporcionar respuestas más precisas y personalizadas. Cualquier archivo que subas será procesado con el máximo cuidado y seguridad. No compartimos ni vendemos tu información a terceros. Los archivos subidos solo se utilizan para mejorar la precisión de nuestras respuestas y no se utilizan para ningún otro propósito. Los archivos se almacenan de forma segura y se eliminan de nuestros servidores después de un período específico, a menos que se especifique lo contrario en nuestra política de retención de datos.",
+        "SERVICE_USAGE_TITLE": "Uso de nuestros servicios",
+        "PERSONAL_INFORMATION_USE_TITLE": "2. Cómo utilizamos la información personal",
+        "PERSONAL_INFO_USAGE_PURPOSE": "Podemos utilizar información personal para los siguientes fines:",
+        "USAGE_PURPOSE_1": "Para proporcionar, administrar, mantener y/o analizar los Servicios;",
+        "USAGE_PURPOSE_2": "Para mejorar nuestros Servicios y realizar investigaciones;",
+        "USAGE_PURPOSE_3": "Para comunicarme contigo; incluido enviarle información sobre nuestros Servicios y eventos;",
+        "USAGE_PURPOSE_4": "Desarrollar nuevos programas y servicios;",
+        "USAGE_PURPOSE_5": "Para prevenir fraudes, actividades delictivas o usos indebidos de nuestros Servicios y para proteger la seguridad de nuestros sistemas de TI, arquitectura y redes;",
+        "USAGE_PURPOSE_6": "Para realizar transacciones comerciales;",
+        "USAGE_PURPOSE_7": "Para cumplir con obligaciones legales y procesos legales y para proteger nuestros derechos, privacidad, seguridad o propiedad, y/o los de nuestros afiliados, usted u otros terceros.",
+        "AGGREGATED_INFO_PARAGRAPH": "Información agregada o no identificada: Podemos agregar o desidentificar información personal para que ya no pueda usarse para identificarte y utilizar dicha información para analizar la efectividad de nuestros Servicios, mejorar y agregar funciones a nuestros Servicios, realizar investigaciones y otros fines similares. Además, de vez en cuando, podemos analizar el comportamiento general y las características de los usuarios de nuestros Servicios y compartir información agregada, como estadísticas generales de usuarios, con terceros, publicar dicha información agregada o hacerla disponible de manera general. Podemos recopilar información agregada a través de los Servicios, mediante cookies y mediante otros medios descritos en esta Política de Privacidad. Mantendremos y utilizaremos información no identificada de forma anónima o no identificada y no intentaremos volver a identificar la información, a menos que lo exija la ley.",
+        "CONTENT_USAGE_PARAGRAPH": "Como se indicó anteriormente, podemos utilizar el Contenido que usted nos proporciona para mejorar nuestros Servicios, por ejemplo, para entrenar los modelos que impulsan Lazo . Lea nuestras instrucciones sobre cómo puede optar por no usar su Contenido para entrenar nuestros modelos.",
+        "PERSONAL_INFO_DISCLOSURE_TITLE": "3. Divulgación de información personal",
+        "PERSONAL_INFO_DISCLOSURE_PARAGRAPH": "En ciertas circunstancias, podemos divulgar su información personal a terceros sin previo aviso, a menos que lo exija la ley:",
+        "DISCLOSURE_TO_VENDORS_PROVIDERS_TITLE": "Vendedores y proveedores de servicios:",
+        "DISCLOSURE_TO_VENDORS_PROVIDERS_DESCRIPTION": "Para ayudarnos a satisfacer las necesidades de operaciones comerciales y realizar ciertos servicios y funciones, podemos proporcionar información personal a vendedores y proveedores de servicios, incluidos los proveedores de alojamiento, servicios de atención al cliente, servicios en la nube, software de comunicación por correo electrónico, servicios de análisis web y otros proveedores de tecnología de la información, entre otros. De acuerdo con nuestras instrucciones, estas partes accederán, procesarán o almacenarán Información Personal únicamente en el desempeño de sus funciones para con nosotros.",
+        "DISCLOSURE_FOR_BUSINESS_TRANSFERS_TITLE": "Transferencias comerciales:",
+        "DISCLOSURE_FOR_BUSINESS_TRANSFERS_DESCRIPTION": "Si estamos involucrados en transacciones estratégicas, reorganización, quiebra, administración judicial o transición del servicio a otro proveedor (colectivamente, una 'Transacción'), su información personal y otra información pueden ser divulgadas en el proceso de diligencia debida con las contrapartes y otras personas que ayudan con la Transacción y transferidas a un sucesor o afiliado como parte de esa Transacción junto con otros activos.",
+        "LEGAL_REQUIREMENTS_TITLE": "Requisitos legales:",
+        "LEGAL_REQUIREMENTS_DESCRIPTION": "Podemos compartir tu información personal, incluida información sobre tu interacción con nuestros Servicios, con autoridades gubernamentales, pares de la industria u otros terceros (i) si es necesario hacerlo por ley o si creemos de buena fe que dicha acción es necesaria para cumplir con una obligación legal, (ii) para proteger y defender nuestros derechos o propiedad, (iii) si determinamos, a nuestro exclusivo criterio, que existe una violación de nuestros términos, políticas o la ley; (iv) para detectar o prevenir fraude u otra actividad ilegal; (v) para proteger la seguridad, protección e integridad de nuestros productos, empleados o usuarios, o el público, o (vi) para proteger contra responsabilidad legal.",
+        "AFFILIATES_DISCLOSURE_TITLE": "Afiliados:",
+        "AFFILIATES_DISCLOSURE_DESCRIPTION": "Podemos divulgar información personal a nuestros afiliados, es decir, una entidad que controla, está controlada o está bajo control común con Lazo . Nuestros afiliados pueden utilizar la información personal que compartimos de manera consistente con esta Política de Privacidad.",
+        "BUSINESS_ACCOUNT_ADMINISTRATORS_TITLE": "Administradores de cuentas empresariales:",
+        "BUSINESS_ACCOUNT_ADMINISTRATORS_DESCRIPTION": "Cuando te unes a una cuenta empresarial o empresarial con Lazo , los administradores de esa cuenta pueden acceder y controlar tu cuenta Lazo . Además, si creas una cuenta utilizando una dirección de correo electrónico que pertenece a tu empleador u otra organización, podemos compartir el hecho de que tienes una cuenta Lazo  y cierta información de la cuenta, como tu dirección de correo electrónico, con tu empleador u organización, por ejemplo, para permitirte ser agregado a tu cuenta comercial.",
+        "SHARING_WITH_OTHER_USERS_TITLE": "Otros usuarios y terceros con los que compartes información:",
+        "SHARING_WITH_OTHER_USERS_DESCRIPTION": "Ciertas funciones te permiten mostrar o compartir información con otros usuarios o terceros. Por ejemplo, puedes compartir conversaciones de Lazo  con otros usuarios a través de enlaces compartidos o enviar información a aplicaciones de terceros mediante acciones personalizadas para GPT. Asegúrate de confiar en cualquier usuario o tercero con quien compartas información.",
+        "YOUR_RIGHTS_TITLE": "4. Tus derechos",
+        "YOUR_RIGHTS_DESCRIPTION": "Dependiendo de la ubicación, las personas pueden tener ciertos derechos legales en relación con su Información personal. Por ejemplo, es posible que tenga derecho a:",
+        "YOUR_RIGHTS_1": "Acceder a su información personal y a la información relacionada con cómo se procesa.",
+        "YOUR_RIGHTS_2": "Eliminar su información personal de nuestros registros.",
+        "YOUR_RIGHTS_3": "Rectificar o actualizar su Información Personal.",
+        "YOUR_RIGHTS_4": "Transferir su Información Personal a un tercero (derecho a la portabilidad de los datos).",
+        "YOUR_RIGHTS_5": "Restringir la forma en que procesamos su información personal.",
+        "YOUR_RIGHTS_6": "Retirar su consentimiento, cuando nos basamos en el consentimiento como base legal para el procesamiento en cualquier momento.",
+        "YOUR_RIGHTS_7": "Oponerse a cómo procesamos su información personal.",
+        "YOUR_RIGHTS_8": "Presentar una queja ante su autoridad local de protección de datos.",
+        "EXERCISE_RIGHTS_ACCOUNT_NOTE": "Puede ejercer algunos de estos derechos a través de su cuenta Lazo . Si no puede ejercer sus derechos a través de su cuenta, envíe su solicitud a través de privacy.LazoIA.com o a...",
+        "ACCURACY_NOTE": "Una nota sobre la precisión: Servicios como Lazo IAT generan respuestas al leer la solicitud de un usuario y, como respuesta, predicen las palabras más probables que aparecerán a continuación. En algunos casos, las palabras más probables que aparecerán a continuación pueden no ser las más precisas en términos de hechos. Por este motivo, no debe confiar en la precisión objetiva de los resultados de nuestro modelo. Si observa que la salida de Lazo IAT contiene información objetivamente inexacta sobre usted y desea que corrijamos la inexactitud, puede enviar una solicitud de corrección a través de privacy.LazoIA.com o a [LUGAR]. Dada la complejidad técnica de cómo operan nuestros modelos, es posible que no podamos corregir la inexactitud en todos los casos. En esos casos, puede solicitar que eliminemos su información personal de los resultados de Lazo IAT completando este formulario.",
+        "US_STATE_DISCLOSURES_TITLE": "5. Divulgaciones adicionales por estado en los Estados Unidos",
+        "US_STATE_DISCLOSURES_DESCRIPTION": "La siguiente tabla proporciona información adicional sobre las categorías de información personal que recopilamos y cómo divulgamos esa información. Puede leer más sobre la información personal que recopilamos en 'Información personal que recopilamos' arriba, cómo usamos la información personal en 'Cómo usamos la información personal' arriba, y cómo retenemos la información personal en 'Seguridad y retención' a continuación.",
+        "PERSONAL_INFO_CATEGORY": "Categoría de información personal",
+        "PERSONAL_INFO_DISCLOSURE": "Divulgación de información personal",
+        "IDENTIFIERS_INFORMATION": "Identificadores, como su nombre, detalles de contacto, dirección IP y otros identificadores de dispositivo",
+        "IDENTIFIERS_DISCLOSURE": "Podemos divulgar esta información a nuestros afiliados, vendedores y proveedores de servicios para que la procesen de acuerdo con nuestras instrucciones; a las autoridades y otros terceros por los motivos legales descritos anteriormente; a las partes involucradas en transacciones; a administradores corporativos de cuentas empresariales o de equipo; y a otros usuarios y terceros con los que usted elija compartirlo.",
+        "COMMERCIAL_INFO": "Información comercial, como su historial de transacciones.",
+        "COMMERCIAL_INFO_DISCLOSURE": "Podemos divulgar esta información a nuestros afiliados, vendedores y proveedores de servicios para que la procesen de acuerdo con nuestras instrucciones; a las autoridades y otros terceros por los motivos legales descritos anteriormente; a las partes involucradas en transacciones; y a administradores corporativos de cuentas empresariales o de equipo.",
+        "NETWORK_ACTIVITY_INFO": "Información de actividad de red, como contenido e interacciones con nuestros servicios.",
+        "NETWORK_ACTIVITY_DISCLOSURE": "Podemos divulgar esta información a nuestros afiliados, vendedores y proveedores de servicios para que la procesen de acuerdo con nuestras instrucciones; a las autoridades y otros terceros por los motivos legales descritos anteriormente; a las partes involucradas en transacciones; y a otros usuarios y terceros con los que usted elija compartirlo.",
+        "GEOLOCATION_DATA": "Datos de geolocalización.",
+        "GEOLOCATION_DISCLOSURE": "Podemos divulgar esta información a nuestros afiliados, vendedores y proveedores de servicios para que la procesen de acuerdo con nuestras instrucciones; a las autoridades y otros terceros por los motivos legales descritos anteriormente; y a las partes involucradas en transacciones.",
+        "SENSITIVE_PERSONAL_INFO": "Credenciales de inicio de sesión de su cuenta e información de tarjeta de pago (Información personal confidencial)",
+        "SENSITIVE_INFO_DISCLOSURE": "Divulgamos esta información a nuestros afiliados, vendedores y proveedores de servicios, autoridades policiales y partes involucradas en transacciones.",
+        "CHILDREN_POLICY_TITLE": "6.Niños",
+        "CHILDREN_POLICY_TEXT": "Nuestro Servicio no está dirigido a niños menores de 13 años. Lazo  no recopila intencionalmente información personal de niños menores de 13 años. Si tiene motivos para creer que un niño menor de 13 años ha proporcionado información personal a Lazo  a través del Servicio, envíenos un correo electrónico a [dirección de correo electrónico]. Investigaremos cualquier notificación y, si corresponde, eliminaremos la información personal de nuestros sistemas. Si tiene 13 años o más, pero es menor de 18, debe tener el permiso de sus padres o tutores para utilizar nuestros servicios.",
+        "EXTERNAL_LINKS_TITLE": "6. Enlaces a otros sitios web",
+        "EXTERNAL_LINKS_TEXT": "El Servicio puede contener enlaces a otros sitios web que Lazo  no opera ni controla, incluidos servicios de redes sociales ('Sitios de terceros'). La información que comparta con Sitios de terceros se regirá por las políticas de privacidad y los términos de servicio específicos de esos Sitios de terceros, no por esta Política de privacidad. Al proporcionar estos enlaces, no implicamos que respaldemos o hayamos revisado estos sitios. Comuníquese directamente con los Sitios de terceros para obtener información sobre sus prácticas y políticas de privacidad.",
+        "SECURITY_RETENTION_TITLE": "Seguridad y retención",
+        "SECURITY_RETENTION_TEXT": "Implementamos medidas técnicas, administrativas y organizativas razonablemente comerciales para proteger la información personal, tanto en línea como fuera de línea, contra pérdidas no autorizadas, mal uso, acceso, divulgación, alteración o destrucción. Sin embargo, ninguna transmisión de Internet o correo electrónico es completamente segura o libre de errores. En particular, el correo electrónico enviado a nosotros o desde nosotros puede no ser seguro. Por lo tanto, debe tener cuidado al decidir qué información enviarnos a través del Servicio o por correo electrónico. Además, no somos responsables de la circunvención de ninguna configuración de privacidad o medidas de seguridad contenidas en el Servicio o en sitios web de terceros.\n\nSolo conservaremos su información personal durante el tiempo necesario para proporcionarle nuestro Servicio u otros fines comerciales legítimos, como resolver disputas, razones de seguridad o cumplir con nuestras obligaciones legales. El período durante el cual retenemos la información personal dependerá de varios factores, como la cantidad, naturaleza y sensibilidad de la información, el riesgo potencial de daños por uso o divulgación no autorizados, nuestros fines para procesar la información y cualquier requisito legal.",
+        "INTERNATIONAL_USERS_TITLE": "8.Usuarios internacionales",
+        "INTERNATIONAL_USERS_TEXT": "Al utilizar nuestro Servicio, usted comprende y reconoce que su información personal se procesará y almacenará en nuestras instalaciones y servidores en los Estados Unidos y puede ser divulgada a nuestros proveedores de servicios y afiliados en otras jurisdicciones.",
+        "LEGAL_BASIS_TITLE": "9. Base legal para el procesamiento",
+        "LEGAL_BASIS_1": "EJECUCIÓN DE UN CONTRATO CON USTED CUANDO PROPORCIONAMOS Y MANTENEMOS NUESTROS SERVICIOS. CUANDO PROCESAMOS INFORMACIÓN DE CUENTAS, CONTENIDO E INFORMACIÓN TÉCNICA ÚNICAMENTE PARA PROPORCIONARLE NUESTROS SERVICIOS, ESTA INFORMACIÓN ES NECESARIA PARA ENTREGAR NUESTROS SERVICIOS. SI NO PROPORCIONA ESTA INFORMACIÓN, ES POSIBLE QUE NO PODAMOS PROPORCIONAR NUESTROS SERVICIOS.",
+        "LEGAL_BASIS_2": "NUESTROS INTERESES LEGÍTIMOS EN PROTEGER NUESTROS SERVICIOS CONTRA EL ABUSO, EL FRAUDE O LOS RIESGOS DE SEGURIDAD, O EN DESARROLLAR, MEJORAR O PROMOCIONAR NUESTROS SERVICIOS, INCLUYENDO CUANDO ENTRENAMOS NUESTROS MODELOS. ESTO PUEDE INVOLUCRAR EL PROCESAMIENTO DE INFORMACIÓN DE CUENTAS, CONTENIDO, INFORMACIÓN SOCIAL E INFORMACIÓN TÉCNICA. LEA NUESTRAS INSTRUCCIONES SOBRE CÓMO PUEDE OPTAR POR NO UTILIZAR SU INFORMACIÓN PARA ENTRENAR NUESTROS MODELOS.",
+        "LEGAL_BASIS_3": "SU CONSENTIMIENTO CUANDO SOLICITAMOS SU CONSENTIMIENTO PARA PROCESAR SU INFORMACIÓN PERSONAL PARA UN PROPÓSITO ESPECÍFICO QUE LE COMUNICAMOS. TIENE EL DERECHO DE RETIRAR SU CONSENTIMIENTO EN CUALQUIER MOMENTO.",
+        "LEGAL_BASIS_4": "CUMPLIMIENTO DE NUESTRAS OBLIGACIONES LEGALES CUANDO UTILIZAMOS SU INFORMACIÓN PERSONAL PARA CUMPLIR CON LA LEY APLICABLE O CUANDO PROTEGEMOS NUESTROS DERECHOS, SEGURIDAD Y PROPIEDAD O LOS DE NUESTROS AFILIADOS, USUARIOS O TERCEROS.",
+        "DATA_TRANSFERS_TEXT": "Transferencias de datos: Cuando sea necesario, utilizaremos medidas de seguridad apropiadas para transferir información personal fuera de ciertos países. Solo transferiremos información personal de acuerdo con un mecanismo de transferencia legalmente válido.",
+        "DPO_CONTACT_TEXT": "Oficial de Protección de Datos: Puede comunicarse con nuestro Oficial de Protección de Datos en [dirección de correo electrónico] para asuntos relacionados con el procesamiento de información personal.",
+        "PRIVACY_POLICY_CHANGES_TITLE": " 10. Cambios en la política de privacidad",
+        "PRIVACY_POLICY_CHANGES_TEXT": "Podemos actualizar esta Política de Privacidad de vez en cuando. Cuando lo hagamos, publicaremos una versión actualizada en esta página, a menos que la ley aplicable exija otro tipo de aviso.",
+        "CONTACT_US_TITLE": "11. Cómo contactarnos",
+        "CONTACT_US_TEXT": "Comuníquese con soporte [insertar enlace de contacto aquí] si tiene alguna pregunta o inquietud que aún no se haya abordado en esta Política de privacidad.",
+        "LEGAL_BASIS_LIST": "Base legal para el procesamiento"
+      }
+    }
+  },
+  "EXTRAPAGES": {
+    "COMINGSOON": {
+      "LET": "Comencemos con Skote",
+      "DESC": "Será tan simple como el occidental; de hecho, será occidental.",
+      "DAYS": "Días",
+      "HOURS": "Horas",
+      "MINUTES": "Minutos",
+      "SECONDS": "Segundos"
+    },
+    "ERROR404": {
+      "PAGE": "Lo siento, Página no encontrada",
+      "BACK": "Volver al Panel de Control"
+    }
+  },
+  "CORE": {
+    "MODULES": {
+      "AUTHENTICATION": {
+        "LOGIN": {
+          "WELCOME_BACK": "¡Bienvenido de nuevo!",
+          "SING": "Inicia sesión para continuar con las Soluciones de .",
+          "ERROR": "error",
+          "EMAIL": "Correo Electrónico",
+          "EMAIL_R": "El correo electrónico es obligatorio",
+          "EMAIL_V": "El correo electrónico debe ser una dirección de correo válida",
+          "PASSWORD": "Contraseña",
+          "PASSWORD_R": "La contraseña debe tener al menos 8 caracteres.",
+          "REMEMBER": "Recuérdame",
+          "LOG_IN": "Iniciar sesión",
+          "FORGOT_PASSWORD": "¿Olvidaste tu contraseña?",
+          "ACCOUNT?": "¿No tienes una cuenta?"
+        },
+        "HEADER": {
+          "EDIT_ACCOUNT": "Editar configuración de la cuenta",
+          "CHANGE_PASSWORD": "Cambiar contraseña",
+          "SUPPORT": "Soporte",
+          "LOGOUT": "Cerrar sesión"
+        }
+      }
+    }
+  },
+  "ACCOUNT": {
+    "AUTH": {
+      "CONFIRMMAIL": {
+        "EMAIL_VERIFIED": "¡Email verificado con éxito!",
+        "THANK_Y": "Gracias por verificar tu unión a nosotros"
+      },
+      "LOGIN2": {
+        "SATISFIED": "Clientes satisfechos",
+        "DESC": "Tema fantástico con muchas opciones. Si solo necesitas el HTML para integrarlo en tu proyecto, este es el paquete. Puedes encontrar los archivos en la carpeta 'dist'... no es necesario instalar git y todo lo demás de lo que habla la documentación.",
+        "ROBIN_USER": "Usuario Lazo",
+        "DESC_IF": "Si cada proveedor en Envato fuera tan solidario como Themesbrand, el desarrollo sería una experiencia agradable. Ustedes son maravillosos. Sigan con el buen trabajo.",
+        "NEZERIOUS": "Nezerious",
+        "WELCOME_BACK": "¡Bienvenido de nuevo!",
+        "SING": "Inicia sesión para continuar en Lazo.",
+        "EMAIL": "Correo electrónico",
+        "EMAIL_R": "El correo electrónico es obligatorio",
+        "EMAIL_V": "El correo electrónico debe ser una dirección de correo válida",
+        "PASSWORD": "Contraseña",
+        "PASSWORD_R": "La contraseña debe tener al menos 8 caracteres.",
+        "PASSWORD_F": "¿Olvidaste tu contraseña?",
+        "REMEMBER": "Recuérdame",
+        "LOG_IN": "Iniciar sesión",
+        "SIGN_WITH": "Iniciar sesión con",
+        "DONT_HAVE": "¿No tienes una cuenta?",
+        "SIGN_UP": "Regístrate",
+        "EMAIL_I": "Introduce tu correo electrónico",
+        "PASSWORD_I": "Introduce la contraseña",
+        "SIGNUP_N": "Regístrate ahora",
+        "CONTINUE_WITH_GOOGLE": "Continuar con Google"
+      },
+      "RECOVERPWD2": {
+        "SATISFIED": "Clientes satisfechos",
+        "DESC": "Tema fantástico con un montón de opciones. Si solo deseas el HTML para integrarlo en tu proyecto, entonces este es el paquete. Puedes encontrar los archivos en la carpeta 'dist'... no es necesario instalar git y todo lo demás de lo que habla la documentación.",
+        "DESC_IF": "Si todos los proveedores en Envato fueran tan solidarios como Themesbrand, el desarrollo sería una experiencia agradable. Ustedes son maravillosos. Sigan con el buen trabajo.",
+        "PASSWORD": "Contraseña",
+        "RESET_PASSWORD": "Restablecer contraseña",
+        "RESET_P": "Restablecer contraseña con Lazo",
+        "ENTER_EMAIL": "¡Ingresa tu correo electrónico y se te enviarán instrucciones!",
+        "RESET": "Restablecer",
+        "SIGN_H": "Inicia sesión aquí",
+        "ROBIN_USER": "Usuario Lazo",
+        "NEZERIOUS": "Nezerious",
+        "EMAIL": "Correo electrónico",
+        "EMAIL_R": "El correo electrónico es obligatorio",
+        "EMAIL_V": "El correo electrónico debe ser una dirección válida",
+        "REMENBER": "¿Lo recuerdas?",
+        "P_EMAIL": "Ingresa tu correo electrónico",
+        "ENTER_TOKEN_VALIDATE": "Ingresa el token que se te envió.",
+        "P_TOKEN": "Token",
+        "TOKEN_R": "El token es obligatorio",
+        "VALIDATE_TOKEN": "Validar token",
+        "ENTER_NEW_PASSWORD": "Ingresa la nueva contraseña",
+        "P_NEW_PASSWORD": "Nueva contraseña",
+        "PASSWORD_R": "La contraseña debe tener al menos 8 caracteres.",
+        "PASSWORD_M": "La contraseña debe tener al menos 8 caracteres.",
+        "PASSWORD_C_R": "Confirmar contraseña es obligatorio",
+        "PASSWORDS_DO_NOT_MATCH": "Las contraseñas no coinciden",
+        "P_ENTER_EMAIL": "Ingresa tu correo electrónico",
+        "PASSWORD_C": "Confirmar contraseña",
+        "C_PASSWORD": "Confirmar contraseña",
+        "REMEMBER": "Recuérdame",
+        "TOKEN": "Token",
+        "PASSWORD_P": "La contraseña necesita minúsculas, mayúsculas y un número."
+      },
+      "REGISTER": {
+        "SATISFIED": "Clientes satisfechos",
+        "DESC": "Tema fantástico con muchas opciones. Si solo necesitas el HTML para integrarlo en tu proyecto, este es el paquete. Puedes encontrar los archivos en la carpeta 'dist'... no es necesario instalar git y todo lo demás de lo que habla la documentación.",
+        "DESC_IF": "Si cada proveedor en Envato fuera tan solidario como Themesbrand, el desarrollo sería una experiencia agradable. Ustedes son maravillosos. Sigan con el buen trabajo.",
+        "ROBIN_USER": "Usuario Lazo",
+        "NEZERIOUS": "Nezerious",
+        "CREATE_ACCOUNT": "Crear cuenta",
+        "CREATE_ACCOUNT2": "Crear cuenta con soluciones de ",
+        "ENTER_DETAILS": "Ingresa tus detalles para crear tu cuenta:",
+        "EMAIL_PLACEHOLDER": "Ingresa tu correo electrónico",
+        "NAME": "Nombre",
+        "NAME_R": "El nombre es obligatorio",
+        "EMAIL": "Correo electrónico",
+        "EMAIL_R": "El correo electrónico es obligatorio",
+        "EMAIL_V": "El correo electrónico debe ser una dirección de correo válida",
+        "PASSWORD": "Contraseña",
+        "PASSWORD_R": "Se requiere contraseña minimo 8 caracteres ",
+        "PASSWORD_V": "La contraseña debe tener al menos 8 caracteres",
+        "PASSWORD_C": "Confirmar contraseña",
+        "PASSWORD_C_R": "La confirmación de contraseña es obligatoria",
+        "PASSWORD_C_V": "La confirmación de contraseña debe tener al menos 6 caracteres",
+        "ALREADY": "¿Ya tienes una cuenta?",
+        "SIGN_IN": "Iniciar sesión",
+        "SIGNUP_N": "Regístrate ahora",
+        "REMENBER": "¿Lo recuerdas?",
+        "GET_ROBIN": "Obtén tu cuenta de Lazo ahora",
+        "FIRST_N": "Nombre",
+        "FIRST_R": "El nombre es obligatorio",
+        "P_FIRST_N": "Ingresa tu nombre",
+        "LAST_N": "Apellido",
+        "LAST_R": "El apellido es obligatorio",
+        "P_LAST_N": "Ingresa tu apellido",
+        "REGISTRATION_SUCCES": "Registro exitoso",
+        "REGISTER_BY_ROBIN": "Al registrarte, aceptas los Términos de Uso de Lazo",
+        "TERMS": "Términos de uso",
+        "REGISTER": "Registrarse",
+        "SING_USING": "Registrarse utilizando",
+        "SING_COMPANY": "Registrarse como Mayorista",
+        "GO": "¡Continuar!",
+        "ALREDY": "¿Ya tienes una cuenta?",
+        "LOGIN": "Iniciar sesión",
+        "REGISTER_WITH_GOOGLE": "Registrarse con Google",
+        "PASSWORD_MIN_LENGTH": "La contraseña debe tener al menos 8 caracteres",
+        "PASSWORDS_DO_NOT_MATCH": "Las contraseñas no coinciden",
+        "PASSWORD_P": "La contraseña necesita minúsculas, mayúsculas y un número."
+      },
+      "SIGNUP": {
+        "FREE_R": "Registro gratuito",
+        "G_F_ROBIN": "Obtén tu cuenta de Lazo ahora",
+        "REGISTER_SUCCES": "Registro exitoso",
+        "FIRST_N": "Nombre",
+        "ENTER_YOUR_F_N": "Ingresa tu nombre",
+        "FIRST_R": "El nombre es obligatorio",
+        "L_NAME": "Apellido",
+        "ENTER_YOUR_L_N": "Ingresa tu apellido",
+        "LAST_R": "El apellido es obligatorio",
+        "EMAIL": "Correo electrónico",
+        "EMAIL_V": "El correo electrónico debe ser una dirección de correo válida",
+        "PASSWORD": "Contraseña",
+        "PASSWORD_R": "La contraseña debe tener al menos 8 caracteres. ",
+        "C_PASSWORD": "Confirmar contraseña",
+        "C_PASSWORD_R": "La confirmación de contraseña es obligatoria",
+        "REGISTER": "Registrarse",
+        "SIGN_WITH": "Iniciar sesión con",
+        "AGREE_R": "Al registrarte, aceptas los Términos de Uso de Lazo",
+        "TERMS": "Términos de uso",
+        "ALREDY": "¿Ya tienes una cuenta?",
+        "LOGIN": "Iniciar sesión",
+        "CONTINUE_WITH_GOOGLE": "Continuar con Google"
+      },
+      "VERIFICATION": {
+        "VERIFY": "Verifica tu correo electrónico",
+        "VERIFY_EMAIL": "Te hemos enviado un correo electrónico de verificación",
+        "RESEND": "Reenviar"
+      }
+    },
+    "MODULES": {
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Portal de cuenta",
+            "SETTINGS": "Configuración",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Portal de cuenta",
+            "SETTINGS": "Configuración",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      },
+      "PROFILE": {
+        "PAGES": {
+          "DETAIL": {
+            "ACCOUNT_S": "Configuración de cuenta",
+            "FILL": "Completa toda la información a continuación",
+            "NAME": "Nombre",
+            "L_NAME": "Apellido",
+            "PREFERED_NAME": "Nombre preferido",
+            "ABOUT": "Acerca de",
+            "SUBMIT": "Enviar"
+          },
+          "FORM": {},
+          "MODEL_B": {
+            "AI_SOLUTIONS": "Soluciones de ",
+            "REGISTER_S": "Registro exitoso",
+            "NOW_PLEASE": "Ahora por favor agrega algunos datos para tu Bot",
+            "NAME": "Nombre",
+            "DESCRIPTION": "Descripción",
+            "NAME_R": "El nombre es obligatorio",
+            "CONTEXT_L": "Límite de contexto",
+            "CONTEXT_V": "El límite de contexto debe ser válido",
+            "STORAGE": "Límite de almacenamiento",
+            "STORAGE_V": "El límite de almacenamiento debe ser válido (menos de 20 GB)",
+            "COMPLETE": "Completar"
+          },
+          "PASSWORD": {
+            "UPDATE_PASSWORD": "Actualizar contraseña",
+            "FILL": "Completa toda la información a continuación",
+            "PASSWORD": "Contraseña",
+            "PASSWORD_C": "Confirmación de contraseña",
+            "SUBMIT": "Enviar",
+            "PASSWORD_R": "La contraseña debe tener al menos 8 caracteres.",
+            "PASSWORD_SHORT": "La contraseña debe tener al menos 8 caracteres",
+            "PASSWORD_C_R": "Se requiere confirmación de contraseña",
+            "PASSWORD_MISMATCH": "Las contraseñas no coinciden",
+            "PASSWORD_P": "La contraseña necesita minúsculas, mayúsculas y un número."
+          },
+          "TENANT_F": {
+            "AI_SOLUTIONS": "Soluciones de ",
+            "REGISTER_S": "Registro exitoso",
+            "FILL": "Por favor, completa el formulario para crear tu Compañía Sombrilla (Inquilino)",
+            "NAME": "Nombre",
+            "NAME_R": "El nombre es obligatorio",
+            "DESCRIPTION": "Descripción",
+            "COMPLETE": "Completar"
+          }
+        }
+      },
+      "PAGES": {
+        "RESET_PASSWORD": {
+          "PASSWORD_R": "Restablecimiento de contraseña ",
+          "SIGN_CONTINUE": "Inicia sesión para continuar en Soluciones de .",
+          "EMAIL": "Correo electrónico",
+          "EMAIL_R": "El correo electrónico es obligatorio",
+          "EMAIL_V": "El correo electrónico debe ser una dirección de correo válida",
+          "REQUEST_C": "Solicitar código",
+          "CODE_R": "El código es obligatorio",
+          "VALIDATE": "Validar",
+          "NEW_PASSWORD": "Nueva contraseña",
+          "PASSWORD_LENGTH": "La longitud de la contraseña es de 9 caracteres",
+          "CONFIRM_PASSWORD": "Confirmar contraseña",
+          "UPDATE": "Actualizar",
+          "UPDATE_S": "¡Actualización de contraseña exitosa!",
+          "BACK_LOGIN": "Volver a inicio de sesión",
+          "DONT_HAVE": "¿No tienes una cuenta?",
+          "SIGN_UP": "Regístrate",
+          "CODE": "Código"
+        }
+      }
+    }
+  },
+  "ADMIN": {
+    "MODULES": {
+      "COMPONENTS": {
+        "ADMIN_COMPANY": {
+          "STAF": "Personal de la Empresa",
+          "SEARCH_F": "Buscar...",
+          "NAME": "Nombre",
+          "L_NAME": "Apellido",
+          "EMAIL": "Correo Electrónico",
+          "ROLE": "Rol",
+          "STAFF_A": "Acciones del Personal",
+          "DELETE_S": "Eliminar Personal",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "NO_DATA": "Sin datos"
+        },
+        "ADMIN_FORM": {
+          "DESC": "Rellena toda la información a continuación para agregar personal.",
+          "F_NAME": "Nombre",
+          "F_NAME_V": "El nombre debe ser válido",
+          "L_NAME": "Apellido",
+          "L_NAME_V": "El apellido debe ser válido",
+          "EMAIL": "Correo Electrónico",
+          "EMAIL_V": "El correo electrónico debe ser válido",
+          "PASSWORD": "Contraseña",
+          "PASSWORD_V": "La contraseña debe ser válida",
+          "ROLE": "Rol",
+          "ROLE_V": "El rol debe ser válido",
+          "ADD_STAFF": "Agregar Personal",
+          "PASSWORD_P": "La contraseña necesita minúsculas, mayúsculas y un número."
+        },
+        "EDIT-FORM": {
+          "DESC": "Rellena toda la información a continuación para actualizar la empresa.",
+          "COMPANY_I": "Información de la Empresa",
+          "TENANT": "Inquilino",
+          "TENANT_V": "El inquilino debe ser válido",
+          "COMPANY_N": "Nombre de la Empresa",
+          "COMPANY_N_V": "El nombre debe ser válido",
+          "SAVE": "Guardar"
+        }
+      },
+      "PAGE": {
+        "FORM": {
+          "DETAILS": "Detalles",
+          "MANAGE": "Gestionar Personal"
+        },
+        "LIST": {
+          "SEARCH": "Buscar...",
+          "NAME": "Nombre",
+          "TENANT": "Inquilino",
+          "MODULES": "Módulos",
+          "COMPANY_MODULES": "Módulos de la Empresa",
+          "ACTIONS": "Acciones",
+          "GO_TO_PORTAL": "Ir al Portal",
+          "EDIT": "Editar",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "ACTION": "Acciones"
+        }
+      }
+    },
+    "LAYOUT": {
+      "COMPONENTS": {
+        "HORIZONTALTOPBAR": {
+          "ACCOUNT_PORTAL": "Portal de Cuenta",
+          "SETTINGS": "Configuración",
+          "LAYOUT": "Diseño",
+          "THEME_MODE": "Modo de Tema",
+          "LIGHT": "Claro",
+          "DARK": "Oscuro",
+          "RESET": "Restablecer",
+          "VERTICAL": "Vertical",
+          "HORIZONTAL": "Horizontal"
+        },
+        "TOPBAR": {
+          "ACCOUNT_PORTAL": "Portal de Cuenta",
+          "SETTINGS": "Configuración",
+          "LAYOUT": "Diseño",
+          "THEME_MODE": "Modo de Tema",
+          "LIGHT": "Claro",
+          "DARK": "Oscuro",
+          "RESET": "Restablecer",
+          "VERTICAL": "Vertical",
+          "HORIZONTAL": "Horizontal"
+        }
+      }
+    },
+    "TENANTS": {
+      "COMPONENTS": {
+        "ADMIN-F": {
+          "USER_I": "Información del Usuario",
+          "FILL": "Rellena toda la información a continuación.",
+          "F_NAME": "Nombre",
+          "F_NAME_V": "El nombre debe ser válido",
+          "L_NAME": "Apellido",
+          "L_NAME_V": "El apellido debe ser válido",
+          "EMAIL": "Correo Electrónico",
+          "EMAIL_V": "El correo electrónico debe ser válido",
+          "PASSWORD": "Contraseña",
+          "PASSWORD_V": "La contraseña debe ser válida",
+          "SUBMIT": "Enviar",
+          "PASSWORD_P": "La contraseña necesita minúsculas, mayúsculas y un número."
+        },
+        "ADMIN-T-F": {
+          "TENANT_I": "Administradores del Inquilino",
+          "ROLE": "Rol",
+          "NAME": "Nombre",
+          "EMAIL": "Correo Electrónico",
+          "SEARCH": "Buscar...",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "NO_DATA": "Sin datos"
+        },
+        "COMPANIS-F": {
+          "DESC": "Rellena toda la información a continuación para agregar una Empresa.",
+          "NAME": "Nombre",
+          "NAME_R": "El nombre es obligatorio",
+          "ADD_C": "Agregar Empresa"
+        },
+        "COMPANIES-T": {
+          "T_COMPANI": "Empresas del Inquilino",
+          "SEARCH": "Buscar...",
+          "NAME": "Nombre",
+          "TIMEZONE": "Zona Horaria",
+          "ACTIONS": "Acciones",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "NO_DATA": "Sin datos"
+        },
+        "FILES": {
+          "TENANT_F": "Archivos del Inquilino"
+        },
+        "GENERAL-F": {
+          "TENANT_I": "Información del Inquilino",
+          "FILL": "Rellena toda la información a continuación.",
+          "NAME": "Nombre",
+          "NAME_V": "El nombre debe ser válido",
+          "DESCRIPTION": "Descripción",
+          "SUBMIT": "Enviar"
+        },
+        "USERS-L": {
+          "SEARCH": "Buscar...",
+          "NAME": "Nombre",
+          "EMAIL": "Correo Electrónico",
+          "ROLE": "Rol",
+          "ACTIONS": "Acciones",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "NO_DATA": "Sin datos"
+        }
+      },
+      "PAGES": {
+        "DETAIL": {
+          "GO_PORTAL": "Ir al Portal",
+          "NAME": "Nombre",
+          "EMAIL": "Correo Electrónico",
+          "ADMINS": "Administradores",
+          "START_D": "Fecha de Inicio",
+          "COMPANIES": "Empresas",
+          "TIMEZONE": "Zona Horaria"
+        },
+        "FORM": {
+          "GENERAL": "General"
+        },
+        "LIST": {
+          "AT_LEAST_3": "Se requieren al menos 3 caracteres para tu término de búsqueda.",
+          "NAME": "Nombre",
+          "DESCRIPTION": "Descripción",
+          "COMPANIES": "Empresas",
+          "ADMINS": "Administradores",
+          "ACTION": "Acciones",
+          "GO": "Ir al Portal",
+          "DETAIL": "Detalle",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "NO_DATA": "Sin datos",
+          "EDIT": "Editar"
+        }
+      }
+    },
+    "USERS": {
+      "COMPONENTS": {
+        "GENERAL-F": {
+          "USER_I": "Información del Usuario",
+          "FILL": "Rellena toda la información a continuación.",
+          "FIRST_NAME": "Nombre",
+          "FIRST_NAME_V": "El nombre debe ser válido",
+          "LAST_NAME": "Apellido",
+          "LAST_NAME_V": "El apellido debe ser válido",
+          "EMAIL": "Correo Electrónico",
+          "EMAIL_V": "El correo electrónico debe ser válido",
+          "ROLES": "Roles",
+          "GENDER": "Género",
+          "Nickname": "Sobrenombre",
+          "PREFERRED_N": "Nombre Preferido",
+          "PHONE_N": "Número de Teléfono",
+          "BIRTH_D": "Fecha de Nacimiento",
+          "SAVE": "Guardar",
+          "ABOUT": "Acerca de"
+        },
+        "MOVE": {
+          "MOVE_U": "Mover Usuario",
+          "COMPANY": "Empresa",
+          "ROLE": "Rol",
+          "MOVE": "Mover"
+        },
+        "USER": {
+          "WELCOME_B": "¡Bienvenido de nuevo",
+          "PERSONAL_I": "Información Personal",
+          "TENANTS": "Inquilinos:",
+          "F_NAME": "Nombre:",
+          "L_NAME": "Apellido",
+          "EMAIL": "Correo Electrónico",
+          "CREATED_AT": "Creado el:",
+          "CODE": "Código:",
+          "NICKNAME": "Sobrenombre:",
+          "PREFERRED_N": "Nombre Preferido"
+        }
+      },
+      "PAGES": {
+        "FORM": {},
+        "LIST": {
+          "ACTIVE": "Activos",
+          "SEARCH": "Buscar...",
+          "ARCHIVED": "Archivados",
+          "F_NAME": "Nombre",
+          "L_NAME": "Apellido",
+          "EMAIL": "Correo Electrónico",
+          "ROLES": "Roles",
+          "ACTIONS": "Acciones",
+          "LOGIN": "INICIO DE SESIÓN",
+          "MOVE": "MOVER",
+          "DETAILS": "DETALLES",
+          "SHOW": "Mostrar",
+          "ENTRIES": "entradas",
+          "SHOWING": "Mostrando",
+          "TO": "a",
+          "OF": "de",
+          "NO_DATA": "Sin datos"
+        },
+        "DETAIL": {}
+      }
+    }
+  },
+  "COMPANIES": {
+    "MODULES": {
+      "COMPANY-M": {
+        "COMPONENTS": {
+          "EDIT": {
+            "COMPANY": "Información del Módulo de la Empresa",
+            "FILL": "Rellena toda la información a continuación para actualizar el módulo de la empresa.",
+            "COMPANY_NAME": "Empresa",
+            "COMPANY_M_N": "Nombre del Módulo de la Empresa",
+            "DESCRIPTION": "Descripción",
+            "SAVE": "Guardar"
+          },
+          "FORM": {
+            "FILL": "Rellena toda la información a continuación para agregar un Modelo de Bot.",
+            "NAME": "Nombre",
+            "DESCRIPTION": "Descripción",
+            "STORAGE_L": "Límite de Almacenamiento",
+            "STORAGE_LIMIT": "El límite de almacenamiento debe ser válido (menos de 20 GB)",
+            "ADD_BOT": "Agregar Modelo de Bot"
+          },
+          "TABLE": {
+            "COMPANY_BOTS": "Modelos de Bot de la Empresa",
+            "SEARCH": "Buscar...",
+            "NAME": "Nombre",
+            "STORAGE": "Almacenamiento",
+            "BOT_A": "Acciones del Bot",
+            "DELETE_B": "Eliminar Bot",
+            "SHOW": "Mostrar",
+            "ENTRIES": "entradas",
+            "SHOWING": "Mostrando",
+            "TO": "a",
+            "OF": "de",
+            "NO_DATA": "Sin datos"
+          }
+        },
+        "MODULES": {
+          "COMPONENTS": {
+            "BOT_C_FORM": {
+              "FILL": "Rellena toda la información a continuación para agregar un personal.",
+              "F_NAME": "Nombre",
+              "F_NAME_V": "El nombre debe ser válido",
+              "L_NAME": "Apellido",
+              "L_NAME_V": "El apellido debe ser válido",
+              "EMAIL": "Correo Electrónico",
+              "EMAIL_V": "El correo electrónico debe ser válido",
+              "PASSWORD": "Contraseña",
+              "PASSWORD_V": "La contraseña debe ser válida",
+              "ROLE": "Rol",
+              "ROLE_V": "El rol debe ser válido",
+              "ADD_STAF": "Agregar Personal",
+              "PASSWORD_P": "La contraseña necesita minúsculas, mayúsculas y un número."
+            },
+            "BOT_C": {
+              "MODEL_B_STAFF": "Personal de Modelo de Bot",
+              "FILL": "Rellena toda la información a continuación para agregar un personal.",
+              "F_NAME": "Nombre",
+              "F_NAME_V": "El nombre debe ser válido",
+              "L_NAME": "Apellido",
+              "L_NAME_V": "El apellido debe ser válido",
+              "EMAIL": "Correo Electrónico",
+              "EMAIL_V": "El correo electrónico debe ser válido",
+              "PASSWORD": "Contraseña",
+              "PASSWORD_V": "La contraseña debe ser válida",
+              "ROLE": "Rol",
+              "ROLE_V": "El rol debe ser válido",
+              "ADD_STAF": "Agregar Personal",
+              "STAF_A": "Acciones del Personal",
+              "DELETE_S": "Eliminar Personal",
+              "SHOW": "Mostrar",
+              "ENTRIES": "entradas",
+              "SHOWING": "Mostrando",
+              "TO": "a",
+              "OF": "de",
+              "NO_DATA": "Sin datos",
+              "SEARCH": "Buscar...",
+              "PASSWORD_P": "La contraseña necesita minúsculas, mayúsculas y un número."
+            },
+            "DATA_S_FORM": {
+              "FILL": "Rellena toda la información a continuación para agregar un conjunto de datos.",
+              "NAME": "Nombre",
+              "NAME_V": "El nombre debe ser válido",
+              "BASE_URL": "URL Base",
+              "BASE_URL_V": "La URL Base debe ser válida",
+              "DEPP": "Nivel Profundo",
+              "DEPP_V": "El Nivel Profundo debe ser válido (Máximo 255)",
+              "FORBIDDEN": "URLs Prohibidas",
+              "ADD_DATA": "Agregar Conjunto de Datos"
+            },
+            "DATA_S_TABLE": {
+              "WEB_U": "URL Web",
+              "SEACH": "Buscar...",
+              "NAME": "Nombre",
+              "BASE": "URL Base",
+              "FORBIDDEN": "URLs Prohibidas",
+              "STAFF": "Acciones del Personal",
+              "DELETE": "Eliminar Conjunto de Datos",
+              "SHOW": "Mostrar",
+              "ENTRIES": "entradas",
+              "SHOWING": "Mostrando",
+              "TO": "a",
+              "OF": "de",
+              "NO_DATA": "Sin datos"
+            },
+            "EDIT": {
+              "MODEL_BOT": "Información del Modelo de Bot",
+              "FILL": "Rellena toda la información a continuación para actualizar el modelo de bot.",
+              "API_URL": "La URL de la API debe ser válida",
+              "API_URL_V": "La URL de la API debe ser válida",
+              "STORAGE": "Límite de Almacenamiento",
+              "STORAGE_V": "El límite de almacenamiento debe ser  (menos de 20 GB)",
+              "DESCRIPTION": "Descripción",
+              "SAVE": "GUARDAR",
+              "COMPANY_M": "Módulo de la Empresa",
+              "NAME": "Nombre"
+            }
+          },
+          "PAGES": {
+            "FORM": {
+              "DETAILS": "Detalles",
+              "MANAGE_M": "Gestionar Modelos de Bot"
+            },
+            "LIST": {
+              "SEARCH": "Buscar...",
+              "NAME": "Nombre",
+              "MODEL_B": "Modelo de Bot",
+              "GO": "Ir a Modelos de Bot",
+              "SHOW": "Mostrar",
+              "ENTRIES": "entradas",
+              "SHOWING": "Mostrando",
+              "TO": "a",
+              "OF": "de",
+              "NO_DATA": "Sin datos",
+              "ACTIONS": "Acciones",
+              "EDIT": "Editar"
+            }
+          }
+        },
+        "PAGES": {
+          "FORM": {
+            "DETAILS": "Detalles",
+            "MANAGE_M": "Gestionar Modelos de Bots"
+          },
+          "LIST": {
+            "SEARCH": "Buscar ...",
+            "NAME": "Nombre",
+            "MODEL_B": "Modelo de Bot",
+            "GO": "Ir a Modelos de Bots",
+            "SHOW": "Mostrar",
+            "ENTRIES": "entradas",
+            "SHOWING": "Mostrando",
+            "TO": "a",
+            "OF": "de",
+            "NO_DATA": "Sin datos",
+            "ACTIONS": "Acciones",
+            "EDIT": "Editar"
+          }
+        }
+      },
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Portal de la Compañía",
+            "SETTINGS": "Configuración",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de Tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Portal de la Compañía",
+            "SETTINGS": "Configuración",
+            "LAYOUT": "Diseño",
+            "THEME_MODE": "Modo de Tema",
+            "LIGHT": "Claro",
+            "DARK": "Oscuro",
+            "RESET": "Restablecer",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "MAIN": {
+        "WELCOME_B": "Bienvenido de nuevo",
+        "SAAS": "Tablero Skote Saas",
+        "LAYOUTS": "Diseños",
+        "MULTIPLE_APPS": "Aplicaciones Múltiples",
+        "ORDERS": "Pedidos",
+        "FROM_PREVIOUS": "Del período anterior",
+        "REVENUE": "Ingresos",
+        "FROM_P": "Del período anterior",
+        "AVERAGE_PRICE": "Precio Promedio",
+        "ANALYTICS": "Análisis"
+      }
+    }
+  }
+}

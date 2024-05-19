@@ -1,0 +1,103 @@
+<div class="row justify-content-md-center">
+  <div class="col-xl-3">
+    <div class="card overflow-hidden">
+      <div class="bg-soft bg-primary">
+        <div class="row">
+          <div class="col-7">
+            <div class="text-primary p-3">
+              <h5 class="text-primary">
+                {{TRANSLATE_KEY+ 'WELCOME_B' | translate}} {{ userDetail.firstName }}!
+              </h5>
+            </div>
+          </div>
+          <div class="col-5 align-self-end">
+            <img [src]="userDetail.profile?.media?.url" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <div class="card-body pt-0">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="avatar-md profile-user-wid mb-4">
+              <img
+                [src]="userDetail.profile?.media?.url"
+                alt=""
+                class="img-thumbnail rounded-circle" />
+            </div>
+            <h5 class="font-size-15 text-truncate">
+              {{ userDetail.firstName }} {{ userDetail.lastName }}
+            </h5>
+          </div>
+
+          <div class="col-sm-8">
+            <div class="pt-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end card -->
+
+  <div class="col-xl-5">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title mb-4">{{TRANSLATE_KEY+ 'PERSONAL_I' | translate}}</h4>
+
+        <div class="table-responsive">
+          <table class="table table-nowrap mb-0">
+            <tbody>
+              <tr>
+                <th scope="row">{{TRANSLATE_KEY+ 'F_NAME' | translate}}</th>
+                <td>{{ userDetail.firstName }}</td>
+              </tr>
+              <tr>
+                <th scope="row">{{TRANSLATE_KEY+ 'L_NAME' | translate}}</th>
+                <td>{{ userDetail.lastName }}</td>
+              </tr>
+              <tr>
+                <th scope="row">{{TRANSLATE_KEY+ 'EMAIL' | translate}}:</th>
+                <td>
+                  {{ userDetail.email }}
+                  <span class="badge bg-info">{{
+                    userDetail.profile?.emailStatus
+                  }}</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">{{TRANSLATE_KEY+ 'CREATED_AT' | translate}}</th>
+                <td>{{ userDetail.createdAt }}</td>
+              </tr>
+              <tr>
+                <th scope="row">{{TRANSLATE_KEY+ 'CODE' | translate}}</th>
+                <td>{{ userDetail.profile?.code }}</td>
+              </tr>
+              <tr>
+                <th scope="row">{{TRANSLATE_KEY+ 'NICKNAME' | translate}}</th>
+                <td>{{ userDetail.profile?.nickname }}</td>
+              </tr>
+              <tr>
+                <th scope="row">{{TRANSLATE_KEY+ 'PREFERRED_N' | translate}}</th>
+                <td>{{ userDetail.profile?.preferredName }}</td>
+              </tr>
+              <tr *ngFor="let details of userDetail.roles">
+                <th scope="row" *ngIf="details.companyName">Companies :</th>
+                <th scope="row" *ngIf="details.tenantName">
+                  T{{TRANSLATE_KEY+ 'TENANTS' | translate}}
+                </th>
+                <td>
+                  <span class="me-1" *ngIf="details.companyName">
+                    {{ details.companyName }}&nbsp;
+                  </span>
+                  <span class="me-1" *ngIf="details.tenantName">
+                    {{ details.tenantName }}&nbsp;
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end card -->
+</div>

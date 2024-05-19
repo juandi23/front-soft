@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-12">
+    <label>
+      {{ label }}
+    </label>
+  </div>
+  <div class="col-12">
+    <div class="d-flex align-items-center gap-2">
+      <div class="flex-shrink-0">
+        <app-images
+          role="button"
+          (click)="preview()"
+          [src]="media?.url ?? null"
+          [class]="'rounded-circle avatar-sm'"></app-images>
+      </div>
+      <div class="flex-grow-1">
+        <ngx-dropzone
+          style="height: 45px"
+          [multiple]="false"
+          [expandable]="false"
+          accept="image/jpeg,image/jpg,image/png,image/gif"
+          (change)="onUpload($event)">
+          <ngx-dropzone-label>Drag or click to upload</ngx-dropzone-label>
+        </ngx-dropzone>
+      </div>
+    </div>
+  </div>
+</div>

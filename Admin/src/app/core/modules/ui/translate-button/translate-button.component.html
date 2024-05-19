@@ -1,0 +1,15 @@
+<div class="dropdown d-inline-block" ngbDropdown>
+  <button type="button" class="btn header-item" id="page-header-user-dropdown" ngbDropdownToggle>
+    <img *ngIf="flagValue !== undefined" src="{{flagValue}}" alt="Header Language" height="16"> <span
+      class="ms-1 ">{{countryName}}</span>
+    <img *ngIf="flagValue === undefined" src="{{valueSet}}" alt="Header Language" height="16">
+    <span *ngIf="flagValue === undefined" class="ms-1 ">English</span>
+  </button>
+  <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
+    <a href="javascript:void(0);" class="dropdown-item notify-item" *ngFor="let item of listLang"
+      (click)="setLanguage(item.text, item.lang, item.flag)" [ngClass]="{'active': cookieValue === item.lang}">
+      <img src="{{item.flag}}" alt="user-image" class="ms-1" height="12"> <span
+        class="align-middle ms-1">{{item.text}}</span>
+    </a>
+  </div>
+</div>

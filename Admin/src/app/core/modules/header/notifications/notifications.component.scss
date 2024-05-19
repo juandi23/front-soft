@@ -1,0 +1,50 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "src/assets/scss/variables";
+
+.notifications-container {
+  @media (min-width: 400px) {
+    width: 400px;
+  }
+}
+
+.item-notification:hover{
+  text-decoration: none;
+  background: #ecf5ff;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.02,1.02);
+  -moz-transform: scale(1.02,1.02);
+  -ms-transform: scale(1.02,1.02);
+  -o-transform: scale(1.02,1.02);
+  transform: scale(1.02,1.02);
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.hover-mark-read:hover {
+  color: $primary !important;
+}
+
+.text-danger-2 {
+  color: red !important;
+}
+
+.dark-docs {
+  color: rgb(27, 6, 162) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.scrollable-container {
+  position: relative;
+  height: 280px;
+  overflow-x: hidden !important;
+}
+.scrollable-container::-webkit-scrollbar {
+  display: none;
+}

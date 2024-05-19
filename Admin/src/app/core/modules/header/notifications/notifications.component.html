@@ -1,0 +1,124 @@
+<div class="dropdown d-inline-block" ngbDropdown>
+  <button
+    type="button"
+    class="btn header-item noti-icon"
+    id="page-header-notifications-dropdown"
+    ngbDropdownToggle
+  >
+    <i class="bx bx-bell" [ngClass]="{'bx-tada': unreads > 0}"></i>
+    <span *ngIf="unreads > 0" class="badge bg-danger rounded-pill">{{ unreads }}</span>
+  </button>
+  <div
+    class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 notifications-container"
+    ngbDropdownMenu
+    aria-labelledby="page-header-notifications-dropdown"
+  >
+    <div class="p-3">
+      <div class="row align-items-center">
+        <div class="col">
+          <h6 class="m-0">
+            {{ "HEADER.NOTIFICATIONS.TITLE" | translate }}
+          </h6>
+        </div>
+        <div class="col-auto">
+          <select
+            (change)="modeChange($event)"
+            [(ngModel)]="mode"
+            class="custom-select custom-select-sm form-control form-control-sm mx-2">
+            <option value="by-user">By User</option>
+          </select>
+        </div>
+        <div class="col">
+          <input placeholder="search" (input)="searchFunc()" [(ngModel)]="search" class="form-control form-control-sm" type="text">
+        </div>
+      </div>
+    </div>
+    <div class="scrollable-container">
+      <div class="mt-2 mb-3 col-12 d-flex justify-content-center">
+        <a (click)="markAllAsRead()" class="text-decoration-underline cursor-pointer">Mark all as read</a>
+      </div>
+      <div *ngIf="formattedNotifications.length > 0;else empty" class="mb-3">
+        <div *ngFor="let item of formattedNotifications; let first = first">
+          <p class="text-center my-3" [ngClass]="{ 'mt-0': first }">
+            {{
+              item.date === "TODAY" ||
+              item.date === "YESTERDAY" ||
+              item.date === "3 DAYS AGO"
+                ? item.date
+                : (item.date | date: "EEEE MMM dd yyyy")
+            }}
+          </p>
+          <div>
+            <div
+              href="javascript: void(0);"
+              class="text-reset notification-item item-notification my-1 rounded cursor-pointer"
+              *ngFor="let notification of item.belongNotifications"
+            >
+              <div class="d-flex align-items-center">
+                <div class="media-body col-10">
+                  <h6 class="mt-0 mb-1">{{ notification.data.title }} <span *ngIf="notification.data.modelBotId">for {{ notification.data.modelBotName  }} bot</span></h6>
+                  <div class="font-size-12">
+                    <p class="mb-1 mt-1">
+                      <span class="text-primary">{{
+                        notification.data.name
+                      }}</span>
+                      <span *ngIf="notification.data.modelBotId"> By {{
+                        notification.data.userName
+                      }} - </span>
+                      {{ notification.data.content }}
+                    </p>
+                    <p class="mb-0">
+                      <i class="mdi mdi-clock-outline me-2"></i
+                      >{{
+                        notification.data.date | date: "HH:mm a"
+                      }}
+                    </p>
+                    <a class="text-secondary hover-mark-read" (click)="markAsRead(notification.id, notification.read_at)" [ngbTooltip]="notification.read_at ? 'Mark As Unread' : 'Mark As Read'" placement="right"><i class="mdi" [ngClass]="{'mdi-bell-check': !notification.read_at, 'mdi-bell-off': notification.read_at}" style="font-size: 1.4em;"></i></a>
+                  </div>
+                </div>
+                <div class="avatar-sm me-3 col-2">
+                  <span
+                    style="color: rgb(128, 67, 249, 1)" class="avatar-title bg-white rounded-circle font-size-16" [ngClass]="{'text-danger-2': notification.data.dataType == 3, 'dark-docs': notification.data.dataType == 1}"
+                  >
+                    <i style="font-size: 2.2em;" class="bx"
+                    [ngClass]="{
+                      'bxs-file': notification.data.dataType == 1,
+                      'bx-world': notification.data.dataType == 2,
+                      'bxl-youtube': notification.data.dataType == 3
+                    }">
+                    </i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ng-template #empty>
+        <div class="d-flex justify-content-center align-items-center mt-5">
+          <h5>No Data</h5>
+        </div>
+      </ng-template>
+    </div>
+    <div class="p-2 border-top d-grid">
+      <div
+        *ngIf="formattedNotifications?.length"
+        class="row justify-content-between align-items-center mt-2"
+      >
+        <div class="col-auto mx-auto">
+          <ul class="pagination pagination-rounded justify-content-end mb-2">
+            <ngb-pagination
+              [collectionSize]="mainData.total"
+              [(page)]="mainData.current_page"
+              [maxSize]="3"
+              [rotate]="true"
+              [pageSize]="mainData.per_page"
+              (pageChange)="paginate($event)"
+            >
+            </ngb-pagination>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "src/assets/scss/variables";
+
+.topnav {
+  nav.navbar {
+    &.navbar-expand-lg {
+      .navbar-collapse {
+        align-content: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.small-link {
+  margin: 5px 15px;
+}
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.accordion-item-no-toggle .accordion-toggle::after {
+  display: none;
+}

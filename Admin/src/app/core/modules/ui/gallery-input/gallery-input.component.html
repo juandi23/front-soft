@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-12">
+    <label>
+      {{ label }}
+    </label>
+  </div>
+  <div class="col-12">
+    <div class="d-flex align-items-center gap-2">
+      <div class="flex-shrink-0">
+        <app-images
+          role="button"
+          (click)="preview()"
+          [src]="media?.url ?? null"
+          [class]="'rounded-circle avatar-md'"></app-images>
+      </div>
+      <div class="flex-grow-1">
+        <ngx-dropzone
+          [multiple]="false"
+          [expandable]="false"
+          accept="image/jpeg,image/jpg,image/png,image/gif"
+          (change)="onUpload($event)">
+          <ngx-dropzone-label>Drag or click to upload</ngx-dropzone-label>
+        </ngx-dropzone>
+      </div>
+      <a (click)="openModal()" class="btn btn-light mx-2 mx-sm-0">
+        <i class="bx bx-collection"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<ng-template #gallery role="document" let-modal>
+  <app-gallery-modal
+    (close)="closeModal()"
+    (emitter)="onSelect($event)"></app-gallery-modal>
+</ng-template>

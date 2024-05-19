@@ -1,0 +1,795 @@
+<nav
+  class="navbar navbar-expand-lg navigation fixed-top sticky"
+  (window:scroll)="windowScroll()"
+  id="navbar"
+>
+  <div class="container">
+    <a class="navbar-logo" routerLink="/">
+      <img
+        src="assets/images/logos/lazo.png"
+        alt=""
+        height="70"
+        class="logo logo-dark"
+      />
+      <img
+        src="assets/images/logos/lazo.png"
+        alt=""
+        height="70"
+        class="logo logo-light"
+      />
+    </a>
+
+    <button
+      type="button"
+      class="btn btn-sm px-3 font-size-16 d-lg-none header-item"
+      data-toggle="collapse"
+      data-target="#topnav-menu-content"
+      (click)="toggleMenu()"
+    >
+      <i class="fa fa-fw fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="topnav-menu-content">
+      <ul class="navbar-nav ms-auto" id="topnav-menu">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="javascript: void(0);"
+            [ngxScrollTo]="'home'"
+            [ngClass]="{ active: currentSection === 'home' }"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="javascript: void(0);"
+            [ngxScrollTo]="'features'"
+            [ngClass]="{ active: currentSection === 'features' }"
+            >Características</a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/meta/reviews"
+            >Reseñas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/vendor/form"
+            >Proveedores</a
+          >
+        </li>
+        <li class="nav-item" *ngIf="!isLoggedIn">
+          <a
+            class="nav-link"
+            routerLink="/account/auth/wholesale-form"
+            >Mayorista</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="javascript: void(0);"
+            [ngxScrollTo]="'faqs'"
+            [ngClass]="{ active: currentSection === 'faqs' }"
+            >FAQs</a
+          >
+        </li>
+        <app-translate-button> </app-translate-button>
+      </ul>
+
+      <div class="dropdown d-inline-block" ngbDropdown>
+        <button
+          routerLink="/products/cart"
+          type="button"
+          class="btn header-item noti-icon">
+          <i class="bx bx-cart"></i>
+          <!-- <span class="badge bg-danger rounded-pill">0</span> -->
+        </button>
+      </div>
+
+      <div class="d-flex align-items-center ms-3">
+        <div class="d-flex" *ngIf="!isLoggedIn; else accountMenu">
+          <a
+            class="me-4 mt-2 text-decoration-underline"
+            routerLink="/account/auth/signup-2"
+          >
+            Registro
+          </a>
+          <button
+            routerLink="/account/auth/login-2"
+            class="btn btn-light b-width"
+          >
+       Inicio de Sesion
+          </button>
+        </div>
+
+        <ng-template #accountMenu>
+          <app-page-header-user-dropdown
+            [landing]="true"
+          ></app-page-header-user-dropdown>
+        </ng-template>
+      </div>
+      <div class="dropdown d-inline-block" ngbDropdown>
+        <button
+          type="button"
+          class="btn header-item noti-icon"
+          id="page-header-settings-dropdown"
+          ngbDropdownToggle
+        >
+          <i class="bx bx-cog"></i>
+        </button>
+        <div
+          class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+          ngbDropdownMenu
+          aria-labelledby="page-header-notifications-dropdown"
+        >
+          <div class="p-3">
+            <div class="row align-items-center">
+              <div class="col">
+                <h6 class="m-0">Configuración</h6>
+              </div>
+            </div>
+          </div>
+          <app-ngx-simplebar style="position: relative; height: 230px">
+            <div class="px-3">
+              <h6 class="mt-4 mb-3">Theme Mode</h6>
+              <div class="form-check sidebar-setting">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="theme-color"
+                  id="theme-color-light"
+                  [checked]="mode === 'light'"
+                  (change)="changeMode('light')"
+                />
+                <label class="form-check-label" for="theme-color-light"
+                  >Light</label
+                >
+              </div>
+              <div class="form-check sidebar-setting">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="theme-color"
+                  id="theme-color-dark"
+                  [checked]="mode === 'dark'"
+                  (change)="changeMode('dark')"
+                />
+                <label class="form-check-label" for="theme-color-dark"
+                  >Dark</label
+                >
+              </div>
+            </div>
+          </app-ngx-simplebar>
+          <div class="p-2 border-top d-grid">
+            <a
+              class="btn btn-sm btn-link font-size-14 text-center"
+              href="javascript:void(0)"
+            >
+              <i class="mdi mdi-arrow-right-circle me-1"></i>
+              Reset
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<app-banners-list-page class="mt-5 ">
+</app-banners-list-page>
+<div
+  appScrollspy
+  [spiedTags]="['SECTION']"
+  (sectionChange)="onSectionChange($event)"
+>
+  <!-- hero section start -->
+
+  <section class="section bg-ico-hero bg-dark-color justify-content-center" id="home">
+   
+    <div class="bg-overlay"></div>
+    <div class="container">
+
+      <div class="row align-items-center">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="text-white-50 text-center">
+            <p class="font-size-14 text-white">
+              Lorem ipsum dolor sit amet, consectetu
+            </p>
+            <h1 class="text-white fw-semibold mb-3 hero-title">
+              Un lazo contigo y tu negocio
+            </h1>
+            <div>
+              <p class="font-size-14 text-white mt-4 ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                <br>Ut
+                enim ad minim veniam ipsum dolor sit amet
+              </p>
+            </div>
+          
+        
+            <div class="button-items mt-5 d-flex justify-content-center gap-2">
+              <button routerLink="/account/auth/signup-2" class="btn btn-rounded btn-primary mx-1 text-white fw-bold">
+                <span class="ms-2">Lorem Ipsum</span>
+              </button>
+              <button (click)="redirectToExternalAuth('google')" class="btn btn-rounded btn-light bg-white mx-1 fw-bold google-btn">
+                <span class="ms-2 text-black">Lorem Ipsum2</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- <div class="col-lg-5 col-md-8 col-sm-10 ms-lg-auto">
+                    <div class="card overflow-hidden mb-0 mt-5 mt-lg-0">
+                        <div class="card-header text-center">
+                            <h5 class="mb-0">ICO Countdown time</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center">
+
+                                <h5>Time left to Ico :</h5>
+                                <div class="mt-4">
+                                    <div inputDate="December 31, 2022" class="counter-number ico-countdown">
+                                        <div class="coming-box">{{_days}}<span>Days</span>
+                                        </div>
+                                        <div class="coming-box">{{_hours}}<span>Hours</span>
+                                        </div>
+                                        <div class="coming-box">{{_minutes}}<span>Minutes</span>
+                                        </div>
+                                        <div class="coming-box">{{_seconds}}<span>Seconds</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <button type="button" class="btn btn-success w-md">Get Token</button>
+                                </div>
+
+                                <div class="mt-5">
+                                    <h4 class="fw-semibold">1 ETH = 2235 SKT</h4>
+                                    <div class="clearfix mt-4">
+                                        <h5 class="float-end font-size-14">5234.43</h5>
+                                    </div>
+                                    <div class="progress p-1 progress-xl softcap-progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 15%"
+                                            aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-label">15 %</div>
+                                        </div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                            role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                            <div class="progress-label">30 %</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
+  </section>
+  <!-- hero section end -->
+
+
+  <section class="section pt-4 bg-white" id="features">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-12">
+          <div class="text-center mb-5">
+            <h1 class="description-title fw-bold">Un lazo con tu mascota</h1>
+            <h5 class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna.</h5>
+            <a [routerLink]="'products/portal'" class="btn btn-outline-primary mt-3">Ver todos los productos</a>
+          </div>
+        </div>
+      </div>
+      <app-categories-list-page></app-categories-list-page>
+    </div>
+  </section>
+
+
+  <section class="section pt-4 bg-white" id="features">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-12">
+          <div class="text-center mb-5">
+            <h1 class="description-title fw-bold">Un lazo con tu negocio</h1>
+            <h5 class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna.</h5>
+            <button class="btn btn-outline-primary mt-3">Quiero Cotizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section pt-4 bg-white" id="features">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-12">
+          <div class="text-center mb-5">
+            <h1 class="description-title fw-bold">Novedades Lazo</h1>
+            <h5 class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna.</h5>
+            <a [routerLink]="'products/portal'" class="btn btn-outline-primary mt-3">Ver todos los productos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section pt-4 bg-white" id="features">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-12">
+          <div class="text-center mb-5">
+            <h1 class="description-title fw-bold">Porque elegirnos</h1>
+            <h5 class="mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore magna.</h5>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="assets/images/animals/dog2.jpg" alt="">
+          </div>
+          <div class="col-md-6">
+            <div class="col-12 d-flex flex-wrap">
+              <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="p-2 rounded bg-primary text-light">
+                <i class="bx bxs-phone font-size-20"></i>
+                </div>
+              </div>
+              <div class="col-10">
+                <h3>Atencion Personalizada</h3>
+                <p>Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices.</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex flex-wrap">
+              <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="p-2 rounded bg-primary text-light">
+                <i class="mdi mdi-tag-multiple-outline font-size-20"></i>
+                </div>
+              </div>
+              <div class="col-10">
+                <h3>Precios mas bajos del sector</h3>
+                <p>Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices.</p>
+              </div>
+            </div>
+            <div class="col-12 d-flex flex-wrap">
+              <div class="col-md-2 d-flex justify-content-center align-items-center">
+                <div class="p-2 rounded bg-primary text-light">
+                <i class="mdi mdi-map-marker-outline font-size-20"></i>
+                </div>
+              </div>
+              <div class="col-10">
+                <h3>Dos sedes</h3>
+                <p>Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="section pt-4 bg-white" id="features">
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-lg-12">
+          <div class="text-center mb-5">
+            <h1 class="description-title fw-bold">Testimonios</h1>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-lg-12">
+            <owl-carousel-o
+              [options]="carouselOption"
+              class="events navs-carousel"
+            >
+              <ng-template carouselSlide *ngFor="let item of testimonials">
+                <div class="item">
+                  <div class="col-12 p-2 rounded">
+                    <div class="col-12 d-flex align-items-center">
+                      <div class="col-2 me-2">
+                        <img class="img-fluid" [src]="item.media" alt="">
+                      </div>
+                      <div class="col-8">
+                        <h5>{{item.name}}</h5>
+                        <p>{{item.place}}</p>
+                      </div>
+                      <div class="col-2 d-flex justify-content-center">
+                        <p>{{item.valoration}}</p>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p>{{item.content}}</p>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </owl-carousel-o>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Faqs start -->
+  <section class="section" id="faqs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center mb-5">
+            <div class="small-title">FAQs</div>
+            <h4>Frequently asked questions</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="vertical-nav">
+            <div class="row">
+              <div class="col-lg-2 col-sm-4">
+                <ul
+                  ngbNav
+                  #nav="ngbNav"
+                  [activeId]="1"
+                  class="nav-pills flex-column"
+                >
+                  <li [ngbNavItem]="1">
+                    <a ngbNavLink>
+                      <i class="bx bx-help-circle nav-icon d-block mb-2"></i>
+                      <p class="fw-bold mb-0">General Questions</p>
+                    </a>
+                    <ng-template ngbNavContent>
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title mb-4">General Questions</h4>
+
+                          <ngb-accordion
+                            [closeOthers]="true"
+                            activeIds="static-1"
+                            class="custom-accordion"
+                          >
+                            <ngb-panel id="static-1">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>What is Lazo ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    Robin is a virtual assistant designed and
+                                    trained to follow an instruction in a prompt
+                                    and provide a detailed response. Robin
+                                    offers information in a clear and
+                                    understandable way to individuals, teams or
+                                    companies from different sectors. It is a
+                                    chat platform that allows you to provide
+                                    detailed information on specialized topics,
+                                    complex processes, content, data and
+                                    specific information.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                            <ngb-panel id="static-2">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>Why do we use it ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    Through this exchange of information, Robin
+                                    will become an expert assistant in the
+                                    subject area of your choice, providing
+                                    advice and specialized knowledge in an
+                                    accessible way at any time.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                            <ngb-panel id="static-3">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>How is it possible ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    Robin uses NLP techniques to understand and
+                                    process human language. This allows you to
+                                    analyze the instructions and questions
+                                    provided by users and generate coherent and
+                                    understandable responses.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                          </ngb-accordion>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </li>
+                  <!-- <li [ngbNavItem]="2">
+                    <a ngbNavLink>
+                      <i class="bx bx-receipt nav-icon d-block mb-2"></i>
+                      <p class="fw-bold mb-0">Token sale</p>
+                    </a>
+                    <ng-template ngbNavContent>
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title mb-4">Token sale</h4>
+
+                          <ngb-accordion
+                            [closeOthers]="true"
+                            activeIds="static-2"
+                            class="custom-accordion"
+                          >
+                            <ngb-panel id="static-1">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>Why do we use it ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    If several languages coalesce, the grammar
+                                    of the resulting language is more simple and
+                                    regular than that of the individual
+                                    languages. The new common language will be
+                                    more simple and regular than the existing
+                                    European languages.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                            <ngb-panel id="static-2">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>What is Lorem Ipsum ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    Everyone realizes why a new common language
+                                    would be desirable: one could refuse to pay
+                                    expensive translators. To achieve this, it
+                                    would be necessary to have uniform grammar,
+                                    pronunciation and more common words.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+
+                            <ngb-panel id="static-3">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>Where can I get some ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    To an English person, it will seem like
+                                    simplified English, as a skeptical Cambridge
+                                    friend of mine told me what Occidental is.
+                                    The European languages are members of the
+                                    same family. Their separate existence is a
+                                    myth.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                            <ngb-panel id="static-4">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>Where does it come from ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    It will be as simple as Occidental; in fact,
+                                    it will be Occidental. To an English person,
+                                    it will seem like simplified English, as a
+                                    skeptical Cambridge friend of mine told me
+                                    what Occidental.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                          </ngb-accordion>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </li>
+                  <li [ngbNavItem]="3">
+                    <a ngbNavLink>
+                      <i class="bx bx-timer d-block nav-icon mb-2"></i>
+                      <p class="fw-bold mb-0">Roadmap</p>
+                    </a>
+                    <ng-template ngbNavContent>
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title mb-4">Roadmap</h4>
+
+                          <ngb-accordion
+                            [closeOthers]="true"
+                            activeIds="static-1"
+                            class="custom-accordion"
+                          >
+                            <ngb-panel id="static-1">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>Where can I get some ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    To an English person, it will seem like
+                                    simplified English, as a skeptical Cambridge
+                                    friend of mine told me what Occidental is.
+                                    The European languages are members of the
+                                    same family. Their separate existence is a
+                                    myth.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                            <ngb-panel id="static-2">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>What is Lorem Ipsum ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    Everyone realizes why a new common language
+                                    would be desirable: one could refuse to pay
+                                    expensive translators. To achieve this, it
+                                    would be necessary to have uniform grammar,
+                                    pronunciation and more common words.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                            <ngb-panel id="static-3">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>Why do we use it ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    If several languages coalesce, the grammar
+                                    of the resulting language is more simple and
+                                    regular than that of the individual
+                                    languages. The new common language will be
+                                    more simple and regular than the existing
+                                    European languages.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                            <ngb-panel id="static-4">
+                              <ng-template ngbPanelTitle class="accordion-list">
+                                <div>Where does it come from ?</div>
+                              </ng-template>
+                              <ng-template ngbPanelContent>
+                                <div class="card-body p-0">
+                                  <p class="mb-0">
+                                    It will be as simple as Occidental; in fact,
+                                    it will be Occidental. To an English person,
+                                    it will seem like simplified English, as a
+                                    skeptical Cambridge friend of mine told me
+                                    what Occidental.
+                                  </p>
+                                </div>
+                              </ng-template>
+                            </ngb-panel>
+                          </ngb-accordion>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </li> -->
+                </ul>
+              </div>
+              <div class="col-lg-10">
+                <div [ngbNavOutlet]="nav"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Faqs end -->
+
+  <!-- Footer start -->
+  <footer class="landing-footer footer-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <div class="mb-4 mb-lg-0">
+            <h5 class="mb-3 footer-list-title">Company</h5>
+            <ul class="list-unstyled footer-list-menu">
+              <li>
+                <a class="cursor-pointer" [ngxScrollTo]="'features'"
+                  >Features</a
+                >
+              </li>
+              <li><a class="cursor-pointer" [ngxScrollTo]="'faqs'">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="mb-4 mb-lg-0">
+            <h5 class="mb-3 footer-list-title">Resources</h5>
+            <ul class="list-unstyled footer-list-menu">
+              <li><a href="/#/meta/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/#/meta/terms-use">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="mb-4 mb-lg-0">
+            <h5 class="mb-3 footer-list-title">Links</h5>
+            <ul class="list-unstyled footer-list-menu">
+              <li>
+                <a class="cursor-pointer" [ngxScrollTo]="'roadmap'">Roadmap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="mb-4 mb-lg-0">
+            <h5 class="mb-3 footer-list-title">Latest News</h5>
+            <div class="blog-post">
+              <a href="javascript: void(0);" class="post">
+                <div class="badge badge-soft-success font-size-11 mb-3">
+                  Lazo Deploy
+                </div>
+                <h5 class="post-title">
+                  Lazo deployed its services to the public
+                </h5>
+                <p class="mb-0">
+                  <i class="bx bx-calendar me-1"></i> Feb, 2024
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end row -->
+
+      <hr class="footer-border my-5" />
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="mb-4">
+            <img src="assets/images/logos/lazo.png" alt="" height="70" />
+          </div>
+
+          <p class="mb-2">{{ year }} © Lazo.</p>
+          <p>
+            It will be as simple as occidental in fact, it will be to an english
+            person, it will seem like simplified English, as a skeptical
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+  </footer>
+  <!-- Footer end -->
+</div>

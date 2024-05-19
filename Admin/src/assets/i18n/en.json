@@ -1,0 +1,1672 @@
+{
+  "HEADER": {
+    "SEARCH": "Search...",
+    "MEGA_MENU": "Mega Menu",
+    "NOTIFICATIONS": {
+      "TITLE": "Notifications",
+      "VIEW_ALL": "View All",
+      "LOAD_MORE": "View More..",
+      "FIRST": {
+        "TITLE": "Your order is placed",
+        "TEXT": "If several languages coalesce the grammar",
+        "TIME": "3 min ago"
+      },
+      "SECOND": {
+        "TITLE": "James Lemire",
+        "TEXT": "It will seem like simplified English.",
+        "TIME": "1 hours ago"
+      },
+      "THIRD": {
+        "TITLE": "Your item is shipped",
+        "TEXT": "If several languages coalesce the grammar",
+        "TIME": "3 min ago"
+      },
+      "FOUR": {
+        "TITLE": "Salena Layfield",
+        "TEXT": "As a skeptical Cambridge friend of mine occidental.",
+        "TIME": "1 hours ago"
+      }
+    },
+    "SETTINGS": "Settings",
+    "TENANTS": "Tenants",
+    "COMPANIES": "Companies",
+    "ACCOUNTS": "Accounts",
+    "USERS": "Users",
+    "UI": {
+      "TITLE": "UI Components",
+      "LIGHTBOX": "LightBox",
+      "RANGE_SLIDER": "Range Slider",
+      "SWEET_ALERT": "Sweet Alert",
+      "RATING": "Rating",
+      "FORMS": "Forms",
+      "TABLES": "Tables",
+      "CHARTS": "Charts"
+    },
+    "APPLICATIONS": {
+      "TITLE": "Applications",
+      "ECOMMERCE": "Ecommerce",
+      "CALENDAR": "Calendar",
+      "EMAIL": "Email",
+      "PROJECTS": "Projects",
+      "TASKS": "Tasks",
+      "CONTACTS": "Contacts"
+    },
+    "EXTRA_PAGES": {
+      "TITLE": "Extra Pages",
+      "LIGHT_SIDEBAR": "Light Sidebar",
+      "COMPACT_SIDEBAR": "Compact Sidebar",
+      "HORIZONTAL_LAYOUT": "Horizontal layout",
+      "MAINTENANCE": "Maintenance",
+      "COMING SOON": "Coming Soon",
+      "TIMELINE": "Timeline",
+      "FAQ": "FAQs"
+    },
+    "LOGIN": {
+      "PROFILE": "Profile",
+      "MY_WALLET": "My Wallet",
+      "SETTINGS": "Settings",
+      "LOCK_SCREEN": "Lock screen",
+      "LOGOUT": "Logout"
+    }
+  },
+  "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menu"
+    },
+    "DASHBOARDS": {
+      "TEXT": "Dashboards",
+      "BADGE": "04",
+      "LIST": {
+        "ADMIN": "Admin",
+        "SAAS": "Saas",
+        "CRYPTO": "Crypto",
+        "BLOG": "Blog",
+        "JOBS": "Jobs"
+      }
+    },
+    "LAYOUTS": {
+      "TEXT": "Layouts",
+      "LIST": {
+        "HORIZONTAL": "Horizontal",
+        "LIGHTSIDEBAR": "Light Sidebar",
+        "COMPACTSIDEBAR": "Compact Sidebar",
+        "ICONSIDEBAR": "Icons Sidebar",
+        "BOXED": "Boxed Layout",
+        "COLOREDSIDEBAR": "Colored Sidebar",
+        "VERTICAL": "Vertical",
+        "LIGHTTOPBAR": "Light Topbar",
+        "COLOREDHEADER": "Colored Header",
+        "SCROLLABLE": "Scrollable"
+      }
+    },
+    "APPS": {
+      "TEXT": "Apps"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendar"
+    },
+    "CHAT": {
+      "TEXT": "Chat",
+      "BADGE": "New"
+    },
+    "FILEMANAGER": {
+      "TEXT": "File Manager",
+      "BADGE": "New"
+    },
+    "ECOMMERCE": {
+      "TEXT": "Ecommerce",
+      "LIST": {
+        "PRODUCTS": "Products",
+        "PRODUCTDETAIL": "Product Detail",
+        "ORDERS": "Orders",
+        "CUSTOMERS": "Customers",
+        "CART": "Cart",
+        "CHECKOUT": "Checkout",
+        "SHOPS": "Shops",
+        "ADDPRODUCT": "Add Product"
+      }
+    },
+    "CRYPTO": {
+      "TEXT": "Crypto",
+      "LIST": {
+        "WALLET": "Wallet",
+        "BUY/SELL": "Buy/Sell",
+        "EXCHANGE": "Exchange",
+        "LENDING": "Lending",
+        "ORDERS": "Orders",
+        "KYCAPPLICATION": "KYC Application",
+        "ICOLANDING": "ICO Landing"
+      }
+    },
+    "EMAIL": {
+      "TEXT": "Email",
+      "LIST": {
+        "INBOX": "Inbox",
+        "READEMAIL": "Read Email",
+        "TEMPLATE": {
+          "BADGE": "New",
+          "TEXT": "Template",
+          "LIST": {
+            "BASIC": "Basic Action",
+            "ALERT": "Alert Email",
+            "BILLING": "Billing Email"
+          }
+        }
+      }
+    },
+    "INVOICES": {
+      "TEXT": "Invoices",
+      "LIST": {
+        "INVOICELIST": "Invoice List",
+        "INVOICEDETAIL": "Invoice Detail"
+      }
+    },
+    "PROJECTS": {
+      "TEXT": "Projects",
+      "LIST": {
+        "GRID": "Projects Grid",
+        "PROJECTLIST": "Projects List",
+        "OVERVIEW": "Project Overview",
+        "CREATE": "Create New"
+      }
+    },
+    "TASKS": {
+      "TEXT": "Tasks",
+      "LIST": {
+        "TASKLIST": "Task List",
+        "KANBAN": "Kanban Board",
+        "CREATETASK": "Create Task"
+      }
+    },
+    "CONTACTS": {
+      "TEXT": "Contacts",
+      "LIST": {
+        "USERGRID": "User Grid",
+        "USERLIST": "User List",
+        "PROFILE": "Profile"
+      }
+    },
+    "BLOG": {
+      "TEXT": "Blog",
+      "BADGE": "New",
+      "LIST": {
+        "BLOGLIST": "Blog List",
+        "BLOGGRID": "Blog Grid",
+        "DETAIL": "Blog Details"
+      }
+    },
+    "JOBS": {
+      "TEXT": "Jobs",
+      "BADGE": "New",
+      "LIST": {
+        "JOBLIST": "Job List",
+        "JOBGRID": "Job Grid",
+        "APPLYJOB": "Apply Job",
+        "JOBDETAILS": "Job Details",
+        "JOBCATEGORIES": "Jobs Categories",
+        "CANDIDATE": {
+          "TEXT": "Candidate",
+          "LIST": {
+            "LIST": "List",
+            "OVERVIEW": "Overview"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "TEXT": "Pages"
+    },
+    "AUTHENTICATION": {
+      "TEXT": "Authentication",
+      "BADGE": "New",
+      "LIST": {
+        "LOGIN": "Login",
+        "LOGIN2": "Login 2",
+        "REGISTER": "Register",
+        "REGISTER2": "Register 2",
+        "RECOVERPWD": "Recover Password",
+        "RECOVERPWD2": "Recover Password 2",
+        "LOCKSCREEN": "Lock screen",
+        "LOCKSCREEN2": "Lock screen 2",
+        "CONFIRMMAIL": "Confirm Mail",
+        "CONFIRMMAIL2": "Confirm Mail 2",
+        "EMAILVERIFICATION": "Email verification",
+        "EMAILVERIFICATION2": "Email verification 2",
+        "TWOSTEPVERIFICATION": "Two step verification",
+        "TWOSTEPVERIFICATION2": "Two step verification 2"
+      }
+    },
+    "UTILITY": {
+      "TEXT": "Utility",
+      "LIST": {
+        "STARTER": "Starter Page",
+        "MAINTENANCE": "Maintenance",
+        "TIMELINE": "Timeline",
+        "FAQS": "FAQs",
+        "PRICING": "Pricing",
+        "ERROR404": "Error 404",
+        "ERROR500": "Error 500"
+      }
+    },
+    "COMPONENTS": {
+      "TEXT": "Components"
+    },
+    "UIELEMENTS": {
+      "TEXT": "UI Elements",
+      "LIST": {
+        "ALERTS": "Alerts",
+        "BUTTONS": "Buttons",
+        "CARDS": "Cards",
+        "CAROUSEL": "Carousel",
+        "DROPDOWNS": "Dropdowns",
+        "GRID": "Grid",
+        "IMAGES": "Images",
+        "LIGHTBOX": "Lightbox",
+        "MODALS": "Modals",
+        "RANGESLIDER": "Range Slider",
+        "PROGRESSBAR": "Progress Bars",
+        "PLACEHOLDER": "Placeholder",
+        "SWEETALERT": "Sweet Alert",
+        "TABS": "Tabs & Accordions",
+        "TYPOGRAPHY": "Typography",
+        "TOASTS": "Toasts",
+        "VIDEO": "Video",
+        "GENERAL": "General",
+        "COLORS": "Colors",
+        "RATING": "Rating",
+        "NOTIFICATION": "Notification",
+        "UTILITIES": "Utilities",
+        "CROPPER": "Image Cropper"
+      }
+    },
+    "FORMS": {
+      "TEXT": "Forms",
+      "BADGE": "09",
+      "LIST": {
+        "ELEMENTS": "Form Elements",
+        "VALIDATION": "Form Validation",
+        "ADVANCED": "Form Advanced",
+        "EDITOR": "Form Editor",
+        "FILEUPLOAD": "Form File Upload",
+        "REPEATER": "Form Repeater",
+        "WIZARD": "Form Wizard",
+        "MASK": "Form Mask",
+        "LAYOUTS": "Form Layouts"
+      }
+    },
+    "TABLES": {
+      "TEXT": "Tables",
+      "LIST": {
+        "BASIC": "Basic Tables",
+        "DataTables": "Data Tables",
+        "EditTableTables": "Editable Table"
+      }
+    },
+    "CHARTS": {
+      "TEXT": "Charts",
+      "LIST": {
+        "APEX": "Apex Chart",
+        "CHARTJS": "Chartjs Chart",
+        "CHARTIST": "Chartist Chart",
+        "ECHART": "E Chart"
+      }
+    },
+    "ICONS": {
+      "TEXT": "Icons",
+      "LIST": {
+        "BOXICONS": "Boxicons",
+        "MATERIALDESIGN": "Material Design",
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Font Awesome"
+      }
+    },
+    "MAPS": {
+      "TEXT": "Maps",
+      "LIST": {
+        "GOOGLEMAP": "Google Maps",
+        "LEAFLETMAP": "Leaflet Maps"
+      }
+    },
+    "MULTILEVEL": {
+      "TEXT": "Multi Level",
+      "LIST": {
+        "LEVEL1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "LEVEL2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+  },
+  "MODEL_BOTS": {
+    "MODULES": {
+      "MAIN": {
+        "CHAT": {
+          "RECENT": "Recent",
+          "NEW_CHAT": "New Chat",
+          "NEW": "New",
+          "START_CONVERSATION": "Start a conversation with Lazo!",
+          "UPLOAD_FILES": "This BOT does not have uploaded files yet",
+          "COPY": "Copy",
+          "DELETE": "Delete",
+          "SEARCH_CHAT": "Search in chat",
+          "RESPONSE": "Response",
+          "NO_AVALIBLE_PDF": "No avalible, The Source is not a PDF File",
+          "MATCHES": "Matches",
+          "ORDERBY": "Order by",
+          "DATE": "Date",
+          "YOU": "You",
+          "PLACEHOLDER.RECENT": "Search all conversations",
+          "NO_CONTENT_YET": "No content yet",
+          "ASK_ROBIN": "Ask Lazo ...",
+          "ANSWER_BASED_ON": "Answer based on ",
+          "SHARECHAT": "Shared Chat"
+        },
+        "UPLOAD_MODAL": {
+          "ADD_SOURCE": "Add Source",
+          "ADD_CONNECTORS": "Add connectors to shape your knowledge base.",
+          "UPLOAD_INSTRUCTIONS": "Drop file here or click to upload",
+          "UPLOAD_LIMIT": "The file upload limit is up to 20MB per file. Please note that only the next formats are supported.",
+          "DOC": "DOC, DOCX, RTF, DOT, DOTX",
+          "XLS": "XLS, XLSX, XLSM",
+          "PPT": "PPT, PPTX, PPS, PPSX",
+          "SAVE": "Save",
+          "CANCEL": "Cancel",
+          "INSERT_URL": "Insert  Web URL",
+          "DEPP_LEVEL": "Deep Level",
+          "REFERENCE_NAME": "Reference Name",
+          "YOUTUBE_URL": "Insert Youtube URL",
+          "NAME": "Name"
+        },
+        "MODAL": {
+          "RESPONSE_VALORATION": "Response Valoration",
+          "SELECT_VALORATION": "Select a valoration",
+          "GOOD": "Good",
+          "BAD": "Bad",
+          "WRITE_FEEDBACK": "Write your feedback",
+          "SAVE": "Save"
+        },
+        "NEW": {
+          "NEW_CHAT": "New Chat",
+          "SELECT_MODE": "Please select the mode of the new chat",
+          "ANSWER_BASED_INFORMATION": "Anwers Based On The Uploaded Information",
+          "ANSWER_BASED_INTERNET": "Answers Based On The Internet knowledge",
+          "DONE": "Done"
+        }
+      },
+      "UPLOADS": {
+        "UPLOAD": {
+          "WELCOME_BACK": "Welcome back",
+          "UPLOAD": "Upload",
+          "ADD_YOUTUBE": " Add Youtube Video URL",
+          "DROPBOX": "Dropbox",
+          "SHARED": "Shared",
+          "STARRED": "Starred",
+          "TRASH": "Trash",
+          "SETTING": "Setting",
+          "DROP_FILE_CLICK": "Drop file here or click to upload",
+          "RECENT_FILES": "Recent Files",
+          "SEARCHFOR": "Search For ...",
+          "NAME": "Name",
+          "DATE_MODIFIED": "Date Modified",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "UPGRADE_FEATURES": "Upgrade Features",
+          "CUMSOCCIIS": "Cum sociis natoque penatibus et.",
+          "UPGRADE": "Upgrade",
+          "PREVIEW_NOT": "Preview not available",
+          "CLOSE": "Close",
+          "USED": "  used",
+          "STORAGE": "Storage",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "SIZE": "Size",
+          "CANCEL": "Cancel",
+          "SAVE": "Save",
+          "READY": "Ready",
+          "INVALID_URL": "Invalid URL",
+          "VIEW_PROFILE": "View Profile"
+        },
+        "YOUTUBE_MODAL": {
+          "SEARCHFOR": "Search For ...",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "ACTIONS": "Actions",
+          "TRANSCRIPTION": "Transcription",
+          "LANGUAGE": "Language",
+          "DATE": "Date"
+        },
+        "MODAL": {
+          "YOU_SELECTED_VIDEO": "You just selected a video",
+          "PLASE_SELECT": "Please select a Language",
+          "ENGLISH": "English",
+          "SPANISH": "Spanish",
+          "SAVE": "Save"
+        }
+      },
+      "DATA-SET": {
+        "EDIT": {
+          "DATA_SET": "Web Url information",
+          "FILL_ALL": "Fill all information for the the web url.",
+          "MODEL_BOT": "Model Bot",
+          "MODEL_BOT_VALID": "Model Bot must be valid",
+          "SET_NAME": "Web Url Name",
+          "NAME_VALID": "Name must be valid",
+          "BASE_VALID": "Base Url must be valid",
+          "DEEP_LEVEL": "Deep Level",
+          "DEPP_VALID": "Deep Level must be valid (Max 255)",
+          "FORBIDDEN": "Forbidden Urls Added",
+          "EXAMPLE": "Example",
+          "SAVE": "Save"
+        },
+        "FORM": {
+          "DETAILS": "Details"
+        },
+        "LIST": {
+          "SEARCH": "Search for ...",
+          "NAME": "Name",
+          "DEEP_LEVEL": "Deep Level",
+          "DELETE_DATA": "Delete Data Set",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "EDIT": "Edit"
+        }
+      },
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Model Bot Portal",
+            "SETTINGS": "Settings",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Theme Mode",
+            "LIGHT": "Light",
+            "DARK": "Dark",
+            "RESET": "Reset",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Model Bot Portal",
+            "SETTINGS": "Settings",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Theme Mode",
+            "LIGHT": "Light",
+            "DARK": "Dark",
+            "RESET": "Reset",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      },
+      "TUNNINGS": {
+        "PAGES": {
+          "FIND_TUNNING": {
+            "UPLOAD_FILE": "Upload File",
+            "SELECT_FILE": "  Select the file you want to upload for fine-tuning",
+            "DROP": "Drop file here or click to upload",
+            "FILE_FINE_TUNNING": "File for fine-tuning",
+            "THIS_FILE": "This file will help improve the model's learning. Please provide relevant data for fine-tuning",
+            "JSON_EDIT": "JSON Edit",
+            "SAVE": "Save"
+          }
+        }
+      },
+      "CRON-JOBS": {
+        "COMPONENTS": {
+          "EDIT-FORM": {
+            "CRON_JOB_INFORMATION": "Cron Job information",
+            "FILL_ALL_INFORMATION_FOR_CRON_JOB": "Fill all information for the Cron Job.",
+            "QUERY_MUST_BE_VALID": "Query must be valid",
+            "QUERY": "Query",
+            "NEWS": "News",
+            "GENERATE_POSSIBLE_NEWS_BASED_ON_THE_NEXT_INFORMATION": "Generate possible news based on the next information",
+            "PROVIDE_A_SUMMARY_BASED_ON_THE_NEXT_INFORMATION": "Provide a summary based on the next information",
+            "SUMMARY": "Summary",
+            "QUESTIONNAIRE": "Questionnaire",
+            "GENERATE_QUESTIONS_BASED_ON_THE_NEXT_INFORMATION": "Generate questions based on the next information",
+            "ANALYSIS": "Analysis",
+            "CREATE_AN_ARTICLE_BASED_ON_THE_NEXT_INFORMATION": "Create an article based on the next information",
+            "SYSTEM_PROMPT": "system prompt",
+            "DAILY": "Daily",
+            "WEEKLY": "Weekly",
+            "MONTHLY": "Monthly",
+            "IF_YOU_ONLY_SELECT_A_DATE_TIME_THE_FREQUENCY_WILL_BE_DAILY": "If you only select a 'Date Time' the frequency will be daily",
+            "DATE_TIME": "Date Time",
+            "TIME_MUST_BE_VALID": "Time must be valid",
+            "WEEKLY_CHOOSE_THE_WEEK_DAY": "Weekly? Choose the week day",
+            "WEEK_DAY_MUST_BE_VALID": "Week day must be valid",
+            "MONTHLY_CHOOSE_THE_MONTH_DAY": "Monthly? Choose the month day",
+            "MONTH_DAY_SHOULD_BE_VALID": "Month day should be valid",
+            "DEPTH_SEARCH": "Depth Search",
+            "URLS_MAX_5": "Urls (Max 5)",
+            "URLS_MUST_BE_VALID": "Urls must be valid",
+            "ADD": "Add",
+            "URLS_ADDED": "Urls Added",
+            "EMAILS_MAX_10": "Emails (Max 10)",
+            "EMAILS_MUST_BE_VALID": "Emails must be valid",
+            "SAVE": "Save",
+            "P_CRON_JOB_NAME": "Cron Job Name",
+            "P_ANY_QUESTION": "Any Question About the Web Urls",
+            "P_SYSTEM_PROM": "Enter system Prom for Response characterization (role or personality)",
+            "HOUR": "Hour",
+            "EMAIL": "Email"
+          }
+        },
+        "PAGES": {
+          "FORM-PAGE": {
+            "DETAILS": "Details"
+          },
+          "LIST-PAGE": {
+            "SEARCH": "Search for ...",
+            "NAME": "Name",
+            "QUERY": "Query",
+            "SYSTEM_PROMPT": "System Prompt",
+            "FRECUENCY": "Frecuency",
+            "TIME": "Time",
+            "ACTIONS": "Actions",
+            "GO_TO_PORTAL": "Go to Portal",
+            "EDIT": "Edit",
+            "SHOW": "Show",
+            "ENTRIES": "entries",
+            "SHOWING": "Showing",
+            "TO": "to",
+            "OF": "of",
+            "DAILY": "Daily ",
+            "WEEKLY": "Weekly at",
+            "MONTHLY": "Monthly at"
+          },
+          "QUERIES-LIST": {
+            "SEARCH": "Search for ...",
+            "NAME": "Name",
+            "QUERY": "Query",
+            "SYSTEM_PROMPT": "System Prompt",
+            "FRECUENCY": "Frecuency",
+            "TIME": "Time",
+            "ACTIONS": "Actions",
+            "GO_TO_PORTAL": "Go to Portal",
+            "EDIT": "Edit",
+            "SHOW": "Show",
+            "ENTRIES": "entries",
+            "SHOWING": "Showing",
+            "TO": "to",
+            "OF": "of",
+            "DAILY": "Daily ",
+            "WEEKLY": "Weekly at",
+            "MONTHLY": "Monthly at"
+          }
+        }
+      }
+    }
+  },
+  "TENANTS": {
+    "MODULES": {
+      "COMPANIES": {
+        "EDIT-FORM": {
+          "COMPANY_INFORMATION": "Firmeninformation",
+          "FILL_ALL": "Füllen Sie alle Informationen aus, um das Unternehmen zu aktualisieren.",
+          "COMPANY_NAME": "Company",
+          "COMPANY_NAME_R": "Company Name is required",
+          "COMPANY_NAME_V": "Company Name must be valid",
+          "SAVE": "Speichern",
+          "NAME_V": "Name must valid"
+        },
+        "PAGES": {
+          "FORM-PAGE": {
+            "DETAILS": "Details"
+          },
+          "LIST-PAGE": {
+            "SEARCH_FOR": "Suche nach ...",
+            "NAME": "Name",
+            "COMPANY_MODULES": "Firmenmodule",
+            "ACTIONS": "Aktionen",
+            "GO_TO_PORTAL": "Zum Portal gehen",
+            "EDIT": "Bearbeiten",
+            "SHOW": "Anzeigen",
+            "ENTRIES": "Einträge",
+            "SHOWING": "Zeigt",
+            "TO": "bis",
+            "OF": "von"
+          }
+        }
+      },
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Mieterportal",
+            "SETTINGS": "Einstellungen",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Themenmodus",
+            "LIGHT": "Hell",
+            "DARK": "Dunkel",
+            "RESET": "Zurücksetzen",
+            "VERTICAL": "Vertikal",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Mieterportal",
+            "SETTINGS": "Einstellungen",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Themenmodus",
+            "LIGHT": "Hell",
+            "DARK": "Dunkel",
+            "RESET": "Zurücksetzen",
+            "VERTICAL": "Vertikal",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "MAIN": {
+        "WELCOME": "Willkommen im Skote-Dashboard",
+        "UI": "UI / UX-Designer",
+        "TOTAL": "Gesamtprojekte",
+        "PROJECTS": "Projekte",
+        "CLIENTS": "Kunden",
+        "SETTING": "Einstellung",
+        "ACTION": "Aktion",
+        "ANOTHER": "Eine andere Aktion",
+        "SOMETHING": "Etwas anderes",
+        "WELCOME_BACK": "Willkommen zurück!",
+        "STOKE": "Skote Saas-Dashboard",
+        "LAYOUT": "Layouts",
+        "MULTIPLE_APPS": "Mehrere Apps",
+        "ORDERS": "Bestellungen",
+        "FROM_PREVIOUS": "Von vorherigem Zeitraum",
+        "REVENUE": "Einnahmen",
+        "AVERAGE_PRICE": "Durchschnittspreis",
+        "ANALYTICS": "Analytik"
+      }
+    }
+  },
+  "WEB-SITE": {
+    "PAGES": {
+      "HOME": {
+        "HOME": "Home",
+        "ABOUT": "About ",
+        "FEATURES": "Features",
+        "ROADMAP": "Roadmap",
+        "TEAM": "Team",
+        "NEWS": "News",
+        "FAQS": "FAQs",
+        "LOGIN": "Login",
+        "REGISTER": "Register",
+        "SETTINGS": "Settings",
+        "THEME_MODE": "Theme Mode",
+        "LIGHT": "Light",
+        "DARK": "Dark",
+        "RESET": "Reset",
+        "HELLO": "Hello i'm Lazo Your assisstant",
+        "WILL_BE": "It will be as simple as occidental in fact to an English person, it will seem like simplified as a skeptical Cambridge",
+        "REQUEST_DEMO": "Request Demo",
+        "HOW_IT_WORK": "How it work",
+        "BITCOIN": "Bitcoin",
+        "ETHEREUM": "Ethereum",
+        "LITECOIN": "Litecoin",
+        "ABOUT_US": "About Us",
+        "WHAT_ICO_TOKEN": "What is ICO Token",
+        "BEST_ICO": "Best ICO for your cryptocurrency business",
+        "SEVERAL_LANGUAGES": "If several languages coalesce, the grammar of the resulting that of the individual new common language will be more simple and regular than the existing.",
+        "IT_WOULD_BE_PRONUNCIATION": "It would be necessary to have uniform pronunciation.",
+        "READ_MORE": "Read More",
+        "HOW_WORK": "How it work",
+        "INVEST_AMOUNT": "Invest Amount",
+        "USERS": "Users",
+        "LENDING": "Lending",
+        "VERO_ACCUSAMUS": "At vero eos et accusamus et iusto blanditiis",
+        "LEARN_MORE": "Learn More",
+        "QUIS_AUTEM": "Quis autem vel eum iure reprehenderit",
+        "KEY_FEATURES": "Key features of profuct",
+        "IF_SEVERAL_LANGUAGES": "If several languages coalesce, the grammar of the resulting language is\n more \n simple and regular than that of the individual will be more simple and regular than the existing.",
+        "DONEC_PEDE": "Donec pede justo vel \n aliquet",
+        "WALLET": "Wallet",
+        "IT_WILL_BE_OCCIDENTAL": "It will be as simple as Occidental; in fact, it will be Occidental. To an \n English person, it will seem like simplified English, as a skeptical Cambridge friend.",
+        "DONEC_PEDE_JUSTO": "Donec pede justo vel ",
+        "AENEAN": "Aenean et nisl sagittis",
+        "TIMELINE": "Timeline",
+        "OUR_ROADMAP": "Our Roadmap",
+        "DECEMBER": "December",
+        "ICO_IDEA": "ICO  Plataform Idea",
+        "IT_WILL_AS_CAMBRIDGE": "It will be as simple as occidental in fact it will be \n Cambridge",
+        "JANUARY": "January"
+      },
+      "TERMS-USE": {
+        "TERMS_USE": "Term Use",
+        "UPDATED_DATE": "Updated: November 24, 2023",
+        "TERMS_OF_USE": "These Terms of Use apply to the use of Lazo's services along with any associated software application and website (collectively, the 'Services'). These Terms form an agreement between you and Lazo and include our important provisions for resolving disputes through arbitration. By using our Services, you agree to these Terms.",
+        "RESIDE_NOTICE": "If you reside in the European Economic Area, Switzerland, or the United Kingdom, your use of the Services is governed by these terms.",
+        "COMMERCIAL_TERMS": "Our Commercial Terms govern the use of Lazo, our APIs, and other services for businesses and developers.",
+        "PRIVACY_POLICY_NOTICE": "Our Privacy Policy explains how we collect and use personal information. Although it is not part of these Terms, it is an important document that you should read.",
+        "WHO_WE_ARE": "Who we are",
+        "ROBIN_DESCRIPTION": "Lazo is a virtual assistant designed and trained to follow an instruction in a notice and provide a detailed response. Lazo offers information clearly and comprehensibly to individuals, teams, or businesses in different sectors.",
+        "SIGNUP_AND_ACCESS": "Sign-up and Access",
+        "MINIMUM_AGE_LABEL": "Minimum Age",
+        "MINIMUM_AGE_TEXT": "You must be at least 13 years old or the minimum age required in your country to consent to use the Services. If you are under 18 years old, you must have permission from your parents or legal guardian to use the Services.",
+        "REGISTRATION_LABEL": "Registration",
+        "REGISTRATION_TEXT": "You must provide accurate and complete information to register and obtain an account to use our Services. You may not share your account credentials or make them available to anyone else, and you are responsible for all activities that occur under your account. If you create an account or use the Services on behalf of another person or entity, you must have the authority to accept these Terms on their behalf.",
+        "USING_OUR_SERVICES": "Using Our Services",
+        "WHAT_YOU_CAN_DO": "What You Can Do",
+        "YOU_CAN_DO_DESCRIPTION": "Subject to your compliance with these Terms, you can access and use our Services. By using our Services, you must comply with all applicable laws, as well as our Policy on Sharing and Publishing, Use Policies, and any other documentation, guidelines, or policies that we make available to you.",
+        "WHAT_YOU_CANNOT_DO": "What You Cannot Do",
+        "YOU_CANNOT_DO_DESCRIPTION": "You cannot use our Services for any illegal, harmful, or abusive activity. For example, you cannot:",
+        "ITEM_1": "Use our Services in a way that infringes, misappropriates, or violates the intellectual property rights of any person.",
+        "ITEM_2": "Modify, copy, rent, sell, or distribute any of our Services.",
+        "ITEM_3": "Attempt or assist anyone to reverse engineer, disassemble, or decompile our Services or underlying components of our Services, including our models.",
+        "ITEM_4": "Automatically or programmatically extract data or results (as defined below).",
+        "ITEM_5": "Misrepresent that Output was generated by humans when it was not.",
+        "ITEM_6": "Interfere or disrupt our Services, including bypassing any fee limit or restriction or bypassing any security protection or mitigation measure we implement on our Services.",
+        "ITEM_7": "Use Output to develop models that compete with Lazo.",
+        "SOFTWARE": "Software",
+        "SOFTWARE_DESCRIPTION": "Our Services may allow you to download software, such as mobile applications, which may be automatically updated to ensure you are using the latest version. Our software may include open-source software governed by their own licenses that we have made available to you.",
+        "CORPORATE_DOMAINS": "Corporate Domains",
+        "CORPORATE_DOMAINS_DESCRIPTION": "If you create an account using an email address owned by an organization (e.g., your employer), that account may be added to the organization's business account with us, in which case we will notify you so you can help facilitate the transfer of your account (unless your organization has already notified you that it may monitor and control your account). Once your account is transferred, the organization's administrator may control your account, including access to Content (defined below) and may restrict or remove your access to the account.",
+        "THIRD_PARTY_SERVICES": "Third-Party Services",
+        "THIRD_PARTY_SERVICES_DESCRIPTION": "Our services may include third-party software, products, or services ('Third-Party Services'), and some parts of our Services, such as our browsing feature, may include results from those services ('Third-Party Results'). Third-party services and third-party results are subject to their own terms, and we are not responsible for them.",
+        "FEEDBACK": "Feedback",
+        "FEEDBACK_DESCRIPTION": "We appreciate your feedback, and you agree that we may use it without restrictions or compensation to you.",
+        "CONTENT_TITLE": "Content",
+        "SERVICE_INTERRUPTION": "Service Interruption",
+        "SERVICE_INTERRUPTION_NOTICE": "We may decide to interrupt our Services, but if we do, we will notify you in advance and reimburse any unused prepaid Service.",
+        "WARRANTY_DISCLAIMER": "Disclaimer of Warranties",
+        "WARRANTY_DISCLAIMER_FIRST_PART": "OUR SERVICES ARE PROVIDED 'AS IS.' EXCEPT WHERE PROHIBITED BY LAW, WE AND OUR AFFILIATES AND LICENSORS DO NOT OFFER WARRANTIES (EXPRESS, IMPLIED, LEGAL, OR OTHERWISE) REGARDING THE SERVICES, AND WE DISCLAIM ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, SATISFACTORY QUALITY, NON-INFRINGEMENT, AND QUIET ENJOYMENT, AND ANY WARRANTY ARISING OUT OF ANY COURSE OF DEALING OR USAGE OF TRADE. WE DO NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, ACCURATE, OR ERROR-FREE, NOR THAT ANY CONTENT WILL BE SECURE OR NOT LOST OR ALTERED.",
+        "WARRANTY_DISCLAIMER_SECOND_PART": "YOU AGREE AND ACCEPT THAT ANY USE OF THE RESULTS OF OUR SERVICE IS AT YOUR OWN RISK AND YOU WILL NOT RELY ON THE RESULTS AS THE SOLE SOURCE OF TRUTH OR INFORMATION MADE, OR AS A SUBSTITUTE FOR PROFESSIONAL ADVICE.",
+        "LIMITATION_OF_LIABILITY": "Limitation of Liability",
+        "LIABILITY_LIMITATION_FIRST_PART": "NEITHER WE NOR ANY OF OUR AFFILIATES OR LICENSORS SHALL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, OR DATA OR OTHER LOSSES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. OUR TOTAL LIABILITY UNDER THESE TERMS SHALL NOT EXCEED THE GREATER OF THE AMOUNT YOU PAID FOR THE SERVICE THAT GAVE RISE TO THE CLAIM DURING THE 12 MONTHS PRIOR TO THE LIABILITY ARISING OR ONE HUNDRED DOLLARS ($100). THE LIMITATIONS IN THIS SECTION APPLY ONLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW.",
+        "LIABILITY_LIMITATION_SECOND_PART": "Some countries and states do not allow the disclaimer of certain warranties or the limitation of certain damages, so some or all of the above terms may not apply to you and you may have additional rights. In that case, these Terms only limit our liabilities to the maximum extent permitted in your country of residence. OUR AFFILIATES, SUPPLIERS, LICENSORS, AND DISTRIBUTORS OF ROBIN ARE THIRD-PARTY BENEFICIARIES OF THIS SECTION.",
+        "GENERAL_TERMS": "General Terms",
+        "TERMS_ASSIGNMENT": "Assignment. You may not assign or transfer any rights or obligations under these Terms, and any attempt to do so will be void. We may assign our rights or obligations under these Terms to any affiliate, subsidiary, or successor in interest to any business associated with our Services.",
+        "TERMS_CHANGES": "Changes to these Terms or Our Services. We are continuously working to develop and improve our Services. We may update these Terms or our Services accordingly from time to time. For example, we may make changes to these Terms or Services due to:",
+        "LIST_ITEM_1": "Changes in the law or regulatory requirements.",
+        "LIST_ITEM_2": "Security or protection reasons.",
+        "LIST_ITEM_3": "Circumstances beyond our reasonable control.",
+        "LIST_ITEM_4": "Changes we make in the ordinary course of developing our Services.",
+        "LIST_ITEM_5": "To adapt to new technologies.",
+        "TERMS_DELAY_ENFORCEMENT": "Delay in Enforcement of these Terms. Our failure to enforce a provision is not a waiver of our right to do so later. Except as provided in the preceding dispute resolution section, if any part of these Terms is determined to be invalid or unenforceable, that part will be applied to the fullest extent permitted and will not affect the enforceability of any other term.",
+        "TERMS_BUSINESS_CONTROLS": "Business Controls. You must comply with all applicable business laws, including sanctions and export control laws. Our Services may not be used in or for the benefit of, nor exported or re-exported to (a) any country or territory embargoed by the U.S. or (b) any individual or entity with whom transactions are prohibited or restricted by applicable business laws. Our Services may not be used for any end-use prohibited by applicable business laws, and your Output may not include material or information that requires a government license for release or export.",
+        "TERMS_COMPLETE_AGREEMENT": "Complete Agreement. These Terms constitute the entire agreement between you and Lazo regarding the Services and, except for specific Service terms, supersede any prior or contemporaneous agreements between you and Lazo.",
+        "YOUR_CONTENT": "Your content",
+        "PROVIDE_INFORMATION_SERVICES": "You can provide information about the Services ('Input') and receive results from the Services based on the Information ('Output'). The input and the output together constitute 'Content.' You are responsible for the Content, including ensuring it does not violate any applicable law or these Terms. You declare and warrant that you have all the necessary rights, licenses, and permissions to provide information about our Services.",
+        "PROPERTY_CONTENT_DISCLAIMER": "Between you and LazoAI, and to the extent permitted by applicable law, you (a) retain your property rights over the Input, and (b) own the Output. Hereby, we assign to you all our rights, titles, and interests, if any, in and to the Output.",
+        "CONTENT_SIMILARITY": "Content Similarity.",
+        "CONTENT_OWNERSHIP": "Content Ownership",
+        "RESULTS_NATURE": "Due to the nature of our services and artificial intelligence in general, the results may not be unique, and other users may receive similar results from our services. Our previous task does not extend to the results of other users or third-party results.",
+        "OUR_CONTENT_USAGE": "Our usage of the content",
+        "ACCEPTANCE_OF_TERMS": "When you use our Services, you understand and agree:",
+        "RESULTS_NOT_ALWAYS_ACCURATE": "Results may not always be accurate. You should not rely on the results from our Services as the sole source of truthful or objective information, nor as a substitute for professional advice.",
+        "EVALUATE_ACCURACY_RESULTS": "You should evaluate the accuracy and suitability of the Results for your use case, including the use of human review where applicable, before using or sharing the Results from the Services.",
+        "PROHIBITED_USE_PERSONAL_INFO": "You must not use any Personal Information for any purpose that may have legal or material impact on that person, such as making credit, educational, employment, housing, insurance, legal, medical, or other important decisions about them.",
+        "INCOMPLETE_OR_OUTDATED_RESULTS": "Results may be incomplete or not up-to-date.",
+        "INACCURATE_OFFENSIVE_RESULTS": "Our Services may provide incomplete, incorrect, or offensive Results that do not represent the viewpoints of Lazo . If Output refers to third-party products or services, it does not imply endorsement or affiliation by LazoAI.",
+        "CONTENT_USAGE": "We can use Content to provide, maintain, develop, and enhance our Services, comply with applicable law, enforce our terms and policies, and keep our Services secure."
+      },
+      "PRIVACY-POLICY": {
+        "POLICY-PRIVACY": "Privacy Policy",
+        "PRIVACY_POLICY_TEXT": "We respect your privacy and are firmly committed to keeping any information we obtain from you or about you safe. This Privacy Policy describes our practices regarding the Personal Information we collect from you or about you when you use our website, applications, and services (collectively, 'Services'). This Privacy Policy does not apply to content we process on behalf of our business customers, such as our API. Our use of such data is governed by our agreements with customers covering access to and use of those offerings.",
+        "PERSONAL_INFORMATION_COLLECTED": "1. Personal Information We Collect",
+        "PERSONAL_INFORMATION_COLLECTED_INTRO": "We collect personal information related to you ('Personal Information') as follows:",
+        "PERSONAL_INFORMATION_DESCRIPTION": "Personal information you provide: We collect personal information if you create an account to use our Services or communicate with us in the following ways:",
+        "ACCOUNT_INFORMATION_DESCRIPTION": "Account information: When you create an account with us, we collect information associated with your account, including your name, account credential information, payment card information, or transaction history (collectively, 'Account Information').",
+        "USER_CONTENT_DESCRIPTION": "User content: When you use our Services, we collect personal information included in the input, file uploads, or other materials provided to our Services ('Content').",
+        "COMMUNICATION_INFORMATION_DESCRIPTION": "Communication information: If you communicate with us, we collect your name, contact information, and the content of any message you send ('Communication Information').",
+        "SOCIAL_MEDIA_INFORMATION_DESCRIPTION": "Social media information: We have pages on sites or social networks such as Instagram, Facebook, Medium, Twitter, YouTube, and LinkedIn. When you interact with our social media pages, we collect personal information that you choose to provide, such as your contact details (collectively 'Social Information'). Additionally, the companies hosting these pages provide us with other aggregated information and analytics about our activity on social media.",
+        "OTHER_INFORMATION_PROVIDED": "Other information you provide: We collect additional information that you may provide us when you participate.",
+        "LOG_DATA": "Log data: Information that your browser or device automatically sends when you use our Services. Log data includes your Internet Protocol address, browser type and settings, the date and time of your request, and how you interact with the Services.",
+        "USAGE_DATA": "Usage data: We may automatically collect information about your use of the Services, such as the types of content you view or interact with, the features you use, and the actions you take. This may include your time zone, country, dates and times when you access the service from a computer or mobile device, and your computer's connection.",
+        "DEVICE_INFORMATION": "Device information: includes the device name, operating system, device identifiers, and browser you are using. The collected information may depend on the type of device you use and its settings.",
+        "COOKIES_INFORMATION": "Cookies: We use cookies to operate and manage our Services and enhance your experience. A 'cookie' is information sent to your browser by a website you visit. You can set your browser to accept all cookies, reject all cookies, or notify you each time a cookie is offered, allowing you to decide each time whether to accept it. However, rejecting a cookie may, in some cases, prevent you from using or negatively affect the display or functionality of a website or other areas or features of a website. For more details about cookies, visit 'All About Cookies'.",
+        "ANALYTICS_INFORMATION": "Analytics: We may use various online analytics products that use cookies to help us...",
+        "UPLOADED_FILES_PRIVACY": "Uploaded file privacy: Our AI service uses the files you upload to provide more accurate and personalized responses. Any file you upload will be processed with the utmost care and security. We do not share or sell your information to third parties. Uploaded files are only used to improve the accuracy of our responses and are not used for any other purpose. Files are securely stored and deleted from our servers after a specific period unless otherwise specified in our data retention policy.",
+        "SERVICE_USAGE_TITLE": "Use of our services",
+        "PERSONAL_INFORMATION_USE_TITLE": "2. How we use personal information",
+        "PERSONAL_INFO_USAGE_PURPOSE": "We may use personal information for the following purposes:",
+        "USAGE_PURPOSE_1": "To provide, manage, maintain, and/or analyze the Services;",
+        "USAGE_PURPOSE_2": "To improve our Services and conduct research;",
+        "USAGE_PURPOSE_3": "To communicate with you; including sending you information about our Services and events;",
+        "USAGE_PURPOSE_4": "To develop new programs and services;",
+        "USAGE_PURPOSE_5": "To prevent fraud, criminal activities, or misuse of our Services and to protect the security of our IT systems, architecture, and networks;",
+        "USAGE_PURPOSE_6": "To conduct business transactions;",
+        "USAGE_PURPOSE_7": "To comply with legal obligations and legal processes and to protect our rights, privacy, security, or property, and/or those of our affiliates, you, or other third parties.",
+        "AGGREGATED_INFO_PARAGRAPH": "Aggregated or non-identifiable information: We may aggregate or de-identify personal information so that it can no longer be used to identify you and use such information to analyze the effectiveness of our Services, enhance and add features to our Services, conduct research, and for similar purposes. Additionally, we may occasionally analyze the general behavior and characteristics of our Services' users and share aggregated information, such as general user statistics, with third parties, publish such aggregated information, or make such aggregated information generally available. We may collect aggregated information through the Services, via cookies, and through other means described in this Privacy Policy. We will maintain and use non-identified information anonymously or non-identifiably and will not attempt to re-identify the information unless required by law.",
+        "CONTENT_USAGE_PARAGRAPH": "As mentioned earlier, we may use the Content you provide to us to improve our Services, for example, to train the models that power Lazo AI. Please read our instructions on how you can opt out of using your Content to train our models.",
+        "PERSONAL_INFO_DISCLOSURE_TITLE": "3. Disclosure of Personal Information",
+        "PERSONAL_INFO_DISCLOSURE_PARAGRAPH": "Under certain circumstances, we may disclose your personal information to third parties without prior notice, unless required by law:",
+        "DISCLOSURE_TO_VENDORS_PROVIDERS_TITLE": "Vendors and service providers:",
+        "DISCLOSURE_TO_VENDORS_PROVIDERS_DESCRIPTION": "To help us meet business operation needs and perform certain services and functions, we may provide personal information to vendors and service providers, including hosting service providers, customer service providers, cloud services, email communication software, web analytics services, and other information technology providers, among others. In accordance with our instructions, these parties will access, process, or store Personal Information solely in the performance of their functions for us.",
+        "DISCLOSURE_FOR_BUSINESS_TRANSFERS_TITLE": "Business transfers:",
+        "DISCLOSURE_FOR_BUSINESS_TRANSFERS_DESCRIPTION": "If we are involved in strategic transactions, reorganization, bankruptcy, receivership, or transition of service to another provider (collectively, a 'Transaction'), your personal information and other information may be disclosed in the process of due diligence with counterparties and other individuals assisting with the Transaction and transferred to a successor or affiliate as part of that Transaction along with other assets.",
+        "LEGAL_REQUIREMENTS_TITLE": "Legal requirements:",
+        "LEGAL_REQUIREMENTS_DESCRIPTION": "We may share your personal information, including information about your interaction with our Services, with government authorities, industry peers, or other third parties (i) if required to do so by law or in good faith belief that such action is necessary to comply with a legal obligation, (ii) to protect and defend our rights or property, (iii) if we determine, in our sole discretion, that there is a violation of our terms, policies, or the law; (iv) to detect or prevent fraud or other illegal activity; (v) to protect the safety, security, and integrity of our products, employees, or users, or the public, or (vi) to protect against legal liability.",
+        "AFFILIATES_DISCLOSURE_TITLE": "Affiliates:",
+        "AFFILIATES_DISCLOSURE_DESCRIPTION": "We may disclose personal information to our affiliates, meaning an entity that controls, is controlled by, or is under common control with Lazo . Our affiliates may use the personal information we share consistently with this Privacy Policy.",
+        "BUSINESS_ACCOUNT_ADMINISTRATORS_TITLE": "Business account administrators:",
+        "BUSINESS_ACCOUNT_ADMINISTRATORS_DESCRIPTION": "When you join a business or enterprise account with Lazo , administrators of that account may access and control your Lazo  account. Additionally, if you create an account using an email address belonging to your employer or another organization, we may share the fact that you have a Lazo  account and certain account information, such as your email address, with your employer or organization, for example, to allow you to be added to your business account.",
+        "SHARING_WITH_OTHER_USERS_TITLE": "Other users and third parties with whom you share information:",
+        "SHARING_WITH_OTHER_USERS_DESCRIPTION": "Certain features allow you to display or share information with other users or third parties. For instance, you may share Lazo  conversations with other users via shared links or send information to third-party applications through custom actions for GPT. Make sure to trust any user or third party with whom you share information.",
+        "YOUR_RIGHTS_TITLE": "4. Your rights",
+        "YOUR_RIGHTS_DESCRIPTION": "Depending on the location, individuals may have certain legal rights concerning their personal information. For example, you may have the right to:",
+        "YOUR_RIGHTS_1": "Access your personal information and information related to how it is processed.",
+        "YOUR_RIGHTS_2": "Delete your personal information from our records.",
+        "YOUR_RIGHTS_3": "Rectify or update your Personal Information.",
+        "YOUR_RIGHTS_4": "Transfer your Personal Information to a third party (right to data portability).",
+        "YOUR_RIGHTS_5": "Restrict how we process your personal information.",
+        "YOUR_RIGHTS_6": "Withdraw your consent, when we rely on consent as the legal basis for processing, at any time.",
+        "YOUR_RIGHTS_7": "Object to how we process your personal information.",
+        "YOUR_RIGHTS_8": "Lodge a complaint with your local data protection authority.",
+        "EXERCISE_RIGHTS_ACCOUNT_NOTE": "You may exercise some of these rights through your Lazo  account. If you are unable to exercise your rights through your account, please submit your request via privacy.LazoIA.com or to...",
+        "ACCURACY_NOTE": "A note on accuracy: Services like Lazo IAT generate responses by reading a user's request and, in response, predicting the words most likely to appear next. In some cases, the words most likely to appear next may not be the most accurate in terms of facts. For this reason, you should not rely on the objective accuracy of our model's results. If you notice that the output of Lazo IAT contains objectively inaccurate information about you and wish for us to correct the inaccuracy, you can submit a correction request via privacy.LazoIA.com or to [PLACEHOLDER]. Given the technical complexity of how our models operate, we may not be able to correct the inaccuracy in all cases. In such cases, you may request that we remove your personal information from Lazo IAT results by completing this form.",
+        "US_STATE_DISCLOSURES_TITLE": "5. Additional U.S. State Disclosures",
+        "US_STATE_DISCLOSURES_DESCRIPTION": "The following table provides additional information about the categories of personal information we collect and how we disclose that information. You can read more about the personal information we collect in 'Personal Information We Collect' above, how we use personal information in 'How We Use Personal Information' above, and how we retain personal information in 'Security and Retention' below.",
+        "PERSONAL_INFO_CATEGORY": "Category of personal information",
+        "PERSONAL_INFO_DISCLOSURE": "Disclosure of personal information",
+        "IDENTIFIERS_INFORMATION": "Identifiers, such as your name, contact details, IP address, and other device identifiers",
+        "IDENTIFIERS_DISCLOSURE": "We may disclose this information to our affiliates, vendors, and service providers for processing in accordance with our instructions; to authorities and other third parties for the legal reasons described above; to parties involved in transactions; to corporate administrators of business or team accounts; and to other users and third parties with whom you choose to share it.",
+        "COMMERCIAL_INFO": "Commercial information, such as your transaction history.",
+        "COMMERCIAL_INFO_DISCLOSURE": "We may disclose this information to our affiliates, vendors, and service providers for processing in accordance with our instructions; to authorities and other third parties for the legal reasons described above; to parties involved in transactions; and to corporate administrators of business or team accounts.",
+        "NETWORK_ACTIVITY_INFO": "Network activity information, such as content and interactions with our services.",
+        "NETWORK_ACTIVITY_DISCLOSURE": "We may disclose this information to our affiliates, vendors, and service providers for processing in accordance with our instructions; to authorities and other third parties for the legal reasons described above; to parties involved in transactions; and to other users and third parties with whom you choose to share it.",
+        "GEOLOCATION_DATA": "Geolocation data.",
+        "GEOLOCATION_DISCLOSURE": "We may disclose this information to our affiliates, vendors, and service providers for processing in accordance with our instructions; to authorities and other third parties for the legal reasons described above; and to parties involved in transactions.",
+        "SENSITIVE_PERSONAL_INFO": "Login credentials for your account and payment card information (Sensitive Personal Information)",
+        "SENSITIVE_INFO_DISCLOSURE": "We disclose this information to our affiliates, vendors, and service providers, law enforcement authorities, and parties involved in transactions.",
+        "CHILDREN_POLICY_TITLE": "6. Children",
+        "CHILDREN_POLICY_TEXT": "Our Service is not directed to children under the age of 13. Lazo  does not knowingly collect personal information from children under 13 years old. If you have reason to believe that a child under the age of 13 has provided personal information to Lazo  through the Service, please email us at [email address]. We will investigate any such notification and, if appropriate, remove the personal information from our systems. If you are 13 years of age or older but under 18, you must have your parents' or guardians' permission to use our Services.",
+        "EXTERNAL_LINKS_TITLE": "7. Links to Other Websites",
+        "EXTERNAL_LINKS_TEXT": "The Service may contain links to other websites that Lazo  does not operate or control, including social media services ('Third-party Sites'). Information you share with Third-party Sites will be governed by the specific privacy policies and terms of service of those Third-party Sites, not by this Privacy Policy. By providing these links, we do not imply endorsement or have reviewed these sites. Please contact Third-party Sites directly for information about their practices and privacy policies.",
+        "SECURITY_RETENTION_TITLE": "8. Security and Retention",
+        "SECURITY_RETENTION_TEXT": "We implement commercially reasonable technical, administrative, and organizational measures to protect personal information, both online and offline, against unauthorized loss, misuse, access, disclosure, alteration, or destruction. However, no Internet or email transmission is entirely secure or error-free. In particular, email sent to or from us may not be secure. Therefore, you should take special care when deciding what information to send us via the Service or by email. Additionally, we are not responsible for circumvention of any privacy settings or security measures contained in the Service or on third-party websites.\n\nWe will retain your Personal Information only for as long as necessary to provide you with our Service or for other legitimate business purposes, such as resolving disputes, security reasons, or complying with our legal obligations. The period we retain Personal Information will depend on various factors, such as the amount, nature, and sensitivity of the information, the potential risk of harm from unauthorized use or disclosure, our purposes for processing the information, and any legal requirements.",
+        "INTERNATIONAL_USERS_TITLE": "International Users",
+        "INTERNATIONAL_USERS_TEXT": "By using our Service, you understand and acknowledge that your Personal Information will be processed and stored in our facilities and servers in the United States and may be disclosed to our service providers and affiliates in other jurisdictions.",
+        "LEGAL_BASIS_TITLE": "9. Legal Basis for Processing",
+        "LEGAL_BASIS_1": "EXECUTION OF A CONTRACT WITH YOU WHEN WE PROVIDE AND MAINTAIN OUR SERVICES. WHEN WE PROCESS ACCOUNT INFORMATION, CONTENT, AND TECHNICAL INFORMATION SOLELY TO PROVIDE YOU OUR SERVICES, THIS INFORMATION IS NECESSARY TO DELIVER OUR SERVICES. IF YOU DO NOT PROVIDE THIS INFORMATION, WE MAY NOT BE ABLE TO PROVIDE OUR SERVICES.",
+        "LEGAL_BASIS_2": "OUR LEGITIMATE INTERESTS IN PROTECTING OUR SERVICES AGAINST ABUSE, FRAUD, OR SECURITY RISKS, OR IN DEVELOPING, ENHANCING, OR PROMOTING OUR SERVICES, INCLUDING WHEN WE TRAIN OUR MODELS. THIS MAY INVOLVE PROCESSING ACCOUNT INFORMATION, CONTENT, SOCIAL INFORMATION, AND TECHNICAL INFORMATION. READ OUR INSTRUCTIONS ON HOW YOU CAN OPT-OUT OF USING YOUR INFORMATION TO TRAIN OUR MODELS.",
+        "LEGAL_BASIS_3": "YOUR CONSENT WHEN WE ASK FOR YOUR CONSENT TO PROCESS YOUR PERSONAL INFORMATION FOR A SPECIFIC PURPOSE WE COMMUNICATE TO YOU. YOU HAVE THE RIGHT TO WITHDRAW YOUR CONSENT AT ANY TIME.",
+        "LEGAL_BASIS_4": "COMPLIANCE WITH OUR LEGAL OBLIGATIONS WHEN WE USE YOUR PERSONAL INFORMATION TO COMPLY WITH APPLICABLE LAW OR WHEN WE PROTECT OUR RIGHTS, SAFETY, AND PROPERTY OR THOSE OF OUR AFFILIATES, USERS, OR THIRD PARTIES.",
+        "DATA_TRANSFERS_TEXT": "Data Transfers: When necessary, we will use appropriate security measures to transfer personal information outside certain countries. We will only transfer Personal Information in accordance with a legally valid transfer mechanism.",
+        "DPO_CONTACT_TEXT": "Data Protection Officer: You can contact our Data Protection Officer at [email address] for matters related to the processing of Personal Information.",
+        "PRIVACY_POLICY_CHANGES_TITLE": " 10. Changes to the Privacy Policy",
+        "PRIVACY_POLICY_CHANGES_TEXT": "We may update this Privacy Policy from time to time. When we do, we will post an updated version on this page, unless otherwise required by applicable law.",
+        "CONTACT_US_TITLE": "11. How to Contact Us",
+        "CONTACT_US_TEXT": "Please contact support [insert contact link here] if you have any questions or concerns that have not been addressed in this Privacy Policy.",
+        "LEGAL_BASIS_LIST": "Legal Basis List"
+      }
+    }
+  },
+  "EXTRAPAGES": {
+    "COMINGSOON": {
+      "LET": "Let's get started with Skote",
+      "DESC": "It will be as simple as Occidental in fact it will be Occidental.",
+      "DAYS": "Days",
+      "HOURS": "Hours",
+      "MINUTES": "Minutes",
+      "SECONDS": "Seconds"
+    },
+    "ERROR404": {
+      "PAGE": "Sorry,Page Not Found",
+      "BACK": "Back to Dashboard"
+    }
+  },
+  "CORE": {
+    "MODULES": {
+      "AUTHENTICATION": {
+        "LOGIN": {
+          "WELCOME_BACK": "Welcome back !",
+          "SING": "Sign in to continue to AI Solutions.",
+          "ERROR": "error",
+          "EMAIL": "Email",
+          "EMAIL_R": "Email is required",
+          "EMAIL_V": " Email must be a valid email address",
+          "PASSWORD": "Password",
+          "PASSWORD_R": "Password is min length 8",
+          "REMEMBER": "Remember me",
+          "LOG_IN": "Log In",
+          "FORGOT_PASSWORD": "Forgot your Password ?",
+          "ACCOUNT?": "Don't have an account ?"
+        },
+        "HEADER": {
+          "EDIT_ACCOUNT": "Edit account Settings",
+          "CHANGE_PASSWORD": "Change Password",
+          "SUPPORT": "support",
+          "LOGOUT": "Logout"
+        }
+      }
+    }
+  },
+  "ACCOUNT": {
+    "AUTH": {
+      "CONFIRMMAIL": {
+        "EMAIL_VERIFIED": "Email Successfully Verified!",
+        "THANK_Y": "Thank you for verifying your joining us"
+      },
+      "LOGIN2": {
+        "SATISFIED": "Satisfied clients",
+        "DESC": " Fantastic theme with a ton of options. If you \n just want the HTML to integrate with your \n  project, then this is the package. You can find \n the files in the 'dist' folder...no need to \n install git and all the other stuff the  \n   documentation talks about. ",
+        "ROBIN_USER": "Lazo User",
+        "DESC_IF": " If Every Vendor on Envato are as supportive as  \n  Themesbrand, Development with be a nice \n   experience. You guys are Wonderful. Keep us the  \n   good work. ",
+        "NEZERIOUS": "Nezerious",
+        "WELCOME_BACK": "Welcome back !",
+        "SING": "Sign in to continue to Lazo.",
+        "EMAIL": "Email",
+        "EMAIL_R": "Email is required",
+        "EMAIL_V": "Email must be a valid email address",
+        "PASSWORD": "Password",
+        "PASSWORD_R": "Password is min length 8",
+        "PASSWORD_F": "Forgot your password?",
+        "REMEMBER": "Remember me",
+        "LOG_IN": "Log In",
+        "SIGN_WITH": "Sign in with",
+        "DONT_HAVE": "Don't have an account ?",
+        "SIGN_UP": "Sign Up",
+        "EMAIL_I": "Enter Email",
+        "PASSWORD_I": "Enter Password",
+        "SIGNUP_N": "Sign Up Now",
+        "CONTINUE_WITH_GOOGLE": "Continue With Google"
+      },
+      "RECOVERPWD2": {
+        "SATISFIED": "Satisfied clients",
+        "DESC": " Fantastic theme with a ton of options. If you \n just want the HTML to integrate with your \n  project, then this is the package. You can find \n the files in the 'dist' folder...no need to \n install git and all the other stuff the  \n   documentation talks about. ",
+        "DESC_IF": " If Every Vendor on Envato are as supportive as  \n  Themesbrand, Development with be a nice \n   experience. You guys are Wonderful. Keep us the  \n   good work. ",
+        "PASSWORD": "Password",
+        "RESET_PASSWORD": "Reset Password",
+        "RESET_P": "Reset Password With Lazo",
+        "ENTER_EMAIL": "Enter your Email and instructions will be sent to you!",
+        "RESET": "Reset",
+        "SIGN_H": "Sign in here",
+        "ROBIN_USER": "Lazo User",
+        "NEZERIOUS": "Nezerious",
+        "EMAIL": "Email",
+        "EMAIL_R": "Email is required",
+        "EMAIL_V": "Email must be a valid email address",
+        "REMENBER": "Remember it ?",
+        "P_EMAIL": "Enter your email",
+        "ENTER_TOKEN_VALIDATE": "Enter the token that was sent to you.",
+        "P_TOKEN": "Enter Token",
+        "TOKEN_R": "Token is required",
+        "VALIDATE_TOKEN": "Validate token",
+        "ENTER_NEW_PASSWORD": "Enter new password",
+        "P_NEW_PASSWORD": "New Password",
+        "PASSWORD_R": "Password is min length 8",
+        "PASSWORD_M": "The password must be at least 8 characters long.",
+        "PASSWORD_C_R": "Confirm Password is required",
+        "PASSWORDS_DO_NOT_MATCH": "Passwords do not match",
+        "P_ENTER_EMAIL": "Enter your email",
+        "PASSWORD_C": "Confirm Password",
+        "C_PASSWORD": "Confirm Password",
+        "REMEMBER": "Remember me",
+        "TOKEN": "Token",
+        "PASSWORD_P": "Password needs lowercase, uppercase, and a number."
+      },
+      "REGISTER": {
+        "SATISFIED": "Satisfied clients",
+        "DESC": " Fantastic theme with a ton of options. If you \n just want the HTML to integrate with your \n  project, then this is the package. You can find \n the files in the 'dist' folder...no need to \n install git and all the other stuff the  \n   documentation talks about. ",
+        "DESC_IF": " If Every Vendor on Envato are as supportive as  \n  Themesbrand, Development with be a nice \n   experience. You guys are Wonderful. Keep us the  \n   good work. ",
+        "ROBIN_USER": "Lazo User",
+        "NEZERIOUS": "Nezerious",
+        "CREATE_ACCOUNT": "Create Account",
+        "CREATE_ACCOUNT2": "Create Account With AI Solutions",
+        "ENTER_DETAILS": "Enter your details to create your account:",
+        "NAME": "Name",
+        "NAME_R": "Name is required",
+        "EMAIL": "Email",
+        "EMAIL_PLACEHOLDER": "Enter your Email",
+        "EMAIL_R": "Email is required",
+        "EMAIL_V": "Email must be a valid email address",
+        "PASSWORD": "Password",
+        "PASSWORD_R": "Password is min length 8",
+        "PASSWORD_V": "Password must be at least 6 characters",
+        "PASSWORD_C": "Confirm Password",
+        "PASSWORD_C_R": "Confirm Password is required",
+        "PASSWORD_C_V": "Confirm Password must be at least 6 characters",
+        "ALREADY": "Already have an account ?",
+        "SIGN_IN": "Sign In",
+        "SIGNUP_N": "Sign Up Now",
+        "REMENBER": "Remember it ?",
+        "GET_ROBIN": "Get your Lazo account now.",
+        "FIRST_N": "First Name",
+        "FIRST_R": "First Name is required",
+        "P_FIRST_N": "Enter your First Name",
+        "LAST_N": "Last Name",
+        "LAST_R": "Last Name is required",
+        "P_LAST_N": "Enter your Last Name",
+        "REGISTRATION_SUCCES": "Registration successful",
+        "REGISTER_BY_ROBIN": "By registering you agree to the Lazo",
+        "TERMS": "Terms of Use",
+        "REGISTER": "Register",
+        "SING_USING": "Sign up using",
+        "SING_COMPANY": "Sign up as a company",
+        "GO": "Go!",
+        "ALREDY": "Already have an account?",
+        "LOGIN": "Login",
+        "REGISTER_WITH_GOOGLE": "Register With Google",
+        "PASSWORD_MIN_LENGTH": "The password must be at least 8 characters long",
+        "PASSWORDS_DO_NOT_MATCH": "Passwords do not match",
+        "PASSWORD_P": "Password needs lowercase, uppercase, and a number."
+      },
+      "SIGNUP": {
+        "FREE_R": "Free Register",
+        "G_F_ROBIN": "Get your Lazo account now.",
+        "REGISTER_SUCCES": "Registration successful.",
+        "FIRST_N": "First Name",
+        "ENTER_YOUR_F_N": "Enter your First Name",
+        "FIRST_R": "First Name is required",
+        "L_NAME": "Last Name",
+        "ENTER_YOUR_L_N": "Enter your Last Name",
+        "LAST_R": "Last Name is required",
+        "EMAIL": "Email",
+        "EMAIL_V": " Email must be a valid email address",
+        "PASSWORD": "Password",
+        "PASSWORD_R": "Password is min length 8",
+        "C_PASSWORD": "Confirm Password",
+        "C_PASSWORD_R": "Confirm Password is required",
+        "REGISTER": "Register",
+        "SIGN_WITH": "Sign in with",
+        "AGREE_R": "By registering you agree to the Lazo",
+        "TERMS": "Terms of Use",
+        "ALREDY": "Already have an account?",
+        "LOGIN": "Login",
+        "CONTINUE_WITH_GOOGLE": "Continue With Google"
+      },
+      "VERIFICATION": {
+        "VERIFY": "Verify Your Email ",
+        "VERIFY_EMAIL": "We have sent you verification email",
+        "RESEND": "Resend"
+      }
+    },
+    "MODULES": {
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Account Portal",
+            "SETTINGS": "Settings",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Theme Mode",
+            "LIGHT": "Light",
+            "DARK": "Dark",
+            "RESET": "Reset",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Account Portal",
+            "SETTINGS": "Settings",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Theme Mode",
+            "LIGHT": "Light",
+            "DARK": "Dark",
+            "RESET": "Reset",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      },
+      "PROFILE": {
+        "PAGES": {
+          "DETAIL": {
+            "ACCOUNT_S": "Account Settings",
+            "FILL": "Fill all information below",
+            "NAME": "Name",
+            "L_NAME": "Last Name",
+            "PREFERED_NAME": "Prefered Name",
+            "ABOUT": "About",
+            "SUBMIT": "Submit"
+          },
+          "FORM": {},
+          "MODEL_B": {
+            "AI_SOLUTIONS": "AI Solutions",
+            "REGISTER_S": "Register Sucess",
+            "NOW_PLEASE": "Now please just add some data for your Bot",
+            "NAME": "Name",
+            "DESCRIPTION": "Description",
+            "NAME_R": "Name is required",
+            "CONTEXT_L": "Context Limit",
+            "CONTEXT_V": "Context Limit must be valid",
+            "STORAGE": "Storage Limit",
+            "STORAGE_V": "Storage Limit must be valid (Less than 5 GB)",
+            "COMPLETE": "Complete"
+          },
+          "PASSWORD": {
+            "UPDATE_PASSWORD": "Update Password",
+            "FILL": "Fill all information below",
+            "PASSWORD": "Password",
+            "PASSWORD_C": "Password Confirmation",
+            "SUBMIT": "Submit",
+            "PASSWORD_R": "Password is min length 8",
+            "PASSWORD_SHORT": "Password must be at least 8 characters",
+            "PASSWORD_C_R": "Password Confirmation is required",
+            "PASSWORD_MISMATCH": "Password mismatch",
+            "PASSWORD_P": "Password needs lowercase, uppercase, and a number."
+          },
+          "TENANT_F": {
+            "AI_SOLUTIONS": "AI Solutions",
+            "REGISTER_S": "Register Sucess",
+            "FILL": " Plese fill the form in order to create your Umbrella Company (Tenant)",
+            "NAME": "Name",
+            "NAME_R": "Name is required",
+            "DESCRIPTION": "Description",
+            "COMPLETE": "Complete"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "RESET_PASSWORD": {
+        "PASSWORD_R": "Password Reset",
+        "SIGN_CONTINUE": "Sign in to continue to AI Solutions.",
+        "EMAIL": "Email",
+        "EMAIL_R": "Email is required",
+        "EMAIL_V": "Email must be a valid email address",
+        "REQUEST_C": "Request Code",
+        "CODE_R": "Code is required",
+        "VALIDATE": "Validate",
+        "NEW_PASSWORD": "New Password",
+        "PASSWORD_LENGTH": "Password length is 9",
+        "CONFIRM_PASSWORD": "Confirm Password",
+        "UPDATE": "Update",
+        "UPDATE_S": "Update Password Sucess !",
+        "BACK_LOGIN": "Back to Login",
+        "DONT_HAVE": "Don't have an account ?",
+        "SIGN_UP": "Sign now",
+        "CODE": "Code"
+      }
+    }
+  },
+  "ADMIN": {
+    "MODULES": {
+      "COMPONENTS": {
+        "ADMIN_COMPANY": {
+          "STAF": "Company staff",
+          "SEARCH_F": "Search for ...",
+          "NAME": "Name",
+          "L_NAME": "Last Name",
+          "EMAIL": "Email",
+          "ROLE": "Role",
+          "STAFF_A": "Staff Actions",
+          "DELETE_S": "Delete Staff",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "NO_DATA": "No data "
+        },
+        "ADMIN_FORM": {
+          "DESC": " Fill all the information below in order to add a staff.",
+          "F_NAME": "First Name",
+          "F_NAME_V": "First Name must valid",
+          "L_NAME": "Last Name",
+          "L_NAME_V": "Last Name must be valid",
+          "EMAIL": "Email",
+          "EMAIL_V": "Email must be valid",
+          "PASSWORD": "Password",
+          "PASSWORD_V": "Password must be valid",
+          "ROLE": "Role",
+          "ROLE_V": "Role must be valid",
+          "ADD_STAFF": "Add Staff",
+          "PASSWORD_P": "Password needs lowercase, uppercase, and a number."
+        },
+        "EDIT-FORM": {
+          "DESC": "Fill all information in order to update the company.",
+          "COMPANY_I": "Company Information",
+          "TENANT": "Tenant",
+          "TENANT_V": "Tenant must be valid",
+          "COMPANY_N": "Company Name",
+          "COMPANY_N_V": " Name must be valid",
+          "SAVE": "Save"
+        }
+      },
+      "PAGE": {
+        "FORM": {
+          "DETAILS": "Details",
+          "MANAGE": "Manage Staff"
+        },
+        "LIST": {
+          "SEARCH": "Search for ...",
+          "NAME": "Name",
+          "TENANT": "Tenant",
+          "MODULES": "Modules",
+          "COMPANY_MODULES": "Company Modules",
+          "ACTIONS": "Actions",
+          "GO_TO_PORTAL": "Go to Portal",
+          "EDIT": "Edit",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "ACTION": "Actions"
+        }
+      }
+    },
+    "LAYOUT": {
+      "COMPONENTS": {
+        "HORIZONTALTOPBAR": {
+          "ACCOUNT_PORTAL": "Account Portal",
+          "SETTINGS": "Settings",
+          "LAYOUT": "Layout",
+          "THEME_MODE": "Theme Mode",
+          "LIGHT": "Light",
+          "DARK": "Dark",
+          "RESET": "Reset",
+          "VERTICAL": "Vertical",
+          "HORIZONTAL": "Horizontal"
+        },
+        "TOPBAR": {
+          "ACCOUNT_PORTAL": "Account Portal",
+          "SETTINGS": "Settings",
+          "LAYOUT": "Layout",
+          "THEME_MODE": "Theme Mode",
+          "LIGHT": "Light",
+          "DARK": "Dark",
+          "RESET": "Reset",
+          "VERTICAL": "Vertical",
+          "HORIZONTAL": "Horizontal"
+        }
+      }
+    },
+    "TENANTS": {
+      "COMPONENTS": {
+        "ADMIN-F": {
+          "USER_I": "User Information",
+          "FILL": "Fill all information below.",
+          "F_NAME": "First Name",
+          "F_NAME_V": "First Name must valid",
+          "L_NAME": "Last Name",
+          "L_NAME_V": "Last Name must be valid",
+          "EMAIL": "Email",
+          "EMAIL_V": "Email must be valid",
+          "PASSWORD": "Password",
+          "PASSWORD_V": "Password must be at least 8 characters",
+          "SUBMIT": "Submit",
+          "PASSWORD_P": "Password needs lowercase, uppercase, and a number."
+        },
+        "ADMIN-T-F": {
+          "TENANT_I": "Tenant Administradors",
+          "ROLE": "Role",
+          "NAME": "Name",
+          "EMAIL": "Email",
+          "SEARCH": "Search for ...",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "NO_DATA": "No data "
+        },
+        "COMPANIS-F": {
+          "DESC": "   Fill all the information below in order to add a Company.",
+          "NAME": "Name",
+          "NAME_R": "Name is required",
+          "ADD_C": "Add Company"
+        },
+        "COMPANIES-T": {
+          "T_COMPANI": "Tenant Companies",
+          "SEARCH": "Search for ...",
+          "NAME": "Name",
+          "TIMEZONE": "Timezone",
+          "ACTIONS": "Actions",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "NO_DATA": "No data "
+        },
+        "FILES": {
+          "TENANT_F": "Tenant Files"
+        },
+        "GENERAL-F": {
+          "TENANT_I": "Tenant Information",
+          "FILL": "Fill all information below.",
+          "NAME": "Name",
+          "NAME_V": "Name must valid",
+          "DESCRIPTION": "Description",
+          "SUBMIT": "Submit"
+        },
+        "USERS-L": {
+          "SEARCH": "Search for ...",
+          "NAME": "Name",
+          "EMAIL": "Email",
+          "ROLE": "Role",
+          "ACTIONS": "Actions",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "NO_DATA": "No data "
+        }
+      },
+      "PAGES": {
+        "DETAIL": {
+          "GO_PORTAL": "Go to Portal",
+          "NAME": "Name",
+          "EMAIL": "Email",
+          "ADMINS": "Administrators",
+          "START_D": "Start Date",
+          "COMPANIES": "Companies",
+          "TIMEZONE": "Timezone"
+        },
+        "FORM": {
+          "GENERAL": "General"
+        },
+        "LIST": {
+          "AT_LEAST_3": "At least 3 characters are required for your search term.",
+          "NAME": "Name",
+          "DESCRIPTION": "Description",
+          "COMPANIES": "Companies",
+          "ADMINS": "Admins",
+          "ACTION": "Actions",
+          "GO": "Go to Portal",
+          "DETAIL": "Detail",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "NO_DATA": "No data ",
+          "EDIT": "Edit"
+        }
+      }
+    },
+    "USERS": {
+      "COMPONENTS": {
+        "GENERAL-F": {
+          "USER_I": "User Information",
+          "FILL": "Fill all information below.",
+          "FIRST_NAME": "First Name",
+          "FIRST_NAME_V": "First Name must valid",
+          "LAST_NAME": "Last Name",
+          "LAST_NAME_V": "Last Name must be valid",
+          "EMAIL": "Email",
+          "EMAIL_V": "Email must be valid",
+          "ROLES": "Roles",
+          "GENDER": "Gender",
+          "Nickname": "Nickname",
+          "PREFERRED_N": "Preferred Name",
+          "PHONE_N": "Phone Number",
+          "BIRTH_D": "Birth Date",
+          "SAVE": "Save",
+          "ABOUT": "About"
+        },
+        "MOVE": {
+          "MOVE_U": "Move User",
+          "COMPANY": "Company",
+          "ROLE": "Role",
+          "MOVE": "Move"
+        },
+        "USER": {
+          "WELCOME_B": "Welcome back ",
+          "PERSONAL_I": "Personal Information",
+          "TENANTS": "Tenants :",
+          "F_NAME": "First Name :",
+          "L_NAME": "Last Name",
+          "EMAIL": "E-mail",
+          "CREATED_AT": "Created At :",
+          "CODE": "Code :",
+          "NICKNAME": "Nickname :",
+          "PREFERRED_N": "Preferred Name"
+        }
+      },
+      "PAGES": {
+        "FORM": {},
+        "LIST": {
+          "ACTIVE": "Active",
+          "SEARCH": "Search for ...",
+          "ARCHIVED": "Archived",
+          "F_NAME": "First Name",
+          "L_NAME": "Last Name",
+          "EMAIL": "Email",
+          "ROLES": "Roles",
+          "ACTIONS": "Actions",
+          "LOGIN": "LOGIN",
+          "MOVE": "MOVE",
+          "DETAILS": "DETAILS",
+          "SHOW": "Show",
+          "ENTRIES": "entries",
+          "SHOWING": "Showing",
+          "TO": "to",
+          "OF": "of",
+          "NO_DATA": "No data "
+        },
+        "DETAIL": {}
+      }
+    }
+  },
+  "COMPANIES": {
+    "MODULES": {
+      "COMPANY-M": {
+        "COMPONENTS": {
+          "EDIT": {
+            "COMPANY": "Company Module Information",
+            "FILL_ALL": "Fill all information below in order to update the company module.",
+            "COMPANY_NAME": "Company",
+            "COMPANY_M_N": "Company Module Name",
+            "COMPANY_NAME_R": "Company Name is required",
+            "COMPANY_NAME_V": "Company Name must be valid",
+            "DESCRIPTION": "Description",
+            "SAVE": "Save"
+          },
+          "FORM": {
+            "FILL_ALL": "Fill all the information below in order to add a Model bot.",
+            "NAME": "Name",
+            "DESCRIPTION": "Description",
+            "STORAGE_L": "Storage Limit",
+            "STORAGE_LIMIT": "Storage Limit must be valid (Less than 5 GB)",
+            "ADD_BOT": "Add Model Bot"
+          },
+          "TABLE": {
+            "COMPANY_BOTS": "Company Modules Model Bots",
+            "SEARCH": "Search for ...",
+            "NAME": "Name",
+            "STORAGE": "Storage",
+            "BOT_A": "Bot Actions",
+            "DELETE_B": "Delete Bot",
+            "SHOW": "Show",
+            "ENTRIES": "entries",
+            "SHOWING": "Showing",
+            "TO": "to",
+            "OF": "of",
+            "NO_DATA": "No data"
+          }
+        },
+        "MODULES": {
+          "COMPONENTS": {
+            "BOT_C_FORM": {
+              "FILL": "Fill all the information below in order to add a staff.",
+              "F_NAME": "First Name",
+              "F_NAME_V": "First Name must valid",
+              "L_NAME": "Last Name",
+              "L_NAME_V": "Last Name must be valid",
+              "EMAIL": "Email",
+              "EMAIL_V": "Email must be valid",
+              "PASSWORD": "Password",
+              "PASSWORD_V": "Password must be valid",
+              "ROLE": "Role",
+              "ROLE_V": "Role must be valid",
+              "ADD_STAF": "Add Staff",
+              "PASSWORD_P": "Password needs lowercase, uppercase, and a number."
+            },
+            "BOT_C": {
+              "MODEL_B_STAFF": "Model Bot Staff",
+              "FILL": "Fill all the information below in order to add a staff.",
+              "F_NAME": "First Name",
+              "F_NAME_V": "First Name must valid",
+              "L_NAME": "Last Name",
+              "L_NAME_V": "Last Name must be valid",
+              "EMAIL": "Email",
+              "EMAIL_V": "Email must be valid",
+              "PASSWORD": "Password",
+              "PASSWORD_V": "Password must be valid",
+              "ROLE": "Role",
+              "ROLE_V": "Role must be valid",
+              "ADD_STAF": "Add Staff",
+              "STAF_A": "Staff Actions",
+              "DELETE_S": "Delete Staff",
+              "SHOW": "Show",
+              "ENTRIES": "entries",
+              "SHOWING": "Showing",
+              "TO": "to",
+              "OF": "of",
+              "NO_DATA": "No data ",
+              "SEARCH": "Search for ...",
+              "PASSWORD_P": "Password needs lowercase, uppercase, and a number."
+            },
+            "DATA_S_FORM": {
+              "FILL": "Fill all the information below in order to add a Data set.",
+              "NAME": "Name",
+              "NAME_V": "Name must valid",
+              "BASE_URL": "Base Url",
+              "BASE_URL_V": "Base Url must be valid",
+              "DEPP": "Deep Level",
+              "DEPP_V": "Deep Level must be valid (Max 255)",
+              "FORBIDDEN": "Forbidden Urls",
+              "ADD_DATA": "Add Data Set"
+            },
+            "DATA_S_TABLE": {
+              "WEB_U": "Web Url",
+              "SEACH": "Search for ...",
+              "NAME": "Name",
+              "BASE": "Base Url",
+              "FORBIDDEN": "Forbidden Urls",
+              "STAFF": "Staff Actions",
+              "DELETE": "Delete Data Set",
+              "SHOW": "Show",
+              "ENTRIES": "entries",
+              "SHOWING": "Showing",
+              "TO": "to",
+              "OF": "of",
+              "NO_DATA": "No data "
+            },
+            "EDIT": {
+              "MODEL_BOT": "Model Bot Information",
+              "FILL": "Fill all information below in order to update the model bot.",
+              "API_URL": "Api Url must be valid",
+              "API_URL_V": "Api Url must be valid",
+              "STORAGE": "Storage Limit",
+              "STORAGE_V": "Storage Limit must be valid (Less than 5 GB)",
+              "DESCRIPTION": "Description",
+              "SAVE": "SAVE",
+              "COMPANY_M": "Company Module",
+              "NAME": "Name"
+            }
+          },
+          "PAGES": {
+            "FORM": {
+              "DETAILS": "Details",
+              "MANAGE_M": "Manage Website URL",
+              "BOT_C": "Bot Creators"
+            },
+            "LIST": {
+              "SEARCH": "Search ...",
+              "NAME": "Name",
+              "STORAGE_L": "Storage Limit",
+              "ACTIONS": "Actions",
+              "MODEL_B": "Bot Model",
+              "GO": "Go to Model Portal",
+              "SHOW": "Show",
+              "ENTRIES": "entries",
+              "SHOWING": "Showing",
+              "TO": "to",
+              "OF": "of",
+              "NO_DATA": "No data",
+              "EDIT": "Edit"
+            }
+          }
+        },
+        "PAGES": {
+          "FORM": {
+            "DETAILS": "Details",
+            "MANAGE_M": "Manage Model Bots"
+          },
+          "LIST": {
+            "SEARCH": "Search for ...",
+            "NAME": "Name",
+            "MODEL_B": "Model Bot",
+            "GO": "Go to Model Bots",
+            "SHOW": "Show",
+            "ENTRIES": "entries",
+            "SHOWING": "Showing",
+            "TO": "to",
+            "OF": "of",
+            "NO_DATA": "No data ",
+            "ACTIONS": "Actions",
+            "EDIT": "Edit"
+          }
+        },
+        "LAYOUT": {
+          "COMPONENTS": {
+            "HORIZONTALTOPBAR": {
+              "ACCOUNT_PORTAL": "Account Portal",
+              "SETTINGS": "Settings",
+              "LAYOUT": "Layout",
+              "THEME_MODE": "Theme Mode",
+              "LIGHT": "Light",
+              "DARK": "Dark",
+              "RESET": "Reset",
+              "VERTICAL": "Vertical",
+              "HORIZONTAL": "Horizontal"
+            },
+            "TOPBAR": {
+              "ACCOUNT_PORTAL": "Account Portal",
+              "SETTINGS": "Settings",
+              "LAYOUT": "Layout",
+              "THEME_MODE": "Theme Mode",
+              "LIGHT": "Light",
+              "DARK": "Dark",
+              "RESET": "Reset",
+              "VERTICAL": "Vertical",
+              "HORIZONTAL": "Horizontal"
+            }
+          }
+        }
+      },
+      "LAYOUT": {
+        "COMPONENTS": {
+          "HORIZONTALTOPBAR": {
+            "ACCOUNT_PORTAL": "Company Portal",
+            "SETTINGS": "Settings",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Theme Mode",
+            "LIGHT": "Light",
+            "DARK": "Dark",
+            "RESET": "Reset",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          },
+          "TOPBAR": {
+            "ACCOUNT_PORTAL": "Company Portal",
+            "SETTINGS": "Settings",
+            "LAYOUT": "Layout",
+            "THEME_MODE": "Theme Mode",
+            "LIGHT": "Light",
+            "DARK": "Dark",
+            "RESET": "Reset",
+            "VERTICAL": "Vertical",
+            "HORIZONTAL": "Horizontal"
+          }
+        }
+      }
+    },
+    "PAGES": {
+      "MAIN": {
+        "WELCOME_B": "Welcome back",
+        "SAAS": "Skote Saas Dashboard",
+        "LAYOUTS": "Layouts",
+        "MULTIPLE_APPS": "Multiple Apps",
+        "ORDERS": "Orders",
+        "FROM_PREVIOUS": "From previous period",
+        "REVENUE": "Revenue",
+        "FROM_P": "From previous period",
+        "AVERAGE_PRICE": "Average Precio",
+        "ANALYTICS": "Analytics"
+      }
+    }
+  }
+}

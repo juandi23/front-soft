@@ -1,0 +1,205 @@
+<div class="container-fluid p-0">
+  <div class="row g-0 ">
+    <div class="col-xl-8">
+      <div class="auth-full-bg pt-lg-5 p-4">
+        <div class="w-100">
+          <div class="bg-overlay bg-dark-color"></div>
+          <div class="d-flex h-100 flex-column">
+            <div class="p-4 mt-auto">
+              <div class="row justify-content-center">
+                <div class="col-lg-7">
+                  <div class="text-center text-white">
+                    <h4 class="mb-3">
+                      <i
+                        class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"
+                      ></i
+                      ><span class="text-primary">1k</span>+ {{ TRANSLATE_KEY+ 'SATISFIED' | translate }}
+                    </h4>
+
+                    <div dir="ltr">
+                      <owl-carousel-o
+                        class="owl-theme auth-review-carousel"
+                        [options]="carouselOption"
+                      >
+                        <ng-template carouselSlide>
+                          <div class="item">
+                            <div class="py-3">
+                              <p class="font-size-16 mb-4">
+                                "Impressive tool! Love the notifications feature. Easy to use. Great support from the team. Thank you team Lazo!"
+                              </p>
+
+                              <div>
+                                <h4 class="font-size-16 text-primary">
+                                  Albert1981
+                                </h4>
+                                <p class="font-size-14 mb-0">- {{ TRANSLATE_KEY+ 'ROBIN_USER' | translate }}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                          <div class="item">
+                            <div class="py-3">
+                              <p class="font-size-16 mb-4">
+                                "At first, I assumed it was similar to other tested platforms like Jasper, CopyAI, GaryAi, etc. However, after thorough testing, it became evident that the approach is significantly superior."
+                              </p>
+
+                              <div>
+                                <h4 class="font-size-16 text-primary">
+                                  valen345h
+                                </h4>
+                                <p class="font-size-14 mb-0">- {{ TRANSLATE_KEY+ 'ROBIN_USER' | translate }}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </ng-template>
+                      </owl-carousel-o>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end col -->
+
+    <div class="col-xl-4">
+      <div class="auth-full-page-content p-md-5 p-4">
+        <div class="w-100">
+          <div class="d-flex flex-column h-100">
+            <div class="">
+              <a routerLink="/" class="d-block auth-logo">
+                <img [src]="mode === 'dark' ? 'assets/images/logos/lazo.png' : 'assets/images/logos/lazo.png'" alt="lazo"
+                height="90"
+                class="logo" />
+              </a>
+            </div>
+            <div class="my-auto">
+              <div>
+                <h3 class="welcome-text">{{ TRANSLATE_KEY+ 'WELCOME_BACK' | translate }}</h3>
+                <p>{{ TRANSLATE_KEY+ 'SING' | translate }}</p>
+              </div>
+              <div class="mt-2 d-grid">
+                <button (click)="redirectToExternalAuth('google')" class="btn bg-transparent p-2 btn-light text-dark fw-semibold google-btn">
+                  <img src="assets/images/oauth/google.svg" class="bg-white rounded-circle me-1" width="24" height="24" alt=""> Continue with google
+                </button>
+              </div>
+              <p class="text-center mt-3 mb-0">Or</p>
+              <div class="mt-3">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  <ngb-alert
+                    type="danger"
+                    *ngIf="error"
+                    [dismissible]="false"
+                    >{{ error }}</ngb-alert
+                  >
+
+                  <div class="mb-3">
+                    <label for="email">{{ TRANSLATE_KEY+ 'EMAIL' | translate }}</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      formControlName="email"
+                      [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                      [placeholder]="TRANSLATE_KEY+ 'EMAIL_I' | translate"
+                    />
+                    <div
+                      *ngIf="submitted && f.email.errors"
+                      class="invalid-feedback"
+                    >
+                      <div *ngIf="f.email.errors.required">
+                        {{ TRANSLATE_KEY+ 'EMAIL_R' | translate }}
+                      </div>
+                      <div *ngIf="f.email.errors.email">
+                        {{ TRANSLATE_KEY+ 'EMAIL_V' | translate }}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <div class="float-end">
+                      <a routerLink="/account/auth/recoverpwd-2"
+                      >{{ TRANSLATE_KEY+ 'PASSWORD_F' | translate }}</a
+                      >
+                    </div>
+                    <label for="userpassword"> {{ TRANSLATE_KEY+ 'PASSWORD' | translate }}</label>
+                    <div class="input-group auth-pass-inputgroup">
+                      <input
+                      type="{{ showPassword ? 'text' : 'password' }}"
+                      class="form-control"
+                      formControlName="password"
+                      [ngClass]="{
+                        'is-invalid': submitted && f.password.errors
+                      }"
+                        [placeholder]="TRANSLATE_KEY+ 'PASSWORD' | translate"
+                        aria-label="Password"
+                        aria-describedby="password-addon"
+                      />
+                      <button
+                        class="btn btn-light"
+                        type="button"
+                        id="password-addon"
+                        (click)="togglePasswordVisibility()"
+                      >
+                        <i class="mdi mdi-eye-outline"></i>
+                      </button>
+                      <div
+                        *ngIf="submitted && f.password.errors"
+                        class="invalid-feedback"
+
+                      >
+                        <span *ngIf="f.password.errors.required"
+                        >{{ TRANSLATE_KEY+ 'PASSWORD_R' | translate }}</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="remember-check"
+                    />
+                    <label class="form-check-label" for="remember-check">
+                      {{ TRANSLATE_KEY+ 'REMEMBER' | translate }}
+                    </label>
+                  </div>
+
+                  <div class="mt-3 d-grid">
+                    <button class="btn btn-outline-primary btn-block fw-semibold" type="submit">
+                      {{ TRANSLATE_KEY+ 'LOG_IN' | translate }}
+                    </button>
+                  </div>
+
+
+                </form>
+                <div class="mt-5 text-center">
+                  <p>
+                    {{ TRANSLATE_KEY+ 'DONT_HAVE' | translate }}
+                    <a
+                      routerLink="/account/auth/signup-2"
+                      class="fw-medium text-primary"
+                    >
+                    {{ TRANSLATE_KEY+ 'SIGNUP_N' | translate }}
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 mt-md-5 text-center">
+              <p class="mb-0">© {{ year }} Lazo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end col -->
+  </div>
+  <!-- end row -->
+</div>
+<!-- end container-fluid -->

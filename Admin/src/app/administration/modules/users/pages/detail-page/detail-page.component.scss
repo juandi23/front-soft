@@ -1,0 +1,26 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "src/assets/scss/variables";
+
+$aw-colors: (
+        '_': (
+                'default': (
+                        'border-color-default': #bbdc80,
+                        'background-color-default': #bbdc80,
+                        'symbol-color-default': #68aa20,
+                        'border-color-hover': #569700,
+                        'background-color-hover': null,
+                        'symbol-color-hover': #569700,
+                ),
+                'current': (
+                        'border-color-default': #bbdc80,
+                        'background-color-default': #bbdc80,
+                        'symbol-color-default': #808080,
+                        'border-color-hover': #76b900,
+                        'background-color-hover': #76b900,
+                        'symbol-color-hover': #808080,
+                )
+        )
+);
+
+@import "~angular-archwizard/styles/archwizard";

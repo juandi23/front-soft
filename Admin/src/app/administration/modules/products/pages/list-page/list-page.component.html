@@ -1,0 +1,211 @@
+<div class="container-fluid" style="max-width: 90%">
+  <app-page-title
+    title="Productos"
+    [breadcrumbItems]="breadCrumbs"
+  ></app-page-title>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body border-bottom">
+          <div class="row justify-content-end">
+            <div class="col-md-3 mb-2 mb-sm-0">
+              <select class="form-control" [formControl]="statusControl">
+                <option value="0">
+                  {{ TRANSLATE_KEY + "ACTIVE" | translate }}
+                </option>
+                <option value="1">
+                  {{ TRANSLATE_KEY + "ARCHIVED" | translate }}
+                </option>
+              </select>
+            </div>
+
+            <div class="col-md-5">
+              <div class="d-flex justify-content-end gap-2">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="searchInput"
+                  [placeholder]="TRANSLATE_KEY + 'SEARCH' | translate"
+                  [formControl]="searchControl"
+                  autocomplete="new-input"
+                />
+
+                <a (click)="clear()" class="btn btn-light"
+                  ><i class="mdi mdi-refresh"></i
+                ></a>
+                <a [routerLink]="['forms']" class="btn btn-primary">
+                  <i class="bx bx-plus-medical align-middle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              class="table table-centered table-nowrap table-hover align-middle"
+            >
+              <thead>
+                <tr>
+                  <th style="width: 10%;"></th>
+                  <th
+                    sortable="title"
+                    (sort)="onSort($event)"
+                    style="width: 15%"
+                  >
+                    Titulo
+                  </th>
+                  <th style="width: 15%">Disponible</th>
+                  <th
+                  sortable="price"
+                  (sort)="onSort($event)"
+                  style="width: 10%"
+                >
+                  Price
+                </th>
+                <th style="width: 10%">Descuento</th>
+                <th style="width: 15%">Categorias</th>
+                 <th style="width: 15%">Etiquetas</th>
+                  <th class="text-end">
+                    {{ TRANSLATE_KEY + "ACTIONS" | translate }}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let data of (service.collection$ | async)?.data">
+                  <td>
+                    <div class="d-block mx-auto" *ngIf="data?.media?.length > 0">
+                      <img (click)="lightboxImage(data?.media[0]?.url)" class="avatar-sm img-fluid cursor-pointer" [src]="data.media[0]?.url" alt="">
+                    </div>
+                  </td>
+                  <td>{{ data.title }}</td>
+                  <td>{{ data.availableQuantity }}</td>
+                  <td>{{ data.price }}</td>
+                  <td>{{ data.discount ?? 0 }}</td>
+                  <td>
+                    <div
+                      class="col-12 text-center"
+                      *ngFor="let cat of data.categories; let i = index"
+                      [ngClass]="{ 'mb-2': i + 1 !== data.categories.length }"
+                    >
+                      <span
+                        class="badge badge-soft-secondary font-size-11 w-100 p-2"
+                      >
+                        {{ cat.title }}
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="col-12 text-center"
+                      *ngFor="let tag of data.tags; let i = index"
+                      [ngClass]="{ 'mb-2': i + 1 !== data.tags.length }"
+                    >
+                      <span
+                        class="badge badge-soft-secondary font-size-11 w-100 p-2"
+                      >
+                        {{ tag.title }}
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex gap-2 justify-content-end">
+                      <button
+                        *ngIf="!data.archivedAt && !data.deletedAt"
+                        type="button"
+                        class="btn btn-outline-danger"
+                        (click)="deleteProduct(data.id)"
+                      >
+                        <i class="fa fa-trash"></i>
+                      </button>
+                      <a
+                        [routerLink]="['forms', data.id]"
+                        type="button"
+                        class="btn btn-outline-info"
+                      >
+                        Editar
+                      </a>
+                      <button
+                        *ngIf="data.archivedAt || data.deletedAt"
+                        type="button"
+                        class="btn btn-outline-info"
+                        (click)="unArchive(data.id)"
+                      >
+                        <i class="mdi mdi-package-up"></i>
+                      </button>
+                      <button
+                        *ngIf="!data.archivedAt && !data.deletedAt"
+                        type="button"
+                        class="btn btn-outline-warning"
+                        (click)="archive(data.id)"
+                      >
+                        <i class="mdi mdi-package-down"></i>
+                      </button>
+                      <a
+                        [title]="data.name + ' details'"
+                        [routerLink]="['../../products/detail/', data.id]"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        <i class="bx bx-customize"></i>
+                        {{ TRANSLATE_KEY + "DETAILS" | translate }}
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto me-auto">
+              <div class="dataTables_length" id="tickets-table_length">
+                <label class="d-inline-flex align-items-center"
+                  >Mostrar
+                  <select
+                    aria-controls="tickets-table"
+                    name="pageSize"
+                    [formControl]="limitControl"
+                    class="custom-select custom-select-sm form-control form-control-sm mx-2"
+                  >
+                    <option [ngValue]="10">10</option>
+                    <option [ngValue]="25">25</option>
+                    <option [ngValue]="50">50</option>
+                    <option [ngValue]="100">100</option>
+                  </select>
+                  {{ TRANSLATE_KEY + "ENTRIES" | translate }}</label
+                >
+              </div>
+            </div>
+            <div class="col-auto me-auto">
+              <p class="mb-0">
+                {{ TRANSLATE_KEY + "SHOWING" | translate }}
+                <b>{{ service.from }}</b>
+                {{ TRANSLATE_KEY + "TO" | translate }} <b>{{ service.to }}</b>
+                {{ TRANSLATE_KEY + "OF" | translate }}
+                <b>{{ service.total }}</b>
+                {{ TRANSLATE_KEY + "ENTRIES" | translate }}
+              </p>
+            </div>
+
+            <div class="col-auto">
+              <ul
+                class="pagination pagination-rounded justify-content-end mb-2"
+              >
+                <ngb-pagination
+                  [collectionSize]="service.total"
+                  [(page)]="service.page"
+                  [maxSize]="3"
+                  [rotate]="true"
+                  [pageSize]="service.limit"
+                >
+                </ngb-pagination>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

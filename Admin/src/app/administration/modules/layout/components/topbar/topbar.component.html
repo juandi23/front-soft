@@ -1,0 +1,181 @@
+<header id="page-topbar">
+  <div class="navbar-header">
+    <div class="d-flex">
+      <div class="navbar-brand-box">
+        <a routerLink="/" class="logo logo-light">
+          <span class="logo-sm">
+            <img
+              src="assets/images/logos/lazo.png"
+              alt=""
+              height="70" />
+          </span>
+          <span class="logo-lg">
+            <img
+              src="assets/images/logos/lazo.png"
+              alt=""
+              height="70" />
+          </span>
+        </a>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-sm px-3 font-size-16 header-item"
+        id="vertical-menu-btn"
+        (click)="toggleMobileMenu($event)">
+        <i class="fa fa-fw fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="d-flex">
+      <app-translate-button></app-translate-button>
+      <div class="dropdown d-inline-block d-lg-none ms-2" ngbDropdown>
+        <button
+          type="button"
+          class="btn header-item noti-icon"
+          id="page-header-search-dropdown"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          ngbDropdownToggle
+          aria-expanded="false">
+          <i class="mdi mdi-magnify"></i>
+        </button>
+        <div
+          class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+          ngbDropdownMenu
+          aria-labelledby="page-header-search-dropdown">
+          <form class="p-3">
+            <div class="m-0">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search ..."
+                  aria-label="Recipient's username" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="submit">
+                    <i class="mdi mdi-magnify"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="dropdown d-inline-block" ngbDropdown>
+        <button
+          routerLink="/products/cart"
+          type="button"
+          class="btn header-item noti-icon">
+          <i class="bx bx-cart"></i>
+          <!-- <span class="badge bg-danger rounded-pill">0</span> -->
+        </button>
+      </div>
+
+      <div class="dropdown d-inline-block" ngbDropdown>
+        <button
+          type="button"
+          class="btn header-item noti-icon"
+          id="page-header-notifications-dropdown"
+          ngbDropdownToggle>
+          <i class="bx bx-bell"></i>
+          <span class="badge bg-danger rounded-pill">0</span>
+        </button>
+
+        <div
+          class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+          aria-labelledby="page-header-notifications-dropdown"
+          ngbDropdownMenu>
+          <div class="p-3">
+            <div class="row align-items-center">
+              <div class="col">
+                <h6 class="m-0">
+                  {{ 'HEADER.NOTIFICATIONS.TITLE' | translate }}
+                </h6>
+              </div>
+              <div class="col-auto">
+                <a href="javascript: void(0);" class="small">{{
+                  'HEADER.NOTIFICATIONS.VIEW_ALL' | translate
+                }}</a>
+              </div>
+            </div>
+          </div>
+
+          <app-ngx-simplebar style="position: relative; height: 230px">
+          </app-ngx-simplebar>
+          <div class="p-2 border-top d-grid">
+            <a
+              class="btn btn-sm btn-link font-size-14 text-center"
+              href="javascript:void(0)">
+              <i class="mdi mdi-arrow-right-circle me-1"></i>
+              <span key="t-view-more">{{
+                'HEADER.NOTIFICATIONS.LOAD_MORE' | translate
+              }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <app-page-header-user-dropdown></app-page-header-user-dropdown>
+
+      <div class="dropdown d-inline-block" ngbDropdown>
+        <button
+          type="button"
+          class="btn header-item noti-icon"
+          id="page-header-settings-dropdown"
+          ngbDropdownToggle>
+          <i class="bx bx-cog"></i>
+        </button>
+        <div
+          class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+          ngbDropdownMenu
+          aria-labelledby="page-header-notifications-dropdown">
+          <div class="p-3">
+            <div class="row align-items-center">
+              <div class="col">
+                <h6 class="m-0">{{TRANSLATE_KEY+'SETTINGS'|translate}}</h6>
+              </div>
+            </div>
+          </div>
+          <app-ngx-simplebar style="position: relative; height: 230px">
+            <div class="px-3">
+              <h6 class="mt-4 mb-3">{{TRANSLATE_KEY+'LAYOUT'|translate}}</h6>
+
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="is-layout"
+                  (click)="changeLayout()" />
+                <label class="form-check-label" for="is-layout">{{
+                  attribute === 'vertical' ? (TRANSLATE_KEY+'HORIZONTAL' | translate) : (TRANSLATE_KEY+'VERTICAL' | translate)
+                }}</label>
+              </div>
+
+              <h6 class="mt-4 mb-3">Theme Mode</h6>
+              <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="theme-color" id="theme-color-light"
+                  [checked]="mode === 'light'" (change)="changeMode('light')">
+                <label class="form-check-label" for="theme-color-light">{{TRANSLATE_KEY+'LIGHT'|translate}}</label>
+              </div>
+              <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="theme-color" id="theme-color-dark"
+                  [checked]="mode === 'dark'" (change)="changeMode('dark')">
+                <label class="form-check-label" for="theme-color-dark">{{TRANSLATE_KEY+'DARK'|translate}}</label>
+              </div>
+            </div>
+          </app-ngx-simplebar>
+          <div class="p-2 border-top d-grid">
+            <a
+              class="btn btn-sm btn-link font-size-14 text-center"
+              href="javascript:void(0)">
+              <i class="mdi mdi-arrow-right-circle me-1"></i>
+              {{TRANSLATE_KEY+'RESET'|translate}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

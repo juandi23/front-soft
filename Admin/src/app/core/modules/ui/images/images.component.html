@@ -1,0 +1,12 @@
+<img
+  [src]="src"
+  (error)="error()"
+  [alt]="alt"
+  *ngIf="src; else defaultImage"
+  [class]="class" />
+<ng-template #defaultImage>
+  <img
+    src="https://via.placeholder.com/200?text=Unavailable"
+    [alt]="alt"
+    [class]="class" />
+</ng-template>

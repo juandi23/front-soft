@@ -1,0 +1,54 @@
+.line-division {
+  height: 1px;
+  background-color: rgb(128 67 249 / 1);
+  width: 80%;
+}
+
+.form-section {
+  background-color: #ece2f6;
+  padding: 25px;
+  border-radius: 6.5px;
+}
+
+.item-border{
+  border: 1px solid rgb(219, 216, 216);
+  border-radius: 0.5rem;
+}
+.custom-fs-title{
+  font-size: small;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+.item-border, .item-border * {
+  cursor: pointer;
+  font-size: 12.2px;
+}
+.item-border:hover {
+  background-color: #f6f6f6da;
+  display: block;
+}
+
+.item-border button {
+  display: none;
+}
+
+.item-border:hover button {
+  display: inline;
+  border-radius: 0.5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+::ng-deep{
+  .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-placeholder {
+    top: 10px !important;
+    padding-bottom: 0  !important;;
+  }
+}
+

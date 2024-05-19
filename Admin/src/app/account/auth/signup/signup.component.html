@@ -1,0 +1,203 @@
+<div class="account-pages">
+  <div class="bg-overlay bg-dark-color"></div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9 col-lg-7 col-xl-6">
+        <div class="card overflow-hidden my-5">
+          <div class="bg-soft bg-primary">
+            <div class="row">
+              <div class="col-7">
+                <div class="welcome-text p-4">
+                  <h3>{{TRANSLATE_KEY+ 'FREE_R'|translate}}</h3>
+                  <p>{{TRANSLATE_KEY+ 'G_F_ROBIN'|translate}}</p>
+                </div>
+              </div>
+              <div class="col-5 align-self-center">
+                <a routerLink="/" class="d-block auth-logo">
+                  <img [src]="mode === 'dark' ? 'assets/images/logos/lazo.png' : 'assets/images/logos/lazo.png'" alt="lazo"
+                  height="90"
+                  class="logo" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body pt-0">
+            <div class="my-4 d-flex justify-content-center">
+              <a [href]="googleAuthAppUrl + '?role=TENANT_ADMIN'" class="btn bg-transparent p-2 btn-light text-dark fw-semibold google-btn w-75">
+                <img src="assets/images/google.svg" class="bg-white rounded-circle me-1" width="24" height="24" alt=""> {{TRANSLATE_KEY+ 'CONTINUE_WITH_GOOGLE'|translate}}
+              </a>
+            </div>
+            <div class="p-2">
+              <form
+                class="needs-validation"
+                name="signupForm"
+                [formGroup]="signupForm"
+                (ngSubmit)="onSubmit()"
+                novalidate
+              >
+                <ngb-alert
+                  type="success"
+                  *ngIf="successmsg"
+                  [dismissible]="false"
+                  >{{TRANSLATE_KEY+ 'REGISTER_SUCCES'|translate}}
+                </ngb-alert>
+
+                <ngb-alert type="danger" *ngIf="error" [dismissible]="false">{{
+                  error
+                }}</ngb-alert>
+
+                <div class="mb-3">
+                  <label for="username" class="form-label">{{TRANSLATE_KEY+ 'FIRST_N'|translate}}</label>
+
+                  <input
+                    type="text"
+                    formControlName="firstName"
+                    class="form-control"
+                    [ngClass]="{
+                      'is-invalid': submitted && f.firstName.errors
+                    }"
+                    id="firstName"
+                    [placeholder]="TRANSLATE_KEY + 'FIRST_N'|translate"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.firstName.errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f.firstName.errors.required">
+                      {{TRANSLATE_KEY+ 'FIRST_R'|translate}}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="lastName" class="form-label">    {{TRANSLATE_KEY+ 'L_NAME'|translate}}</label>
+
+                  <input
+                    type="text"
+                    formControlName="lastName"
+                    class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }"
+                    id="lastName"
+                    [placeholder]="TRANSLATE_KEY + 'ENTER_YOUR_L_N'|translate"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.lastName.errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f.lastName.errors.required">
+                      {{TRANSLATE_KEY+ 'LAST_R'|translate}}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">    {{TRANSLATE_KEY+ 'EMAIL'|translate}}</label>
+
+                  <input
+                    type="email"
+                    formControlName="email"
+                    class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                    id="email"
+                    [placeholder]="TRANSLATE_KEY + 'EMAIL'|translate"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.email.errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                    <div *ngIf="f.email.errors.email">
+                     {{TRANSLATE_KEY+ 'EMAIL_V'|translate}}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">{{TRANSLATE_KEY+'PASSWORD'| translate}}</label>
+
+                  <input
+                    type="password"
+                    formControlName="password"
+                    class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.password.errors }"
+                    id="password"
+                    [placeholder]="TRANSLATE_KEY + 'PASSWORD'|translate"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.password.errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f.password.errors.required">
+                      {{TRANSLATE_KEY+ 'PASSWORD_R'|translate}}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="passwordConfirmation" class="form-label"
+                    >{{TRANSLATE_KEY+ 'C_PASSWORD'|translate }}</label
+                  >
+
+                  <input
+                    type="password"
+                    formControlName="passwordConfirmation"
+                    class="form-control"
+                    [ngClass]="{
+                      'is-invalid': submitted && f.passwordConfirmation.errors
+                    }"
+                    id="passwordConfirmation"
+                    [placeholder]="TRANSLATE_KEY + 'C_PASSWORD'|translate"
+                  />
+
+                  <div
+                    *ngIf="submitted && f.passwordConfirmation.errors"
+                    class="invalid-feedback"
+                  >
+                    <div *ngIf="f.passwordConfirmation.errors.required">
+                      {{TRANSLATE_KEY+ 'C_PASSWORD_R'|translate}}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 d-grid">
+                  <button class="btn btn-outline-primary" type="submit">
+                    {{TRANSLATE_KEY+ 'REGISTER'|translate}}
+                  </button>
+                </div>
+                <div class="mt-4 text-center">
+                  <p class="mb-0">
+                    {{TRANSLATE_KEY+ 'AGREE_R'|translate}}
+                    <a href="javascript: void(0);" class="text-primary"
+                      >{{TRANSLATE_KEY +'TERMS'|translate  }}</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- end card -->
+
+        <div class="mt-5 text-center text-white">
+          <p>
+            {{TRANSLATE_KEY+ 'ALREDY'|translate}}
+            <a routerLink="/account/auth/login-2" class="fw-medium text-primary">
+              {{TRANSLATE_KEY+ 'LOGIN'|translate}}</a
+            >
+          </p>
+          <p>
+            © {{ year }} Lazo
+            <i class="mdi mdi-heart text-danger"></i>
+          </p>
+        </div>
+      </div>
+      <!-- end col -->
+    </div>
+    <!-- end row -->
+  </div>
+  <!-- end container -->
+</div>

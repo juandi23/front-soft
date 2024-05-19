@@ -1,0 +1,71 @@
+<div class="dropdown d-inline-block" ngbDropdown>
+  <button
+    *ngIf="authenticationService.authService.model"
+    type="button"
+    class="btn header-item d-flex align-items-center"
+    id="page-header-user-dropdown"
+    ngbDropdownToggle>
+    <img
+      class="rounded-circle header-profile-user"
+      [src]="
+        authenticationService.authService.model!.profile?.media?.url ??
+        'assets/images/users/avatarv2.jpg'
+      "
+      [alt]="authenticationService.authService.model!.name" />
+    <span class="d-none d-xl-inline-block ms-1 username" [style]="landing ? 'color: #34c38f !important' : ''">
+      {{ authenticationService.authService.model!.name }}
+    </span>
+    <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+  </button>
+  <div class="dropdown-menu dropdown-menu-start" ngbDropdownMenu>
+    <!-- item-->
+    <a
+      class="dropdown-item"
+      [routerLink]="[item.link]"
+      *ngFor="let item of authenticationService.menuService.model$ | async">
+      <i
+        class="font-size-16 align-middle me-1"
+        *ngIf="item.icon"
+        [ngClass]="item.icon"></i>
+      {{ item.label }}
+    </a>
+
+    <ng-container *ngIf="authenticationService.authService.model">
+      <a
+        class="dropdown-item"
+        [routerLink]="[
+          '/account/profile',
+          authenticationService.authService.model!.id
+        ]">
+        <i class="bx bx-user font-size-16 align-middle me-1"></i>
+        {{HEADER + 'EDIT_ACCOUNT'|translate}}
+      </a>
+
+      <a
+        class="dropdown-item"
+        [routerLink]="[
+          '/account/profile',
+          authenticationService.authService.model!.id,
+          'password'
+        ]">
+        <i class="bx bx-lock font-size-16 align-middle me-1"></i>
+        {{HEADER+'CHANGE_PASSWORD'|translate}}
+      </a>
+    </ng-container>
+
+    <a class="dropdown-item" (click)="support()" role="button">
+      <i class="bx bx-help-circle font-size-16 align-middle me-1"></i>
+      {{HEADER+'SUPPORT'|translate}}
+    </a>
+
+    <div class="dropdown-divider"></div>
+    <a
+      class="dropdown-item text-danger"
+      href="javascript: void(0);"
+      (click)="logout()"
+      ><i
+        class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i>
+        {{HEADER+'LOGOUT'|translate}}
+    </a>
+  </div>
+</div>

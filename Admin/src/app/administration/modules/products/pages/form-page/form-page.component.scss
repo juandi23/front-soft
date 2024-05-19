@@ -1,0 +1,32 @@
+.rainbow-text {
+  font-weight: 600;
+  font-size: 49px;
+  background-image: linear-gradient(to left, #ce2471f0, indigo, rgba(39, 105, 246, 0.959), #16e3e2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media (max-width: 1200px)
+  {
+    font-size: 40px;
+  }
+  @media (max-width: 602px)
+  {
+    font-size: 28px;
+  }
+}
+.custom-textarea {
+  max-height: 200px;
+  overflow-y: hidden;
+}
+
+.custom-textarea:hover {
+  overflow-y: auto;
+}
+.url-list {
+  max-height: 200px;
+  overflow: overlay;
+}
+
+.url-list::-webkit-scrollbar {
+  display: none;
+}
