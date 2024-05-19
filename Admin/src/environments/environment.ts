@@ -6,7 +6,21 @@ export const environment = {
   production: false,
   defaultauth: 'devbackend',
   firebaseConfig: {
- },
+    apiKey: "aaaaaaaaaaaaaaaaaaaaaaa",
+    authDomain: "xxxxxxxxxxxxxxxxxxxxxx",
+    projectId: "xxxxxxxxxxxxxxxxxxx",
+    storageBucket: "xxxxxxxxxxxxxxx",
+    messagingSenderId: "xxxxxxxxxxxxxxx",
+    appId: "1:xxxxxxxxxxxxxxx:web:",
+    measurementId: "G-xxxxxxxxxxxxxxx",
+    vapidKey: "xxxxxxxxxxxxxxx"
+  },
+  stripePublicKey: 'xxxxxxxxxxxxxxx',
+  payu: {
+    merchantId: 'xxxxxxxxxxxxxxx',
+    accountId: '10xxxxxxxxxxxxxxx12620',
+    apiKey: 'xxxxxxxxxxxxxxx'
+  },
   api: 'https://lazomascotas.com:8000/api',
 };
 

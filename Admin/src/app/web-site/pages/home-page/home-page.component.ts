@@ -19,7 +19,6 @@ import { of } from 'rxjs';
 import { switchMap } from 'rxjs';
 import { ModelService } from '@services/common/model.service';
 import { ProductPromotion } from '@models/promotion/promotion-pop-up.model';
-import { PromotionsModalComponent } from './modals/promotions-modal/promotions-modal.component';
 
 @Component({
   selector: 'app-home-page',
@@ -197,8 +196,7 @@ export class HomePageComponent extends CommonComponent implements OnInit {
     this.api.get<any>('get-promotions').subscribe((data) => {
       this.promotions = data.data;
       if(this.promotions.length > 0){
-        const modalRef = this.modalService.open(PromotionsModalComponent, { size: 'lg' });
-        modalRef.componentInstance.productPromotions = this.promotions;
+
       }
 
     }
