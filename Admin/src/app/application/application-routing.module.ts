@@ -12,9 +12,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('../administration/administration.module').then(
         m => m.AdministrationModule
-      ),
-    canActivate: [AuthGuard, RoleGuard],
-    data: { roles: ['ADMIN','MARKETER_USER'] }
+      )
   },
   {
     path: 'account',
