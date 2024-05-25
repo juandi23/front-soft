@@ -11,30 +11,28 @@ import { validate as uuidValidate } from 'uuid';
 import { takeUntil } from 'rxjs/operators';
 import { tap } from 'rxjs';
 import { ActivatedRoute } from "@angular/router";
-import { Product } from "@models/products/product.model";
-
 @Component({
-  selector: "app-forms-page",
-  templateUrl: "./form-page.component.html",
-  styleUrls: ["./form-page.component.scss"],
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.scss'],
   providers: [
-    { provide: 'API_SERVICE', useValue: 'products' },
+    { provide: 'API_SERVICE', useValue: 'cron-jobs' },
     CommonApiService,
     {
-      provide: 'ProductService',
-      useFactory: () => new ModelService<Product>(),
+      provide: 'CronJobService',
+      useFactory: () => new ModelService<any>(),
     },
-  ],
+  ]
 })
-export class FormPageComponent extends CommonPageComponent implements OnInit {
+export class FormComponent extends CommonPageComponent implements OnInit {
   constructor(
     private api: CommonApiService,
-    @Inject('ProductService')
-    public productService: ModelService<Product>,
+    @Inject('CronJobService')
+    public cronJobService: ModelService<any>,
     private route: ActivatedRoute
   ) {
-    super('Product', [
-      { label: 'Products', route: '../' },
+    super('Selecion y Contratacion', [
+      { label: 'Selecion y Contratacion', route: '../' },
     ]);
   }
 
@@ -42,7 +40,7 @@ export class FormPageComponent extends CommonPageComponent implements OnInit {
     const subscribe = this.route.paramMap
       .pipe(
         map((params: ParamMap) => {
-          if (params.get('id') && uuidValidate(params.get('id') || '')) {
+          if (params.get('id') && uuidValidate(params.get('id') || '') && this.route.snapshot.data.modelBot?.id !==  params.get('id')) {
             return params.get('id');
           }
           return null;
@@ -53,18 +51,18 @@ export class FormPageComponent extends CommonPageComponent implements OnInit {
           } else {
             this.breadCrumbs.push({ label: 'Create', active: true });
           }
-          this.productService.isLoading = true;
+          this.cronJobService.isLoading = true;
         }),
         switchMap(id => {
           return id
-            ? this.api.get<Product>(`/${id}`, { limit: 50, page: 1 },)
+            ? this.api.get<any>(`/${id}`, { limit: 50, page: 1 },)
             : of(null);
         }),
         takeUntil(this.destroy$)
       )
       .subscribe(model => {
-        this.productService.isLoading = false;
-        this.productService.set(model);
+        this.cronJobService.isLoading = false;
+        this.cronJobService.set(model);
       });
     this.unsubscribe.push(subscribe);
   }
