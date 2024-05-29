@@ -166,7 +166,7 @@ export class HomePageComponent extends CommonComponent implements OnInit {
          For companies Turn your customer questions into dynamic conversations, powered by the speed and precision of our AI `
     });
     this.title.setTitle(
-      'Lazo '
+      'HR_plataforma '
     );
     this.cookieValue = this.cookiesService.get('lang');
     const modeAttribute = this.themeService.getTheme();
