@@ -1,0 +1,61 @@
+<div class="row">
+    <div class="col-12">
+      <div class="card-body border-bottom">
+        <div class="row">
+          <div class="col-12">
+            <p class="card-title-desc">
+              Completa toda la información para la categoría
+            </p>
+          </div>
+          <form class="row" [formGroup]="group" (ngSubmit)="ngSubmit()">
+  
+  
+            <div class="col-md-6 mb-4" id="title">
+              <label for="title"> Titulo </label>
+              <input id="title" placeholder="Category Title" formControlName="title"
+                type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'title')" />
+              <div *ngIf="submit && f" class="invalid-feedback">
+                <div *ngIf="f['title'].errors">
+                  El título debe ser válido
+                </div>
+              </div>
+            </div>
+  
+  
+            <div id="description">
+              <div class="col-12" >
+                  <label for="description"> Descripción </label>
+                <textarea id="description" formControlName="description" placeholder="Description"
+                  type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'description')">
+                </textarea>
+                <div *ngIf="submit && f" class="invalid-feedback">
+                  <div *ngIf="f['description'].errors">La descripción debe ser válida</div>
+                </div>
+              </div>
+            </div>
+  
+            <div id="name">
+                <div class="col-12" >
+                    <label for="name"> name </label>
+                  <textarea id="name" formControlName="name" placeholder="name"
+                    type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'name')">
+                  </textarea>
+                  <div *ngIf="submit && f" class="invalid-feedback">
+                    <div *ngIf="f['name'].errors">La descripción debe ser válida</div>
+                  </div>
+                </div>
+              </div>
+
+  
+  
+            <div class="col-md-2 mb-3 float-end align-self-end ms-auto">
+              <button type="submit" class="btn w-100 btn-primary w-md mt-4">
+                {{ TRANSLATE_KEY + "SAVE" | translate }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
