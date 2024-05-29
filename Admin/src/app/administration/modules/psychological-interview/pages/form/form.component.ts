@@ -18,17 +18,13 @@ import { ActivatedRoute } from "@angular/router";
   providers: [
     { provide: 'API_SERVICE', useValue: 'cron-jobs' },
     CommonApiService,
-    {
-      provide: 'CronJobService',
-      useFactory: () => new ModelService<any>(),
-    },
-  ]
+  ],
 })
+
 export class FormComponent extends CommonPageComponent implements OnInit {
   constructor(
     private api: CommonApiService,
-    @Inject('CronJobService')
-    public cronJobService: ModelService<any>,
+  
     private route: ActivatedRoute
   ) {
     super('Selecion y Contratacion', [
@@ -46,12 +42,8 @@ export class FormComponent extends CommonPageComponent implements OnInit {
           return null;
         }),
         tap(id => {
-          if (id) {
-            this.breadCrumbs.push({ label: 'Edit', active: true });
-          } else {
             this.breadCrumbs.push({ label: 'Create', active: true });
-          }
-          this.cronJobService.isLoading = true;
+     
         }),
         switchMap(id => {
           return id
@@ -61,8 +53,6 @@ export class FormComponent extends CommonPageComponent implements OnInit {
         takeUntil(this.destroy$)
       )
       .subscribe(model => {
-        this.cronJobService.isLoading = false;
-        this.cronJobService.set(model);
       });
     this.unsubscribe.push(subscribe);
   }
