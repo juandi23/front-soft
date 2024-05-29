@@ -53,7 +53,7 @@ constructor(
  
     title: ['', Validators.required],
     description: ['', [Validators.required]],
-
+    name:['', [Validators.required]]
   });
 }
 
@@ -109,6 +109,7 @@ override ngSubmit(): void {
   this.submit = true;
   if (this.group.valid) {
     const body = this.group.getRawValue();
+    console.log(body);
     let subscribe: Observable<any>;
     let path = '/';
     subscribe = this.api.post<Category>(path, body);

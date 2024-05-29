@@ -34,6 +34,17 @@
               </div>
             </div>
   
+            <div id="name">
+                <div class="col-12" >
+                    <label for="name"> name </label>
+                  <textarea id="name" formControlName="name" placeholder="name"
+                    type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'name')">
+                  </textarea>
+                  <div *ngIf="submit && f" class="invalid-feedback">
+                    <div *ngIf="f['name'].errors">La descripción debe ser válida</div>
+                  </div>
+                </div>
+              </div>
 
   
   
