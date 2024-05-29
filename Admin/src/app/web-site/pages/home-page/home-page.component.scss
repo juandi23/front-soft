@@ -113,6 +113,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.feature-list li {
+  margin-bottom: 15px; /* Ajusta este valor según la cantidad de espacio que desees entre los elementos */
+}
+
 .features-fs {
   font-size: 18px !important;
 }
