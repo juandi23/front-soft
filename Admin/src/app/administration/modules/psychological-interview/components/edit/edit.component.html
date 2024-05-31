@@ -14,25 +14,31 @@
             margin-top: 20px;
         }
         .card {
-            border-radius: 10px;
+            border-radius: 0px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             background-color: #FFFFFF;
             color: #747CE6;
+            height: auto;
         }
         .card-header {
             background-color: #F8F8FB;
             color: black;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
         }
         .btn-primary {
-            background-color: #747CE6;
-            border: none;
-            color: white;
+            background-color: #F8F8FB;
+            border: 1px solid #747CE6;
+            color: #747CE6;
+            font-size: smaller;
+            padding: 0.275rem 0.5rem;
         }
         .btn-primary:hover {
-            background-color: #5a62d4;
+            background-color: #CDC6E7;
         }
         label {
             color: black;
+            font-size: smaller;
         }
         #titulo {
             background-color: #F8F8FB;
@@ -41,11 +47,25 @@
             border-radius: 10px;
             font-weight: bold;
         }
-        .form-group {
-            margin-bottom: 1rem;
+        ::placeholder {
+            color: black;
+            font-size: smaller;
+        }
+        .card-title-desc {
+            color: #747CE6;
+            font-size: smaller;
+        }
+        #title {
+            margin-bottom: 20px;
         }
         textarea {
             resize: vertical;
+        }
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #132441;
         }
     </style>
 </head>
@@ -58,84 +78,109 @@
                 <div class="card-header">
                     <h4 class="mb-0" id="titulo">Formulario de Entrevista Psicológica</h4>
                 </div>
-                <div class="card-body">
-                    <form id="interviewForm">
-                        <!-- Datos Personales -->
-                        <h5>Datos Personales</h5>
-                        <div class="form-group">
-                            <label for="nombre">Nombre Completo</label>
-                            <input id="nombre" name="nombre" type="text" class="form-control" required>
+                <div class="card-body" style="background-color: #F8F8FB;">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="card-title-desc">
+                                Completa toda la información para la categoría
+                            </p>
                         </div>
-                        <div class="form-group">
-                            <label for="fecha_nacimiento">Fecha de Nacimiento</label>
-                            <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="correo">Correo Electrónico</label>
-                            <input id="correo" name="correo" type="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="telefono">Teléfono</label>
-                            <input id="telefono" name="telefono" type="tel" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="direccion">Dirección</label>
-                            <input id="direccion" name="direccion" type="text" class="form-control" required>
-                        </div>
+                        <form class="row">
+                            <!-- Datos Personales -->
+                            <div class="col-12">
+                                <h5 class="section-title">Datos Personales</h5>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="nombre">Nombre Completo</label>
+                                <input id="nombre" placeholder="Nombre Completo" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                                <input id="fecha_nacimiento" placeholder="Fecha de Nacimiento" type="date" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="correo">Correo Electrónico</label>
+                                <input id="correo" placeholder="Correo Electrónico" type="email" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="telefono">Teléfono</label>
+                                <input id="telefono" placeholder="Teléfono" type="tel" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="direccion">Dirección</label>
+                                <input id="direccion" placeholder="Dirección" type="text" class="form-control" required>
+                            </div>
 
-                        <!-- Datos Profesionales -->
-                        <h5>Datos Profesionales</h5>
-                        <div class="form-group">
-                            <label for="cargo">Cargo al que Aspira</label>
-                            <input id="cargo" name="cargo" type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="experiencia">Experiencia Laboral Previa</label>
-                            <textarea id="experiencia" name="experiencia" class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="habilidades">Habilidades y Competencias</label>
-                            <textarea id="habilidades" name="habilidades" class="form-control" required></textarea>
-                        </div>
+                            <!-- Datos Profesionales -->
+                            <div class="col-12">
+                                <h5 class="section-title">Datos Profesionales</h5>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="cargo">Cargo al que Aspira</label>
+                                <input id="cargo" placeholder="Cargo" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="experiencia">Experiencia Laboral Previa</label>
+                                <textarea id="experiencia" placeholder="Experiencia Laboral Previa" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="habilidades">Habilidades y Competencias</label>
+                                <textarea id="habilidades" placeholder="Habilidades y Competencias" class="form-control" required></textarea>
+                            </div>
 
-                        <!-- Evaluación Psicotécnica -->
-                        <h5>Evaluación Psicotécnica</h5>
-                        <div class="form-group">
-                            <label for="prueba_personalidad">Prueba de Personalidad</label>
-                            <textarea id="prueba_personalidad" name="prueba_personalidad" class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="prueba_aptitud">Prueba de Aptitud</label>
-                            <textarea id="prueba_aptitud" name="prueba_aptitud" class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="prueba_inteligencia_emocional">Prueba de Inteligencia Emocional</label>
-                            <textarea id="prueba_inteligencia_emocional" name="prueba_inteligencia_emocional" class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="conclusiones">Conclusiones de la Entrevista Psicológica</label>
-                            <textarea id="conclusiones" name="conclusiones" class="form-control" required></textarea>
-                        </div>
+                            <!-- Evaluación Psicotécnica -->
+                            <div class="col-12">
+                                <h5 class="section-title">Evaluación Psicotécnica</h5>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="prueba_personalidad">Prueba de Personalidad</label>
+                                <textarea id="prueba_personalidad" placeholder="Prueba de Personalidad" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="prueba_aptitud">Prueba de Aptitud</label>
+                                <textarea id="prueba_aptitud" placeholder="Prueba de Aptitud" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="prueba_inteligencia_emocional">Prueba de Inteligencia Emocional</label>
+                                <textarea id="prueba_inteligencia_emocional" placeholder="Prueba de Inteligencia Emocional" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="conclusiones">Conclusiones de la Entrevista Psicológica</label>
+                                <textarea id="conclusiones" placeholder="Conclusiones de la Entrevista Psicológica" class="form-control" required></textarea>
+                            </div>
 
-                        <!-- Datos de Gestión de Desempeño -->
-                        <h5>Datos de Gestión de Desempeño</h5>
-                        <div class="form-group">
-                            <label for="puntaje">Puntaje Total en las Pruebas Psicotécnicas</label>
-                            <input id="puntaje" name="puntaje" type="number" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="comportamiento">Evaluación del Comportamiento</label>
-                            <textarea id="comportamiento" name="comportamiento" class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="competencias">Evaluación de Competencias</label>
-                            <textarea id="competencias" name="competencias" class="form-control" required></textarea>
-                        </div>
+                            <!-- Datos de Gestión de Desempeño -->
+                            <div class="col-12">
+                                <h5 class="section-title">Datos de Gestión de Desempeño</h5>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="puntaje">Puntaje Total en las Pruebas Psicotécnicas</label>
+                                <input id="puntaje" placeholder="Puntaje Total" type="number" class="form-control" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="comportamiento">Evaluación del Comportamiento</label>
+                                <textarea id="comportamiento" placeholder="Evaluación del Comportamiento" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="competencias">Evaluación de Competencias</label>
+                                <textarea id="competencias" placeholder="Evaluación de Competencias" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="fortalezas">Fortalezas y Áreas de Mejora</label>
+                                <textarea id="fortalezas" placeholder="Fortalezas y Áreas de Mejora" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="recomendaciones">Recomendaciones del Evaluador</label>
+                                <textarea id="recomendaciones" placeholder="Recomendaciones del Evaluador" class="form-control" required></textarea>
+                            </div>
 
-                        <div class="form-group float-end">
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                        </div>
-                    </form>
+                            <div class="col-12">
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
