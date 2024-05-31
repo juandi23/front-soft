@@ -3,153 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Cita Psicotécnica</title>
+    <title>Formulario de Entrevista Psicológica</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f0f8ff;
+            background-color: #132441;
             font-family: Arial, sans-serif;
         }
         .container {
-            margin-top: 50px;
+            margin-top: 20px;
         }
         .card {
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #FFFFFF;
+            color: #747CE6;
         }
         .card-header {
-            background-color: #3681AB;
-            color: white;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            background-color: #F8F8FB;
+            color: black;
         }
         .btn-primary {
-            background-color: #3681AB;
+            background-color: #747CE6;
             border: none;
+            color: white;
         }
         .btn-primary:hover {
-            background-color: #CDC6E7;
+            background-color: #5a62d4;
         }
         label {
+            color: black;
+        }
+        #titulo {
+            background-color: #F8F8FB;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
             font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        textarea {
+            resize: vertical;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="card">
-        <div class="card-header">
-            <h4 class="mb-0">Completa toda la información del aspirante</h4>
-        </div>
-        <div class="card-body">
-            <form class="row" [formGroup]="group" (ngSubmit)="ngSubmit()" enctype="multipart/form-data">
-                <!-- Campo para el nombre del aspirante -->
-                <div class="col-md-6 mb-4" id="nombre">
-                    <label for="nombre">Nombre</label>
-                    <input id="nombre" placeholder="Nombre" formControlName="nombre"
-                           type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'nombre')" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['nombre'].errors">
-                            El nombre debe ser válido
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="mb-0" id="titulo">Formulario de Entrevista Psicológica</h4>
+                </div>
+                <div class="card-body">
+                    <form id="interviewForm">
+                        <!-- Datos Personales -->
+                        <h5>Datos Personales</h5>
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input id="nombre" name="nombre" type="text" class="form-control" required>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Campo para el apellido del aspirante -->
-                <div class="col-md-6 mb-4" id="apellido">
-                    <label for="apellido">Apellido</label>
-                    <input id="apellido" placeholder="Apellido" formControlName="apellido"
-                           type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'apellido')" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['apellido'].errors">
-                            El apellido debe ser válido
+                        <div class="form-group">
+                            <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                            <input id="fecha_nacimiento" name="fecha_nacimiento" type="date" class="form-control" required>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Campo para la identificación del aspirante -->
-                <div class="col-md-6 mb-4" id="identificacion">
-                    <label for="identificacion">Identificación</label>
-                    <input id="identificacion" placeholder="Identificación" formControlName="identificacion"
-                           type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'identificacion')" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['identificacion'].errors">
-                            La identificación debe ser válida
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico</label>
+                            <input id="correo" name="correo" type="email" class="form-control" required>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Campo para la fecha de nacimiento del aspirante -->
-                <div class="col-md-6 mb-4" id="fecha_nacimiento">
-                    <label for="fecha_nacimiento">Fecha de Nacimiento</label>
-                    <input id="fecha_nacimiento" placeholder="Fecha de Nacimiento" formControlName="fecha_nacimiento"
-                           type="date" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'fecha_nacimiento')" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['fecha_nacimiento'].errors">
-                            La fecha de nacimiento debe ser válida
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input id="telefono" name="telefono" type="tel" class="form-control" required>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Campo para el teléfono del aspirante -->
-                <div class="col-md-6 mb-4" id="telefono">
-                    <label for="telefono">Teléfono</label>
-                    <input id="telefono" placeholder="Teléfono" formControlName="telefono"
-                           type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'telefono')" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['telefono'].errors">
-                            El teléfono debe ser válido
+                        <div class="form-group">
+                            <label for="direccion">Dirección</label>
+                            <input id="direccion" name="direccion" type="text" class="form-control" required>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Campo para el correo electrónico del aspirante -->
-                <div class="col-md-6 mb-4" id="email">
-                    <label for="email">Correo Electrónico</label>
-                    <input id="email" placeholder="Correo Electrónico" formControlName="email"
-                           type="email" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'email')" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['email'].errors">
-                            El correo electrónico debe ser válido
+                        <!-- Datos Profesionales -->
+                        <h5>Datos Profesionales</h5>
+                        <div class="form-group">
+                            <label for="cargo">Cargo al que Aspira</label>
+                            <input id="cargo" name="cargo" type="text" class="form-control" required>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Campo para la dirección del aspirante -->
-                <div class="col-12 mb-4" id="direccion">
-                    <label for="direccion">Dirección</label>
-                    <input id="direccion" placeholder="Dirección" formControlName="direccion"
-                           type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'direccion')" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['direccion'].errors">
-                            La dirección debe ser válida
+                        <div class="form-group">
+                            <label for="experiencia">Experiencia Laboral Previa</label>
+                            <textarea id="experiencia" name="experiencia" class="form-control" required></textarea>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Campo para subir archivos -->
-                <div class="col-12 mb-4" id="archivo">
-                    <label for="archivo">Subir Hoja de vida</label>
-                    <input id="archivo" formControlName="archivo" type="file" class="form-control" />
-                    <div *ngIf="submit && f" class="invalid-feedback">
-                        <div *ngIf="f['archivo'].errors">
-                            El archivo debe ser válido
+                        <div class="form-group">
+                            <label for="habilidades">Habilidades y Competencias</label>
+                            <textarea id="habilidades" name="habilidades" class="form-control" required></textarea>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Botón para guardar -->
-                <div class="col-md-2 mb-3 float-end align-self-end ms-auto">
-                    <button type="submit" class="btn w-100 btn-primary w-md mt-4">
-                        Guardar
-                    </button>
+                        <!-- Evaluación Psicotécnica -->
+                        <h5>Evaluación Psicotécnica</h5>
+                        <div class="form-group">
+                            <label for="prueba_personalidad">Prueba de Personalidad</label>
+                            <textarea id="prueba_personalidad" name="prueba_personalidad" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="prueba_aptitud">Prueba de Aptitud</label>
+                            <textarea id="prueba_aptitud" name="prueba_aptitud" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="prueba_inteligencia_emocional">Prueba de Inteligencia Emocional</label>
+                            <textarea id="prueba_inteligencia_emocional" name="prueba_inteligencia_emocional" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="conclusiones">Conclusiones de la Entrevista Psicológica</label>
+                            <textarea id="conclusiones" name="conclusiones" class="form-control" required></textarea>
+                        </div>
+
+                        <!-- Datos de Gestión de Desempeño -->
+                        <h5>Datos de Gestión de Desempeño</h5>
+                        <div class="form-group">
+                            <label for="puntaje">Puntaje Total en las Pruebas Psicotécnicas</label>
+                            <input id="puntaje" name="puntaje" type="number" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comportamiento">Evaluación del Comportamiento</label>
+                            <textarea id="comportamiento" name="comportamiento" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="competencias">Evaluación de Competencias</label>
+                            <textarea id="competencias" name="competencias" class="form-control" required></textarea>
+                        </div>
+
+                        <div class="form-group float-end">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
 
 </body>
 </html>
-

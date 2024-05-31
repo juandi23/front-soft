@@ -27,7 +27,7 @@ export class FormComponent extends CommonPageComponent implements OnInit {
   
     private route: ActivatedRoute
   ) {
-    super('Psicologia', [
+    super('Psicología', [
       { label: 'form', route: '../' },
     ]);
   }
