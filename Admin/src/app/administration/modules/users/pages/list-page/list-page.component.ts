@@ -132,8 +132,8 @@ TRANSLATE_KEY= 'ADMIN.USERS.PAGES.LIST.'
     this.apiAuth.loginById({ userId: data.id }).subscribe(response => {
       const data = response.data;
       localStorage.clear();
-      localStorage.setItem('userToken', data?.plainTextToken);
-      localStorage.setItem('tokenIdentifier', data?.accessToken?.tokenable_id);
+      localStorage.setItem('userToken', data?.authToken);
+      localStorage.setItem('tokenIdentifier', data?.authToken);
       this.authService.set(data.user);
       this.menuService.set(getMenuByRole(data.user));
       this.subject$.next(data.user);

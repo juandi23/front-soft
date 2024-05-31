@@ -21,7 +21,7 @@ export const environment = {
     accountId: '10xxxxxxxxxxxxxxx12620',
     apiKey: 'xxxxxxxxxxxxxxx'
   },
-  api: 'https://localhost:8080/api',
+  api: 'http://localhost:8080/api',
 };
 
   

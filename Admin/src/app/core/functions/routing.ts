@@ -5,9 +5,11 @@ import { first } from 'lodash';
 import { map } from 'lodash';
 
 export function   getRouteByRole(user: User): string {
+  console.log('user',user);
   const roleNames = map(user.roles, r => r.name);
+  return '/admin';
   if (roleNames.includes('ADMIN')) {
-    return '/admin/users';
+   
   }
   if(
    roleNames.includes('WHOLESALE_USER')
@@ -40,14 +42,14 @@ export function   getRouteByRole(user: User): string {
 export function getMenuByRole(user: User): MenuItem[] {
   const menu: MenuItem[] = [];
   const roleNames = map(user.roles, r => r.name);
-  if (roleNames.includes('ADMIN')) {
+
     menu.push({
       id: 1,
       label: 'Admin Panel',
       link: '/admin/users',
       icon: 'bx bx-grid-alt',
     });
-  }
+  
   if (
     roleNames.includes('SINGLE_USER')
   ) {

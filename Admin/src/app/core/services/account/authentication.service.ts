@@ -41,19 +41,20 @@ export class AuthenticationService {
     private api: AuthenticationApiService
   ) { }
 
-  login(email: string, password: string): Observable<User | null> {
+  login(email: string, password: string): Observable<any | null> {
     return this.api.login({ email, password }).pipe(
       map(response => {
-        const data = response.data;
-        localStorage.setItem('userToken', data?.plainTextToken);
-        localStorage.setItem('userName', data?.user?.profile?.firstName ?? '');
+        console.log('response', response);
+        const data = response;
+        localStorage.setItem('userToken', response.authToken);
+        localStorage.setItem('userName', data?.firstName ?? '');
         localStorage.setItem(
           'tokenIdentifier',
-          data?.accessToken?.tokenable_id
+          data.authToken,
         );
-        this.authService.set(data.user);
-        this.menuService.set(getMenuByRole(data.user));
-        this.subject$.next(data.user);
+        this.authService.set(data);
+        this.menuService.set(getMenuByRole(data));
+        this.subject$.next(data);
       }),
       switchMap(() => {
         return of(this.subject$.value);
@@ -64,16 +65,16 @@ export class AuthenticationService {
     );
   }
 
-  localLogin(tokenData: Account) {
-    localStorage.setItem('userToken', tokenData?.plainTextToken);
-    localStorage.setItem('userName', tokenData?.user?.profile?.firstName ?? '');
+  localLogin(tokenData: User) {
+    localStorage.setItem('userToken', tokenData.authToken);
+    localStorage.setItem('userName', tokenData?.firstName ?? '');
     localStorage.setItem(
       'tokenIdentifier',
-      tokenData?.accessToken?.tokenable_id
+      tokenData?.authToken ?? '',
     );
-    this.authService.set(tokenData.user);
-    this.menuService.set(getMenuByRole(tokenData.user));
-    this.subject$.next(tokenData.user);
+    this.authService.set(tokenData);
+    this.menuService.set(getMenuByRole(tokenData));
+    this.subject$.next(tokenData);
   }
 
   loginByToken(data: User): void {
