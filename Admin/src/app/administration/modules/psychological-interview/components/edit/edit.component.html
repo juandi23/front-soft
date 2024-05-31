@@ -1,76 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Entrevista Psicológica</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #132441;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            margin-top: 20px;
-        }
-        .card {
-            border-radius: 0px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            background-color: #FFFFFF;
-            color: #747CE6;
-            height: auto;
-        }
-        .card-header {
-            background-color: #F8F8FB;
-            color: black;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-        }
-        .btn-primary {
-            background-color: #F8F8FB;
-            border: 1px solid #747CE6;
-            color: #747CE6;
-            font-size: smaller;
-            padding: 0.275rem 0.5rem;
-        }
-        .btn-primary:hover {
-            background-color: #CDC6E7;
-        }
-        label {
-            color: black;
-            font-size: smaller;
-        }
-        #titulo {
-            background-color: #F8F8FB;
-            color: black;
-            padding: 10px;
-            border-radius: 10px;
-            font-weight: bold;
-        }
-        ::placeholder {
-            color: black;
-            font-size: smaller;
-        }
-        .card-title-desc {
-            color: #747CE6;
-            font-size: smaller;
-        }
-        #title {
-            margin-bottom: 20px;
-        }
-        textarea {
-            resize: vertical;
-        }
-        .section-title {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-weight: bold;
-            color: #132441;
-        }
-    </style>
-</head>
-<body>
-
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -92,23 +19,38 @@
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="nombre">Nombre Completo</label>
-                                <input id="nombre" placeholder="Nombre Completo" type="text" class="form-control" required>
+                                <input id="nombre" placeholder="Nombre Completo" formControlName="nombre" type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'nombre')" />
+                                <div *ngIf="submit && f && f['nombre'].errors" class="invalid-feedback">
+                                    El nombre completo es obligatorio.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
-                                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
-                                <input id="fecha_nacimiento" placeholder="Fecha de Nacimiento" type="date" class="form-control" required>
+                                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                                <input id="fechaNacimiento" placeholder="Fecha de Nacimiento" formControlName="fechaNacimiento" type="date" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'fechaNacimiento')" />
+                                <div *ngIf="submit && f && f['fechaNacimiento'].errors" class="invalid-feedback">
+                                    La fecha de nacimiento es obligatoria.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="correo">Correo Electrónico</label>
-                                <input id="correo" placeholder="Correo Electrónico" type="email" class="form-control" required>
+                                <input id="correo" placeholder="Correo Electrónico" formControlName="correo" type="email" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'correo')" />
+                                <div *ngIf="submit && f && f['correo'].errors" class="invalid-feedback">
+                                    El correo electrónico es obligatorio.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="telefono">Teléfono</label>
-                                <input id="telefono" placeholder="Teléfono" type="tel" class="form-control" required>
+                                <input id="telefono" placeholder="Teléfono" formControlName="telefono" type="tel" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'telefono')" />
+                                <div *ngIf="submit && f && f['telefono'].errors" class="invalid-feedback">
+                                    El teléfono es obligatorio.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="direccion">Dirección</label>
-                                <input id="direccion" placeholder="Dirección" type="text" class="form-control" required>
+                                <input id="direccion" placeholder="Dirección" formControlName="direccion" type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'direccion')" />
+                                <div *ngIf="submit && f && f['direccion'].errors" class="invalid-feedback">
+                                    La dirección es obligatoria.
+                                </div>
                             </div>
 
                             <!-- Datos Profesionales -->
@@ -117,15 +59,24 @@
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="cargo">Cargo al que Aspira</label>
-                                <input id="cargo" placeholder="Cargo" type="text" class="form-control" required>
+                                <input id="cargo" placeholder="Cargo" formControlName="cargo" type="text" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'cargo')" />
+                                <div *ngIf="submit && f && f['cargo'].errors" class="invalid-feedback">
+                                    El cargo al que aspira es obligatorio.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="experiencia">Experiencia Laboral Previa</label>
-                                <textarea id="experiencia" placeholder="Experiencia Laboral Previa" class="form-control" required></textarea>
+                                <textarea id="experiencia" placeholder="Experiencia Laboral Previa" formControlName="experiencia" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'experiencia')"></textarea>
+                                <div *ngIf="submit && f && f['experiencia'].errors" class="invalid-feedback">
+                                    La experiencia laboral previa es obligatoria.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="habilidades">Habilidades y Competencias</label>
-                                <textarea id="habilidades" placeholder="Habilidades y Competencias" class="form-control" required></textarea>
+                                <textarea id="habilidades" placeholder="Habilidades y Competencias" formControlName="habilidades" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'habilidades')"></textarea>
+                                <div *ngIf="submit && f && f['habilidades'].errors" class="invalid-feedback">
+                                    Las habilidades y competencias son obligatorias.
+                                </div>
                             </div>
 
                             <!-- Evaluación Psicotécnica -->
@@ -133,20 +84,32 @@
                                 <h5 class="section-title">Evaluación Psicotécnica</h5>
                             </div>
                             <div class="col-md-6 mb-4">
-                                <label for="prueba_personalidad">Prueba de Personalidad</label>
-                                <textarea id="prueba_personalidad" placeholder="Prueba de Personalidad" class="form-control" required></textarea>
+                                <label for="pruebaPersonalidad">Prueba de Personalidad</label>
+                                <textarea id="pruebaPersonalidad" placeholder="Prueba de Personalidad" formControlName="pruebaPersonalidad" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'pruebaPersonalidad')"></textarea>
+                                <div *ngIf="submit && f && f['pruebaPersonalidad'].errors" class="invalid-feedback">
+                                    La prueba de personalidad es obligatoria.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
-                                <label for="prueba_aptitud">Prueba de Aptitud</label>
-                                <textarea id="prueba_aptitud" placeholder="Prueba de Aptitud" class="form-control" required></textarea>
+                                <label for="pruebaAptitud">Prueba de Aptitud</label>
+                                <textarea id="pruebaAptitud" placeholder="Prueba de Aptitud" formControlName="pruebaAptitud" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'pruebaAptitud')"></textarea>
+                                <div *ngIf="submit && f && f['pruebaAptitud'].errors" class="invalid-feedback">
+                                    La prueba de aptitud es obligatoria.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
-                                <label for="prueba_inteligencia_emocional">Prueba de Inteligencia Emocional</label>
-                                <textarea id="prueba_inteligencia_emocional" placeholder="Prueba de Inteligencia Emocional" class="form-control" required></textarea>
+                                <label for="pruebaInteligencia">Prueba de Inteligencia Emocional</label>
+                                <textarea id="pruebaInteligencia" placeholder="Prueba de Inteligencia Emocional" formControlName="pruebaInteligencia" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'pruebaInteligencia')"></textarea>
+                                <div *ngIf="submit && f && f['pruebaInteligencia'].errors" class="invalid-feedback">
+                                    La prueba de inteligencia emocional es obligatoria.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="conclusiones">Conclusiones de la Entrevista Psicológica</label>
-                                <textarea id="conclusiones" placeholder="Conclusiones de la Entrevista Psicológica" class="form-control" required></textarea>
+                                <textarea id="conclusiones" placeholder="Conclusiones de la Entrevista Psicológica" formControlName="conclusiones" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'conclusiones')"></textarea>
+                                <div *ngIf="submit && f && f['conclusiones'].errors" class="invalid-feedback">
+                                    Las conclusiones de la entrevista psicológica son obligatorias.
+                                </div>
                             </div>
 
                             <!-- Datos de Gestión de Desempeño -->
@@ -155,23 +118,38 @@
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="puntaje">Puntaje Total en las Pruebas Psicotécnicas</label>
-                                <input id="puntaje" placeholder="Puntaje Total" type="number" class="form-control" required>
+                                <input id="puntaje" placeholder="Puntaje Total" formControlName="puntaje" type="number" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'puntaje')" />
+                                <div *ngIf="submit && f && f['puntaje'].errors" class="invalid-feedback">
+                                    El puntaje total es obligatorio.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="comportamiento">Evaluación del Comportamiento</label>
-                                <textarea id="comportamiento" placeholder="Evaluación del Comportamiento" class="form-control" required></textarea>
+                                <textarea id="comportamiento" placeholder="Evaluación del Comportamiento" formControlName="comportamiento" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'comportamiento')"></textarea>
+                                <div *ngIf="submit && f && f['comportamiento'].errors" class="invalid-feedback">
+                                    La evaluación del comportamiento es obligatoria.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="competencias">Evaluación de Competencias</label>
-                                <textarea id="competencias" placeholder="Evaluación de Competencias" class="form-control" required></textarea>
+                                <textarea id="competencias" placeholder="Evaluación de Competencias" formControlName="competencias" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'competencias')"></textarea>
+                                <div *ngIf="submit && f && f['competencias'].errors" class="invalid-feedback">
+                                    La evaluación de competencias es obligatoria.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="fortalezas">Fortalezas y Áreas de Mejora</label>
-                                <textarea id="fortalezas" placeholder="Fortalezas y Áreas de Mejora" class="form-control" required></textarea>
+                                <textarea id="fortalezas" placeholder="Fortalezas y Áreas de Mejora" formControlName="fortalezas" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'fortalezas')"></textarea>
+                                <div *ngIf="submit && f && f['fortalezas'].errors" class="invalid-feedback">
+                                    Las fortalezas y áreas de mejora son obligatorias.
+                                </div>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label for="recomendaciones">Recomendaciones del Evaluador</label>
-                                <textarea id="recomendaciones" placeholder="Recomendaciones del Evaluador" class="form-control" required></textarea>
+                                <textarea id="recomendaciones" placeholder="Recomendaciones del Evaluador" formControlName="recomendaciones" class="form-control" autocomplete="new-data" [ngClass]="ngClassValidate(group, 'recomendaciones')"></textarea>
+                                <div *ngIf="submit && f && f['recomendaciones'].errors" class="invalid-feedback">
+                                    Las recomendaciones del evaluador son obligatorias.
+                                </div>
                             </div>
 
                             <div class="col-12">
@@ -187,5 +165,3 @@
     </div>
 </div>
 
-</body>
-</html>

@@ -1,0 +1,62 @@
+
+        body {
+            background-color: #132441;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .card {
+            border-radius: 0px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: #FFFFFF;
+            color: #747CE6;
+            height: auto;
+        }
+        .card-header {
+            background-color: #F8F8FB;
+            color: black;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+        .btn-primary {
+            background-color: #F8F8FB;
+            border: 1px solid #747CE6;
+            color: #747CE6;
+            font-size: smaller;
+            padding: 0.275rem 0.5rem;
+        }
+        .btn-primary:hover {
+            background-color: #CDC6E7;
+        }
+        label {
+            color: black;
+            font-size: smaller;
+        }
+        #titulo {
+            background-color: #F8F8FB;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        ::placeholder {
+            color: black;
+            font-size: smaller;
+        }
+        .card-title-desc {
+            color: #747CE6;
+            font-size: smaller;
+        }
+        #title {
+            margin-bottom: 20px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .section-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #132441;
+        }
