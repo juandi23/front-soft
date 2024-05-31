@@ -51,9 +51,23 @@ constructor(
   super(builder, api, toastr);
   this.group = this.builder.group({
  
-    title: ['', Validators.required],
-    description: ['', [Validators.required]],
-    name:['', [Validators.required]]
+    nombre: ['', Validators.required],
+    fechaNacimiento: ['', Validators.required],
+    correo: ['', Validators.required],
+    telefono: ['', Validators.required],
+    direccion: ['', Validators.required],
+    cargo: ['', Validators.required],
+    experiencia: ['', Validators.required],
+    habilidades: ['', Validators.required],
+    pruebaPersonalidad: ['',  Validators.required],
+    pruebaAptitud: ['', Validators.required],
+    pruebaInteligencia: ['', Validators.required],
+    conclusiones: ['', Validators.required],
+    puntaje: ['', Validators.required],
+    comportamiento: ['', Validators.required],
+    competencias: ['', Validators.required],
+    fortalezas: ['', Validators.required],
+    recomendaciones: ['', Validators.required],
   });
 }
 
