@@ -24,6 +24,7 @@ export interface User {
   apiBalanceValue?: number;
   wholesaleUsers?: UserWhosale;
   getTotalPurchaseValue?: number;
+  authToken: string;
   getTotalOrders?: number;
 
 }

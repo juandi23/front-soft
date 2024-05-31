@@ -99,16 +99,27 @@ export class Register2Component implements OnInit {
     if (this.signupForm.invalid) {
       return;
     } else {
+
       const group = this.signupForm.getRawValue();
-      this.api.post<any>('users/register', group)
+      const body={
+        username: group.firstName,
+        firstName: group.firstName,
+        lastName: group.lastName,
+        email: group.email,
+        password: group.password,
+      }
+      this.api.post<any>('users/register', body)
         .subscribe(r => {
-          if (r.user) {
+          if (r) {
+            console.log(r);
+            console.log(r);  
+
             this.service
               .login(this.f['email'].value, this.f['password'].value)
               .pipe(first())
-              .subscribe(user => {
-                if (user) {
-                  this.router.navigate([getRouteByRole(user)]).then();
+              .subscribe(r => {
+                if (r) {
+                  this.router.navigate([getRouteByRole(r)]).then();
                 }
               }, error => {
            this.toastr.error(error || 'Error');

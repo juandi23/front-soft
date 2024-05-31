@@ -15,8 +15,8 @@ export class AuthenticationApiService {
     private httpClient: HttpClient
   ) {}
 
-  login(body: any = {}): Observable<ApiDataResponse<Account>> {
-    return this.httpClient.post<ApiDataResponse<Account>>(
+  login(body: any = {}): Observable<any> {
+    return this.httpClient.post<ApiDataResponse<any>>(
       `${this.api}/users/login`,
       body
     );
