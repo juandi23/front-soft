@@ -6,13 +6,13 @@
   <div class="container">
     <a class="navbar-logo" routerLink="/">
       <img
-        src="assets/images/logos/lazo.png"
+        src="assets/images/logos/favicon.png"
         alt=""
         height="70"
         class="logo logo-dark"
       />
       <img
-        src="assets/images/logos/lazo.png"
+        src="assets/images/logos/favicon.png"
         alt=""
         height="70"
         class="logo logo-light"
@@ -46,31 +46,16 @@
             href="javascript: void(0);"
             [ngxScrollTo]="'features'"
             [ngClass]="{ active: currentSection === 'features' }"
-            >Características</a
+            >¿Por qué elegir Yéminus?</a
           >
         </li>
-
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/meta/reviews"
-            >Reseñas</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/vendor/form"
-            >Proveedores</a
-          >
-        </li>
-        <li class="nav-item" *ngIf="!isLoggedIn">
+        <!-- <li class="nav-item" *ngIf="!isLoggedIn">
           <a
             class="nav-link"
             routerLink="/account/auth/wholesale-form"
             >Mayorista</a
           >
-        </li>
+        </li>-->
         <li class="nav-item">
           <a
             class="nav-link"
@@ -80,18 +65,17 @@
             >FAQs</a
           >
         </li>
-        <app-translate-button> </app-translate-button>
       </ul>
 
-      <div class="dropdown d-inline-block" ngbDropdown>
+      <!-- <div class="dropdown d-inline-block" ngbDropdown>
         <button
           routerLink="/products/cart"
           type="button"
           class="btn header-item noti-icon">
           <i class="bx bx-cart"></i>
-          <!-- <span class="badge bg-danger rounded-pill">0</span> -->
+          <span class="badge bg-danger rounded-pill">0</span>
         </button>
-      </div>
+      </div>-->
 
       <div class="d-flex align-items-center ms-3">
         <div class="d-flex" *ngIf="!isLoggedIn; else accountMenu">
@@ -115,7 +99,7 @@
           ></app-page-header-user-dropdown>
         </ng-template>
       </div>
-      <div class="dropdown d-inline-block" ngbDropdown>
+      <!-- <div class="dropdown d-inline-block" ngbDropdown>
         <button
           type="button"
           class="btn header-item noti-icon"
@@ -177,7 +161,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </nav>
@@ -198,24 +182,28 @@
         <div class="col-12 d-flex justify-content-center">
           <div class="text-white-50 text-center">
             <p class="font-size-14 text-white">
-              
+              Bienvenid@ a
             </p>
             <h1 class="text-white fw-semibold mb-3 hero-title">
-              Bienvenido.
+              Yéminus
             </h1>
             <div>
               <p class="font-size-14 text-white mt-4 ">
-                Tu portal integral para la gestión de recursos humanos. Facilitamos la administración del talento, 
-                el seguimiento del desempeño y el bienestar de tus empleados.
+                Tu solución integral para mejorar la gestión del talento humano en tu empresa. 
                 <br>
-              
+                ¿Estás cansado de lidiar con procesos de reclutamiento ineficientes, contrataciones demoradas y una baja tasa de retención de personal? 
+                <br>
+                ¡Ya no tienes que preocuparte más! Yéminus está aquí para ayudarte a optimizar cada aspecto de la gestión de recursos humanos.
               </p>
             </div>
           
         
             <div class="button-items mt-5 d-flex justify-content-center gap-2">
               <button routerLink="/account/auth/signup-2" class="btn btn-rounded btn-primary mx-1 text-white fw-bold">
-                <span class="ms-2">Inicio sesión</span>
+                <span class="ms-2">Registro</span>
+              </button>
+              <button (click)="redirectToExternalAuth('google')" class="btn btn-rounded btn-light bg-white mx-1 fw-bold google-btn">
+                <span class="ms-2 text-black">Inicio de sesión</span>
               </button>
             </div>
           </div>
@@ -233,45 +221,65 @@
     <div class="container">
       <div class="row mt-4">
         <div class="col-lg-12">
-          <div class="text-center mb-5">
-            <h1 class="description-title fw-bold">Conectando Talento y Oportunidades
-            </h1>
-            <h5 class="mt-2">Nuestro objetivo es crear un vínculo significativo entre las empresas y sus empleados. Optimiza tus procesos de contratación, desarrollo y retención de talento con nuestras soluciones innovadoras.<br> </h5>
-            
+          <div class="mb-5">
+            <br>
+            <h1 class="description-title fw-bold text-center">¿Por qué elegir Yéminus?</h1>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <h5>1. Eficiencia y Automatización:</h5>
+                    <p>Simplifica y automatiza tus procesos de reclutamiento, selección, contratación, capacitación y retención del personal.</p>
+                  </li>
+                  <li>
+                    <h5>2. Mejora de la Calidad:</h5>
+                    <p>Eleva la calidad de tus contrataciones, reduce los tiempos de contratación y aumenta la satisfacción y retención de tus empleados.</p>
+                  </li>
+                  <li>
+                    <h5>3. Cumplimiento Normativo:</h5>
+                    <p>Mantente al día con las regulaciones laborales y de privacidad, minimizando el riesgo de litigios y sanciones.</p>
+                  </li>
+                  <li>
+                    <h5>4. Comunicación Interna:</h5>
+                    <p>Facilita una comunicación interna efectiva con un sistema de envío de correos electrónicos oportuno y preciso.</p>
+                  </li>
+                  <li>
+                    <h5>5. Experiencia del Candidato:</h5>
+                    <p>Refina tu proceso de contratación para ofrecer una experiencia transparente y positiva a los candidatos, fortaleciendo tu marca empleadora.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <h5>¿Qué ofrecemos?</h5>
+                  </li>
+                  <li>
+                    <h5>1. Automatización de Procesos:</h5>
+                    <p>Simplifica y agiliza tus procesos de RR.HH. desde la contratación hasta la liquidación de nómina.</p>
+                  </li>
+                  <li>
+                    <h5>2. Cumplimiento Normativo:</h5>
+                    <p>Mantente siempre al día con las regulaciones legales y laborales, minimizando riesgos y sanciones.</p>
+                  </li>
+                  <li>
+                    <h5>3. Soporte Personalizado:</h5>
+                    <p>Un equipo dedicado de soporte técnico siempre está listo para ayudarte en cada paso del camino.</p>
+                  </li>
+                  <li>
+                    <h5>4. Interfaz Intuitiva:</h5>
+                    <p>Una interfaz de usuario intuitiva y fácil de usar para una experiencia sin complicaciones.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    
     </div>
   </section>
-
-
-  <section class="section pt-4 bg-white" id="features">
-    <div class="container">
-      <div class="row mt-4">
-        <div class="col-lg-12">
-          <div class="text-center mb-5">
-            <h1 class="description-title fw-bold">Características</h1>
-          </div>
-          <div class="text-left">
-            <h5 class="mt-2">
-              <ol>
-                <li>Gestión de Reclutamiento: Herramientas avanzadas para la publicación de ofertas de trabajo, seguimiento de candidatos y selección de personal.<br></li>
-                <li>Administración de Empleados: Gestión centralizada de la información de los empleados, incluyendo datos personales, historial laboral y documentación.<br></li>
-                <li>Seguimiento del Desempeño: Evaluaciones de desempeño personalizadas, establecimiento de objetivos y seguimiento del progreso.<br></li>
-                <li>Gestión de Nómina: Procesamiento de nóminas de manera eficiente y precisa, con cálculos automáticos de impuestos y deducciones.<br></li>
-                <li>Capacitación y Desarrollo: Programas de capacitación integrados para el desarrollo profesional continuo de los empleados.<br></li>
-                <li>Gestión de Beneficios: Administración de beneficios y compensaciones para los empleados, asegurando la satisfacción y retención.<br></li>
-                <li>Análisis y Reportes: Informes detallados y análisis de datos para tomar decisiones informadas y estratégicas en RRHH.<br></li>
-                <li>Cumplimiento Legal: Aseguramiento del cumplimiento con las normativas laborales y legales vigentes.</li>
-                <li>Comunicación Interna: Herramientas para mejorar la comunicación y colaboración entre los equipos.</li>
-              </ol>
-            </h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   
 
 
@@ -285,7 +293,7 @@
         <div class="col-lg-12">
           <div class="text-center mb-5">
             <div class="small-title">FAQs</div>
-            <h4>Preguntas Frecuentes</h4>
+            <h4>Preguntas frecuentes</h4>
           </div>
         </div>
       </div>
@@ -304,12 +312,12 @@
                   <li [ngbNavItem]="1">
                     <a ngbNavLink>
                       <i class="bx bx-help-circle nav-icon d-block mb-2"></i>
-                      <p class="fw-bold mb-0">Preguntas Generales</p>
+                      <p class="fw-bold mb-0">Preguntas generales</p>
                     </a>
                     <ng-template ngbNavContent>
                       <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title mb-4">Preguntas Generales</h4>
+                          <h4 class="card-title mb-4">Preguntas generales</h4>
 
                           <ngb-accordion
                             [closeOthers]="true"
@@ -318,30 +326,28 @@
                           >
                             <ngb-panel id="static-1">
                               <ng-template ngbPanelTitle class="accordion-list">
-                                <div>¿Qué esta plataforma?</div>
+                                <div>¿Qué es Yéminus?</div>
                               </ng-template>
                               <ng-template ngbPanelContent>
                                 <div class="card-body p-0">
                                   <p class="mb-0">
-                                    Es una plataforma integral de recursos humanos diseñada para optimizar 
-                                    y mejorar la gestión de las funciones de RRHH. Ofrece herramientas 
-                                    para la contratación, la gestión de empleados, el seguimiento del desempeño y mucho más, 
-                                    todo dentro de una interfaz intuitiva y fácil de usar.
+                                    En Yéminus, entendemos los desafíos que enfrenta tu departamento de Recursos Humanos. 
+                                    Desde la ineficiencia en los procesos de reclutamiento hasta la falta de seguimiento 
+                                    adecuado de los candidatos, estamos aquí para ofrecerte una solución integral que 
+                                    transformará la forma en que gestionas el talento humano en tu empresa.
                                   </p>
                                 </div>
                               </ng-template>
                             </ngb-panel>
                             <ngb-panel id="static-2">
                               <ng-template ngbPanelTitle class="accordion-list">
-                                <div>¿Por qué se usa?</div>
+                                <div>¿Por qué lo usamos?</div>
                               </ng-template>
                               <ng-template ngbPanelContent>
                                 <div class="card-body p-0">
                                   <p class="mb-0">
-                                    Usamos este sitio web para optimizar nuestros procesos de RRHH, asegurando una gestión eficiente y 
-                                    efectiva de las tareas relacionadas con los empleados. Al centralizar todas las actividades de RRHH, 
-                                    este ayuda a mejorar la productividad, reducir las cargas administrativas y aumentar la 
-                                    satisfacción de los empleados.
+                                    Usamos Yéminus porque ofrece una solución integral para abordar los desafíos en la gestión 
+                                    del talento humano en las empresas.
                                   </p>
                                 </div>
                               </ng-template>
@@ -349,13 +355,14 @@
                             <ngb-panel id="static-3">
                               <ng-template ngbPanelTitle class="accordion-list">
                                 <div>¿Cómo es posible?</div>
+                                <div>¿Cómo es posible?</div>
                               </ng-template>
                               <ng-template ngbPanelContent>
                                 <div class="card-body p-0">
                                   <p class="mb-0">
-                                    Aprovecha la tecnología avanzada y el análisis de datos para proporcionar información valiosa y 
-                                    procesable. Su enfoque integrado permite una coordinación fluida entre las diversas funciones de RRHH, 
-                                    haciendo posible la gestión de tareas con precisión y facilidad.
+                                    Yéminus nos ayuda a optimizar nuestra gestión del talento humano, mejorar la eficiencia de 
+                                    nuestros procesos y garantizar el cumplimiento normativo, todo mientras ofrecemos una experiencia 
+                                    positiva tanto para nuestros empleados como para los candidatos.
                                   </p>
                                 </div>
                               </ng-template>
@@ -551,81 +558,105 @@
   </section>
   <!-- Faqs end -->
 
-  <!-- Footer start -->
-  <footer class="landing-footer footer-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <div class="mb-4 mb-lg-0">
-            <h5 class="mb-3 footer-list-title">Company</h5>
-            <ul class="list-unstyled footer-list-menu">
-              <li>
-                <a class="cursor-pointer" [ngxScrollTo]="'features'"
-                  >Features</a
-                >
-              </li>
-              <li><a class="cursor-pointer" [ngxScrollTo]="'faqs'">FAQs</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="mb-4 mb-lg-0">
-            <h5 class="mb-3 footer-list-title">Resources</h5>
-            <ul class="list-unstyled footer-list-menu">
-              <li><a href="/#/meta/privacy-policy">Privacy Policy</a></li>
-              <li><a href="/#/meta/terms-use">Terms & Conditions</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <div class="mb-4 mb-lg-0">
-            <h5 class="mb-3 footer-list-title">Links</h5>
-            <ul class="list-unstyled footer-list-menu">
-              <li>
-                <a class="cursor-pointer" [ngxScrollTo]="'roadmap'">Roadmap</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+  
 
-        <div class="col-lg-3 col-sm-6">
-          <div class="mb-4 mb-lg-0">
-            <h5 class="mb-3 footer-list-title">Latest News</h5>
-            <div class="blog-post">
-              <a href="javascript: void(0);" class="post">
-                <div class="badge badge-soft-success font-size-11 mb-3">
-                  Lazo Deploy
-                </div>
-                <h5 class="post-title">
-                  Lazo deployed its services to the public
-                </h5>
-                <p class="mb-0">
-                  <i class="bx bx-calendar me-1"></i> Feb, 2024
-                </p>
-              </a>
-            </div>
-          </div>
+  <!-- Footer start -->
+<footer class="landing-footer footer-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="mb-4 mb-lg-0">
+
+          <h5 class="mb-3 footer-list-title">Empresa</h5>
+          <ul class="list-unstyled footer-list-menu">
+            <li>
+              <a class="cursor-pointer" [ngxScrollTo]="'features'"
+                >¿Por qué elegir Yéminus?</a
+              >
+            </li>
+            <li><a class="cursor-pointer" [ngxScrollTo]="'faqs'">FAQs</a></li>
+          </ul>
         </div>
       </div>
-      <!-- end row -->
+      <div class="col-lg-3 col-sm-6">
+        <div class="mb-4 mb-lg-0">
+          <h5 class="mb-3 footer-list-title">Recursos</h5>
+          <ul class="list-unstyled footer-list-menu">
+            <li><a href="/#/meta/privacy-policy">Política de privacidad</a></li>
+            <li><a href="/#/meta/terms-use">Términos y condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="mb-4 mb-lg-0">
+          <h5 class="mb-3 footer-list-title">Links</h5>
+          <ul class="list-unstyled footer-list-menu">
+            <li>
+              <a class="cursor-pointer" [ngxScrollTo]="'home'">Plan de trabajo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-      <hr class="footer-border my-5" />
-
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="mb-4">
-            <img src="assets/images/logos/lazo.png" alt="" height="70" />
+      <div class="col-lg-3 col-sm-6">
+        <div class="mb-4 mb-lg-0">
+          <h5 class="mb-3 footer-list-title">Últimas Noticias</h5>
+          <div class="blog-post">
+            <a href="javascript: void(0);" class="post">
+              <div class="badge badge-soft-success font-size-11 mb-3">
+                Yéminus en acción
+              </div>
+              <h5 class="post-title">
+                Yéminus ha desplegado sus servicios al público
+              </h5>
+              <p class="mb-0">
+                <i class="bx bx-calendar me-1"></i> Feb, 2024
+              </p>
+            </a>
           </div>
-
-          <p class="mb-2">{{ year }} © Lazo.</p>
-          <p>
-            It will be as simple as occidental in fact, it will be to an english
-            person, it will seem like simplified English, as a skeptical
-          </p>
         </div>
       </div>
     </div>
-    <!-- end container -->
-  </footer>
-  <!-- Footer end -->
+
+    <!-- Additional content -->
+    <div class="row">
+      <div class="col-lg-6">
+        <h5>Contacto</h5>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>YouTube</li>
+        </ul>
+        <p><strong>Llámanos:</strong></p>
+        <ul>
+          <li>Teléfono: +57 123 4567890 Fax: 0987654</li>
+          <li>Conmutador: (57) (123) 456 7890</li>
+          <li>Correo: info@yeminus.com</li>
+          <li><strong>Dirección:</strong></li>
+          <li>Yéminus, Pereira, Risaralda, Colombia</li>
+        </ul>
+      </div>
+    </div>
+    <!-- end additional content -->
+    <!-- end row -->
+
+    <hr class="footer-border my-5" />
+
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="mb-4">
+          <img src="assets/images/logos/favicon.png" alt="" height="70" />
+        </div>
+
+        <p class="mb-2">2024 © Yéminus.</p>
+        <p>
+          Yéminus es una solución innovadora que simplifica y automatiza los procesos de recursos humanos. Nuestra misión es mejorar la eficiencia y la calidad en la gestión del personal.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- end container -->
+</footer>
+<!-- Footer end -->
+
 </div>
