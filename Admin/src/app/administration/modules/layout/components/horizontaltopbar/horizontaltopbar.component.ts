@@ -52,18 +52,15 @@ export class HorizontaltopbarComponent
     this.attribute = attributeAux !== '' ? attributeAux : 'horizontal';
     const modeAttribute = this.themeService.getTheme();
     this.mode= modeAttribute !== '' ? modeAttribute : 'light';
-    const readUserRole = this.authenticationService.authService.model.roles.find(e => e.name === 'MARKETER_USER');
-    if(readUserRole && this.authenticationService.authService.model.roles.length === 1){
+
       this.menuItems = this.menuItems.filter(item => {
-        if (item.label === 'Marketing') {
-          return true;
-        } else if (item.subItems) {
+     if (item.subItems) {
           item.subItems = item.subItems.filter(subItem => subItem.label === 'Company Modules');
           return item.subItems.length > 0;
         }
         return false;
       });
-    }
+    
 
   }
 

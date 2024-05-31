@@ -21,7 +21,7 @@ import { readFile } from '@functions/files';
   templateUrl: './edit-form.component.html',
   styleUrls: ['./edit-form.component.scss'],
   providers: [
-    { provide: 'API_SERVICE', useValue: 'users' },
+    { provide: 'API_SERVICE', useValue: 'employees' },
   CommonVerbsApiService
   ],
 
@@ -54,8 +54,6 @@ constructor(
   super(builder, api, toastr);
   this.group = this.builder.group({
  
-    title: ['', Validators.required],
-    description: ['', [Validators.required]],
     first_name: ['', [Validators.required]],
     last_name: ['', [Validators.required]],
     cargo: ['', [Validators.required]],
@@ -117,11 +115,14 @@ onSelect(event: NgxDropzoneChangeEvent, media: Media) {
 
 override ngSubmit(): void {
   this.submit = true;
+  console.log(this.group);
   if (this.group.valid) {
+    
     const body = this.group.getRawValue();
+    console.log(body);
     let subscribe: Observable<any>;
-    let path = '/';
-    subscribe = this.api.post<Category>(path, body);
+    let path = '';
+    subscribe = this.api.post<any>(path, body);
     subscribe.subscribe({
       complete: () => (this.submit = false),
       error: err => {
@@ -136,7 +137,7 @@ override ngSubmit(): void {
         if (this.isCreateSubject$.value) {
           this.group.reset();
         }
-        this.router.navigate([`admin/categories`]);
+        this.router.navigate([`admin/seleccion`]);
       },
     });
   }

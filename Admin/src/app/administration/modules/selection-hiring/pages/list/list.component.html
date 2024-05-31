@@ -1,1 +1,67 @@
-<p>list works!</p>
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body border-bottom">
+          <div class="row justify-content-end">
+         
+
+            <div class="col-md-5">
+              <div class="d-flex justify-content-end gap-2">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="searchInput"
+                  [placeholder]="TRANSLATE_KEY+'SEARCH'|translate"
+                  [formControl]="searchControl"
+                  autocomplete="new-input" />
+
+                <a (click)="clear()" class="btn btn-light"
+                  ><i class="mdi mdi-refresh"></i
+                ></a>
+                <a [routerLink]="['forms']" class="btn btn-primary">
+                  <i class="bx bx-plus-medical align-middle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-centered table-nowrap table-hover align-middle">
+                <thead>
+                  <tr>
+                    <th>{{ 'F_NAME' | translate }}</th>
+                    <th>{{ 'L_NAME' | translate }}</th>
+                    <th>{{ 'EMAIL' | translate }}</th>
+                    <th>{{ 'ROLES' | translate }}</th>
+                    <th>{{ 'ACTIONS' | translate }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let employee of (service.collection$ | async)?.data">
+                    <td>{{ employee.name.first_name }}</td>
+                    <td>{{ employee.name.last_name }}</td>
+                    <td>{{ employee.name.lista_de_proyectos }}</td>
+                    <td> {{employee.name.salario_base}}</td>
+                    <td>
+                      <div *ngFor="let role of employee.roles" class="col-12 text-center">
+                        <span class="badge badge-soft-secondary font-size-11 w-100 p-2">{{ role.name.lista_de_proyectos }}</span>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-2 justify-content-end">
+                        <button type="button" class="btn btn-outline-danger" (click)="deleteUser(employee.name.id)">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
