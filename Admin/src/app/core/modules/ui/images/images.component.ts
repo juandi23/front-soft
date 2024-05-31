@@ -8,7 +8,7 @@ import { Input } from '@angular/core';
 })
 export class ImagesComponent {
   @Input() src: string | null = null;
-  @Input() alt = 'Lazo';
+  @Input() alt = 'Yéminus';
   @Input() class = 'w-100';
   private default = 'https://via.placeholder.com/200?text=Unavailable';
 
