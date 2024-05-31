@@ -17,11 +17,8 @@ export class AppComponent implements OnInit  {
   ) {}
   variables : any;
   ngOnInit() {
-    this.api.get<any>('styles').
-    subscribe((response: any) => {
-      this.variables = response;
-      this.styles.loadVariablesFromLocalStorage(this.variables);
-    });
+
+  
 
   }
 }

@@ -16,12 +16,28 @@ const routes: Routes = [
           import('./modules/users/users.module').then(
             m => m.UsersModule
           ),
-          canActivate: [RoleGuard],
+          canActivate: [AuthGuard, RoleGuard],
           data: { roles: ['ADMIN'] }
       },
 
     ]
   },
+  {
+    path: 'psicologia',
+    loadChildren: () =>
+      import('./modules/psychological-interview/psychological-interview.module').then(
+        m => m.PsychologicalInterviewModule
+      ),
+
+  },
+  {
+    path: 'seleccion'
+    , loadChildren: () =>
+      import('./modules/selection-hiring/selection-hiring.module').then(
+        m => m.SelectionHiringModule
+      ),
+  }
+
 ];
 
 @NgModule({
