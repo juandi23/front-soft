@@ -19,7 +19,7 @@ import { readFile } from '@functions/files';
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.scss'],
   providers: [
-    { provide: 'API_SERVICE', useValue: 'users' },
+    { provide: 'API_SERVICE', useValue: '' },
   CommonVerbsApiService
   ],
 })

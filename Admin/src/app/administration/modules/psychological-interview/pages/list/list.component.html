@@ -1,1 +1,85 @@
-<p>list works!</p>
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body border-bottom">
+          <div class="row justify-content-end">
+            <div class="col-md-5">
+              <div class="d-flex justify-content-end gap-2">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="searchInput"
+                  [placeholder]="TRANSLATE_KEY+'SEARCH'|translate"
+                  [formControl]="searchControl"
+                  autocomplete="new-input" />
+
+                <a (click)="clear()" class="btn btn-light">
+                  <i class="mdi mdi-refresh"></i>
+                </a>
+                <a [routerLink]="['forms']" class="btn btn-primary">
+                  <i class="bx bx-plus-medical align-middle"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-centered table-nowrap table-hover align-middle">
+              <thead>
+                <tr>
+                  <th>{{ 'NOMBRE' | translate }}</th>
+                  <th>{{ 'FECHA_NACIMIENTO' | translate }}</th>
+                  <th>{{ 'CORREO' | translate }}</th>
+                  <th>{{ 'TELEFONO' | translate }}</th>
+                  <th>{{ 'DIRECCION' | translate }}</th>
+                  <th>{{ 'CARGO' | translate }}</th>
+                  <th>{{ 'EXPERIENCIA' | translate }}</th>
+                  <th>{{ 'HABILIDADES' | translate }}</th>
+                  <th>{{ 'PRUEBA_PERSONALIDAD' | translate }}</th>
+                  <th>{{ 'PRUEBA_APTITUD' | translate }}</th>
+                  <th>{{ 'PRUEBA_INTELIGENCIA' | translate }}</th>
+                  <th>{{ 'CONCLUSIONES' | translate }}</th>
+                  <th>{{ 'PUNTAJE' | translate }}</th>
+                  <th>{{ 'COMPORTAMIENTO' | translate }}</th>
+                  <th>{{ 'COMPETENCIAS' | translate }}</th>
+                  <th>{{ 'FORTALEZAS' | translate }}</th>
+                  <th>{{ 'RECOMENDACIONES' | translate }}</th>
+                  <th>{{ 'ACCIONES' | translate }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let entrevista of (service.collection$ | async)?.data">
+                  <td>{{ entrevista.nombre }}</td>
+                  <td>{{ entrevista.fechaNacimiento }}</td>
+                  <td>{{ entrevista.correo }}</td>
+                  <td>{{ entrevista.telefono }}</td>
+                  <td>{{ entrevista.direccion }}</td>
+                  <td>{{ entrevista.cargo }}</td>
+                  <td>{{ entrevista.experiencia }}</td>
+                  <td>{{ entrevista.habilidades }}</td>
+                  <td>{{ entrevista.pruebaPersonalidad }}</td>
+                  <td>{{ entrevista.pruebaAptitud }}</td>
+                  <td>{{ entrevista.pruebaInteligencia }}</td>
+                  <td>{{ entrevista.conclusiones }}</td>
+                  <td>{{ entrevista.puntaje }}</td>
+                  <td>{{ entrevista.comportamiento }}</td>
+                  <td>{{ entrevista.competencias }}</td>
+                  <td>{{ entrevista.fortalezas }}</td>
+                  <td>{{ entrevista.recomendaciones }}</td>
+                  <td>
+                    <div class="d-flex gap-2 justify-content-end">
+                      <button type="button" class="btn btn-outline-danger" (click)="deleteEntrevista(entrevista.id)">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

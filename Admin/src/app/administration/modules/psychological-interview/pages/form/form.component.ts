@@ -16,7 +16,7 @@ import { ActivatedRoute } from "@angular/router";
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss'],
   providers: [
-    { provide: 'API_SERVICE', useValue: 'cron-jobs' },
+    { provide: 'API_SERVICE', useValue: 'entrevistapsicologica' },
     CommonApiService,
   ],
 })
