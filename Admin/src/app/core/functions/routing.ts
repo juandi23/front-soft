@@ -7,7 +7,7 @@ import { map } from 'lodash';
 export function   getRouteByRole(user: User): string {
   console.log('user',user);
   const roleNames = map(user.roles, r => r.name);
-  return '/admin';
+  return '/admin/seleccion';
   if (roleNames.includes('ADMIN')) {
    
   }

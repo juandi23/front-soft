@@ -1,0 +1,56 @@
+body {
+    background-color: #132441; /* Color de fondo del cuerpo */
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin-top: 20px; /* Ajuste del margen superior */
+}
+.card {
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF; /* Color de fondo de las tarjetas */
+    color: #747CE6; /* Color del texto en las tarjetas */
+    height: auto; /* Altura automática */
+}
+.card-header {
+    background-color: #F8F8FB; /* Color de fondo del encabezado de la tarjeta */
+    color: black; /* Color del texto del encabezado de la tarjeta */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.btn-primary {
+    background-color: #F8F8FB; /* Color de fondo del botón Guardar */
+    border: 1px solid #747CE6; /* Borde del botón */
+    color: #747CE6; /* Color del texto del botón Guardar */
+    font-size: smaller; /* Tamaño de fuente más pequeño */
+    padding: 0.275rem 0.5rem; /* Ajuste del relleno del botón */
+}
+.btn-primary:hover {
+    background-color: #CDC6E7;
+}
+label {
+    color: black; /* Color del texto de los labels */
+    font-size: smaller; /* Tamaño de fuente más pequeño */
+}
+#titulo {
+    background-color: #F8F8FB; /* Color de fondo del título */
+    color: black; /* Color del texto del título */
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold; /* Texto del título en negrita */
+}
+/* Estilos para los placeholders */
+::placeholder {
+    color: black; /* Color del texto del placeholder */
+    font-size: smaller; /* Tamaño de fuente del placeholder */
+}
+.card-title-desc {
+    color: #747CE6; /* Color del texto del título */
+    font-size: smaller; /* Tamaño de fuente más pequeño */
+}
+#title {
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+}
+textarea {
+    resize: vertical; /* Permitir redimensionamiento vertical */
+}

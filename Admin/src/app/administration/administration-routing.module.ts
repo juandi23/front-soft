@@ -31,11 +31,19 @@ const routes: Routes = [
 
   },
   {
-    path: 'seleccion'
-    , loadChildren: () =>
-      import('./modules/selection-hiring/selection-hiring.module').then(
-        m => m.SelectionHiringModule
-      ),
+    path: '',
+    component: LayoutComponent,
+    children: [
+      {
+        path: 'seleccion'
+        , loadChildren: () =>
+          import('./modules/selection-hiring/selection-hiring.module').then(
+            m => m.SelectionHiringModule
+          ),
+      },
+
+    ]
+
   }
 
 ];

@@ -56,6 +56,12 @@ constructor(
  
     title: ['', Validators.required],
     description: ['', [Validators.required]],
+    first_name: ['', [Validators.required]],
+    last_name: ['', [Validators.required]],
+    cargo: ['', [Validators.required]],
+    salario_base: ['', [Validators.required]],
+    tipo_contrato: ['', [Validators.required]],
+    lista_de_proyectos: ['', [Validators.required]],
 
   });
 }
@@ -77,6 +83,7 @@ private init(category: Category) {
   this.group.patchValue({
     title: category.title,
     description: category.description,
+
   });
 }
 
