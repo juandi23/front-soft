@@ -1,62 +1,24 @@
 <div class="container-fluid p-0">
   <div class="row g-0 ">
-    <div class="col-xl-8">
-      <div class="auth-full-bg pt-lg-5 p-4">
+    <div class="col-xl-7 position-relative">
+      <div class="auth-full-bg pt-lg-5 p-4" style="background-color: #0e1726;">
         <div class="w-100">
-          <div class="bg-overlay bg-dark-color"></div>
-          <div class="d-flex h-100 flex-column">
-            <div class="p-4 mt-auto">
-              <div class="row justify-content-center">
-                <div class="col-lg-7">
-                  <div class="text-center text-white">
-                    <h4 class="mb-3">
-                      <i
-                        class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"
-                      ></i
-                      ><span class="text-primary">1k</span>+ {{ TRANSLATE_KEY+ 'SATISFIED' | translate }}
-                    </h4>
-
-                    <div dir="ltr">
-                      <owl-carousel-o
-                        class="owl-theme auth-review-carousel"
-                        [options]="carouselOption"
-                      >
-                        <ng-template carouselSlide>
-                          <div class="item">
-                            <div class="py-3">
-                              <p class="font-size-16 mb-4">
-                                "Impressive tool! Love the notifications feature. Easy to use. Great support from the team. Thank you team Yéminus!"
-                              </p>
-
-                              <div>
-                                <h4 class="font-size-16 text-primary">
-                                  Albert1981
-                                </h4>
-                                <p class="font-size-14 mb-0">- {{ TRANSLATE_KEY+ 'ROBIN_USER' | translate }}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </ng-template>
-                        <ng-template carouselSlide>
-                          <div class="item">
-                            <div class="py-3">
-                              <p class="font-size-16 mb-4">
-                                "At first, I assumed it was similar to other tested platforms like Jasper, CopyAI, GaryAi, etc. However, after thorough testing, it became evident that the approach is significantly superior."
-                              </p>
-
-                              <div>
-                                <h4 class="font-size-16 text-primary">
-                                  valen345h
-                                </h4>
-                                <p class="font-size-14 mb-0">- {{ TRANSLATE_KEY+ 'ROBIN_USER' | translate }}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </ng-template>
-                      </owl-carousel-o>
-                    </div>
-                  </div>
+          <div class="d-flex h-100 justify-content-center align-items-center">
+            <div class="p-4">
+              <div class="text-center text-white">
+                <div class="mb-2">
+                  <a routerLink="/" class="d-block auth-logo">
+                    <img [src]="mode === 'dark' ? 'assets/images/logos/favicon.png' : 'assets/images/logos/favicon.png'" alt="robin"
+                    height="90"
+                    class="logo" />
+                  </a>
                 </div>
+                <h4 class="mb-3" style="color: #FFD700;">
+                  ¡Bienvenido a Yéminus!
+                </h4>
+                <p class="font-size-15 mb-4">
+                  Gracias por unirte a nuestra plataforma. Estamos aquí para ayudarte en cada paso del camino. Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. ¡Esperamos que disfrutes de tu experiencia en Yéminus!
+                </p>
               </div>
             </div>
           </div>
@@ -65,28 +27,15 @@
     </div>
     <!-- end col -->
 
-    <div class="col-xl-4">
-      <div class="auth-full-page-content p-md-5 p-4">
+    <div class="col-xl-5">
+      <div class="auth-full-page-content p-md-2 p-4">
         <div class="w-100">
-          <div class="d-flex flex-column h-100">
-            <div class="">
-              <a routerLink="/" class="d-block auth-logo">
-                <img [src]="mode === 'dark' ? 'assets/images/logos/favicon.png' : 'assets/images/logos/favicon.png'" alt="lazo"
-                height="90"
-                class="logo" />
-              </a>
-            </div>
+          <div class="d-flex h-100 justify-content-center align-items-center">
             <div class="my-auto">
               <div>
                 <h3 class="welcome-text">{{ TRANSLATE_KEY+ 'WELCOME_BACK' | translate }}</h3>
                 <p>{{ TRANSLATE_KEY+ 'SING' | translate }}</p>
               </div>
-              <div class="mt-2 d-grid">
-                <button (click)="redirectToExternalAuth('google')" class="btn bg-transparent p-2 btn-light text-dark fw-semibold google-btn">
-                  <img src="assets/images/oauth/google.svg" class="bg-white rounded-circle me-1" width="24" height="24" alt=""> Continue with google
-                </button>
-              </div>
-              <p class="text-center mt-3 mb-0">Or</p>
               <div class="mt-3">
                 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
                   <ngb-alert
@@ -190,8 +139,10 @@
                 </div>
               </div>
             </div>
+            
 
             <div class="mt-4 mt-md-5 text-center">
+              <br><br>
               <p class="mb-0">© {{ year }} Yéminus.</p>
             </div>
           </div>
