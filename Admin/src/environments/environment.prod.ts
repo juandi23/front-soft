@@ -9,6 +9,14 @@ export const environment = {
     storageBucket: '',
     messagingSenderId: '',
     appId: '',
-    measurementId: ''
+    measurementId: '',
+    vapidKey: '' // Agregado: clave VAPID para Firebase
+  },
+  api: '', // Agregado: URL de tu API
+  stripePublicKey: '', // Agregado: Llave pública de Stripe
+  payu: {
+    merchantId: '', // Agregado: ID del comerciante
+    accountId: '', // Agregado: ID de cuenta de PayU
+    apiKey: '' // Agregado: Llave API de PayU
   }
 };
